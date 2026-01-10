@@ -1,29 +1,41 @@
+# MiLux AI Labs — corporate website (React + Tailwind)
 
-# TikMahik AI — landing site (generated)
+Futuristic, privacy-first company site for **MiLux AI Labs**, built as a static multi-page React app for **GitHub Pages**.
 
-This package is a minimal, privacy-first landing site prepared for app store verification (Google Play / App Store). It contains templates and guidance; **you must replace placeholders** (YOUR_EMAIL@example.com, third-party services) before publishing.
+## Pages
+- `/` — one-page landing: Hero, Projects, Why MiLux, Roadmap, FAQ, Contact, Footer.
+- `/projects/tik-mathik/` — Tik‑Mathik AI project page.
+- `/projects/tikdrive/` — TikDrive project page.
+- `/projects/tikeverylang/` — TikEveryLang AI project page.
+- `/privacy/` — Privacy Policy (PL/EN).
 
-## Included files
-- index.html — main landing page (dark UI).
-- privacy.html — privacy policy template (update with exact services).
-- terms.html — terms of service template.
-- cookies.html — cookie policy.
-- style.css — dark theme styling.
-- manifest.json — PWA manifest (icons are placeholders).
-- LICENSE.txt — MIT-like license.
-- README.md — this file.
+## Tech
+- Vite + React + TypeScript
+- Tailwind CSS
+- Static multi-page build (each route has its own `index.html`, so clean URLs work on GitHub Pages)
 
-## Short checklist before publishing (Google/Apple)
-1. Host these pages at a public HTTPS URL (your GitHub Pages or custom domain).
-2. In Play Console / App Store, paste the privacy policy URL (HTTPS).
-3. Fill contact email and exact third-party services.
-4. If you send images to external OCR services, disclose that and link to their privacy policy.
-5. Prepare App Store Data Safety form (list data types and purposes).
+## Local development
+Requirements: Node.js 20+
 
-## Notes from our chats (short, non-sensitive)
-- OCR & Math parsing workflow (local-first; optional Mathpix or third-party).
-- Need for privacy explicitness if images are sent off-device.
-- App navigation and OCR fixes (we discussed Flutter screens and navigation).
-- Math step-by-step generation, possible integration with Mathpix or custom OCR.
-- Minimizing exposed proprietary algorithm descriptions (keep product secret).
+- Install: `npm install`
+- Dev server: `npm run dev`
+- Production build: `npm run build`
+- Preview build: `npm run preview`
+
+## Deployment (GitHub Pages)
+This repo includes a workflow: `.github/workflows/deploy.yml`.
+
+1. In GitHub repo settings, enable **Pages** and select **GitHub Actions** as the source.
+2. Push to `main`.
+3. Workflow builds and deploys `dist/`.
+
+Custom domain:
+- The domain is configured via `CNAME` / `public/CNAME`.
+- Update `public/robots.txt` + `public/sitemap.xml` if the domain changes.
+
+## Privacy policy URL for app stores
+Use the deployed URL:
+- `https://matmilux.pl/privacy/`
+
+If you deploy under a different domain, update the sitemap/robots accordingly.
 
