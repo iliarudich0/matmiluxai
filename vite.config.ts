@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         home: path.resolve(__dirname, 'index.html'),
         privacy: path.resolve(__dirname, 'privacy/index.html'),
+        tikDrivePrivacyPL: path.resolve(__dirname, 'polityka_prywatnosci.html'),
         tikMathik: path.resolve(__dirname, 'projects/tik-mathik/index.html'),
         tikDrive: path.resolve(__dirname, 'projects/tikdrive/index.html'),
         tikEveryLang: path.resolve(__dirname, 'projects/tikeverylang/index.html')

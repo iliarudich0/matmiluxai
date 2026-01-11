@@ -34,8 +34,11 @@ Custom domain:
 - Update `public/robots.txt` + `public/sitemap.xml` if the domain changes.
 
 ## Privacy policy URL for app stores
-Use the deployed URL:
-- `https://matmilux.pl/privacy/`
+TikDrive uses the deployed URL:
+- `https://matmilux.pl/privacy/` (redirects to the TikDrive privacy policy)
+
+Direct URL (same content):
+- `https://matmilux.pl/polityka_prywatnosci.html`
 
 If you deploy under a different domain, update the sitemap/robots accordingly.
 

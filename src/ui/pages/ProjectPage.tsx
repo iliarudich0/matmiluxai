@@ -8,6 +8,7 @@ export function ProjectPage({ project }: { project: Project }) {
 
   const desc = lang === 'pl' ? project.description.pl : project.description.en;
   const features = lang === 'pl' ? project.features.pl : project.features.en;
+  const privacyHref = project.slug === 'tikdrive' ? '/polityka_prywatnosci.html' : '/privacy/';
 
   return (
     <Layout lang={lang} setLang={setLang} mode="project">
@@ -37,7 +38,7 @@ export function ProjectPage({ project }: { project: Project }) {
           <div className="card mt-6">
             <div className="text-sm font-semibold">CTA</div>
             <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <a className="btn btn-primary" href="/privacy/">
+              <a className="btn btn-primary" href={privacyHref}>
                 {lang === 'pl' ? 'Polityka prywatności' : 'Privacy policy'}
               </a>
               <a className="btn btn-ghost" href="/#contact">
