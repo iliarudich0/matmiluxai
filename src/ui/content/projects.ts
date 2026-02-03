@@ -1,4 +1,4 @@
-export type ProjectSlug = 'tik-mathik' | 'tikdrive' | 'tikeverylang';
+export type ProjectSlug = 'tik-mathik' | 'tikdrive' | 'tikeverylang' | 'tiklawyer';
 
 export type Project = {
   slug: ProjectSlug;
@@ -141,6 +141,49 @@ export const projects: Project[] = [
       en: 'Prototype planned for Q3 2026.'
     },
     accent: 'neon-1'
+  },
+  {
+    slug: 'tiklawyer',
+    name: 'TikLawyer AI',
+    tagline: {
+      pl: 'Osobisty asystent prawny zasilany AI.',
+      en: 'Your personal AI-powered legal assistant.'
+    },
+    shortDescription: {
+      pl: 'AI-powered legal assistant providing instant legal information and guidance',
+      en: 'AI-powered legal assistant providing instant legal information and guidance'
+    },
+    description: {
+      pl: 'TikLawyer AI to Twój osobisty asystent prawny napędzany zaawansowaną sztuczną inteligencją. Uzyskaj natychmiastowe odpowiedzi na pytania prawne, zrozum skomplikowane dokumenty prawne i otrzymaj wskazówki dotyczące różnych kwestii prawnych - wszystko w prostej, łatwej w użyciu aplikacji mobilnej. Aplikacja została zaprojektowana z myślą o dostarczaniu ogólnych informacji prawnych i ma charakter edukacyjny. TikLawyer AI to idealne narzędzie do zrozumienia swoich praw, uzyskania szybkich odpowiedzi na pytania prawne, nauki o procedurach prawnych oraz analizy dokumentów prawnych. Pamiętaj: TikLawyer AI dostarcza informacji prawnych, NIE porad prawnych. Zawsze konsultuj się z wykwalifikowanym prawnikiem w konkretnych sprawach prawnych.',
+      en: 'TikLawyer AI is your personal legal assistant powered by advanced artificial intelligence. Get instant answers to legal questions, understand complex legal documents, and receive guidance on various legal matters - all in a simple, easy-to-use mobile app. The app is designed for educational purposes and general legal information. TikLawyer AI is perfect for understanding your legal rights, getting quick answers to legal questions, learning about legal procedures, and analyzing legal documents. Remember: TikLawyer AI provides legal information, NOT legal advice. Always consult with a qualified attorney for specific legal matters.'
+    },
+    features: {
+      pl: [
+        'AI-asystent prawny – zadaj dowolne pytanie prawne i otrzymaj natychmiastowe, zrozumiałe odpowiedzi.',
+        'Analiza dokumentów – prześlij i przeanalizuj dokumenty prawne za pomocą AI.',
+        'Baza informacji prawnych – dostęp do kompleksowych informacji prawnych.',
+        'Wsparcie wielu języków – dostępne w wielu językach.',
+        'Prywatność przede wszystkim – Twoje rozmowy są prywatne i bezpieczne.',
+        'Zero reklam, przejrzysty interfejs skoncentrowany na dostarczaniu rzetelnych informacji prawnych.'
+      ],
+      en: [
+        'AI Legal Assistant — Ask any legal question and get instant, understandable answers.',
+        'Document Analysis — Upload and analyze legal documents with AI.',
+        'Legal Information Database — Access comprehensive legal information.',
+        'Multi-language Support — Available in multiple languages.',
+        'Privacy First — Your conversations are private and secure.',
+        'No ads, clean interface focused on delivering reliable legal information.'
+      ]
+    },
+    cta: {
+      pl: 'Pobierz wkrótce',
+      en: 'Download soon'
+    },
+    ctaNote: {
+      pl: 'Wkrótce dostępne w Google Play / App Store.',
+      en: 'Coming soon to Google Play / App Store.'
+    },
+    accent: 'neon-2'
   }
 ];
 
