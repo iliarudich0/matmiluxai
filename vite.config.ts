@@ -15,7 +15,8 @@ export default defineConfig({
         tikDrivePrivacyPL: path.resolve(__dirname, 'polityka_prywatnosci.html'),
         tikMathik: path.resolve(__dirname, 'projects/tik-mathik/index.html'),
         tikDrive: path.resolve(__dirname, 'projects/tikdrive/index.html'),
-        tikEveryLang: path.resolve(__dirname, 'projects/tikeverylang/index.html')
+        tikEveryLang: path.resolve(__dirname, 'projects/tikeverylang/index.html'),
+        tikLawyer: path.resolve(__dirname, 'projects/tiklawyer/index.html')
       }
     }
   }
