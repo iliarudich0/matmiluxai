@@ -19,7 +19,9 @@ export default defineConfig({
         tikDrivePrivacy: path.resolve(__dirname, 'projects/tikdrive/privacy.html'),
         tikEveryLang: path.resolve(__dirname, 'projects/tikeverylang/index.html'),
         tikLawyer: path.resolve(__dirname, 'projects/tiklawyer/index.html'),
-        tikLawyerPrivacy: path.resolve(__dirname, 'projects/tiklawyer/privacy.html')
+        tikLawyerPrivacy: path.resolve(__dirname, 'projects/tiklawyer/privacy.html'),
+        safeZoneX: path.resolve(__dirname, 'projects/safezonex/index.html'),
+        safeZoneXPrivacy: path.resolve(__dirname, 'projects/safezonex/privacy.html')
       }
     }
   }

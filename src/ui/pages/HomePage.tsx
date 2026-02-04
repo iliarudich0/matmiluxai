@@ -26,12 +26,12 @@ export function HomePage() {
         </div>
       </header>
 
-      {/* Mega Viral Logo Hero Section */}
+      {/* Mega Viral Hero Section */}
       <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: `url(/icons/logo.png)`,
+            backgroundImage: `url(https://pl-testdrive.b-cdn.net/miluxailabs/giflogo.gif)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -39,8 +39,10 @@ export function HomePage() {
           }}
         />
 
+        <div className="absolute inset-0 hero-aurora" />
+
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/15 to-black/65" />
 
         {/* Futuristic CTA Button */}
         <div className="relative z-10 text-center">
@@ -50,8 +52,10 @@ export function HomePage() {
                 MiLux AI Labs
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-light tracking-wide max-w-2xl mx-auto">
-              {lang === 'pl' ? 'Innowacyjne rozwiązania AI dla edukacji i bezpieczeństwa' : 'Innovative AI solutions for education and safety'}
+            <p className="text-2xl md:text-3xl text-white/90 font-semibold tracking-wide max-w-3xl mx-auto handwrite">
+              {lang === 'pl'
+                ? 'Tworzymy pomocne aplikacje i narzędzia IT, które realnie wspierają ludzi.'
+                : 'We build helpful apps and IT tools that genuinely support people.'}
             </p>
           </div>
 

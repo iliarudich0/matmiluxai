@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,6 +38,8 @@ body {
     radial-gradient(1200px 600px at 15% 10%, rgb(var(--c-neon-1) / 0.18), transparent 55%),
     radial-gradient(900px 520px at 85% 0%, rgb(var(--c-neon-2) / 0.10), transparent 50%),
     linear-gradient(to bottom, rgb(var(--c-bg) / 1), rgb(3 4 6 / 1));
+  background-size: 160% 160%;
+  animation: aurora 24s ease-in-out infinite;
 }
 
 /* Utility-like component styles */
@@ -69,4 +73,35 @@ body {
 
 .link {
   @apply text-neon-2 hover:text-neon-2/90 underline underline-offset-4;
+}
+
+.handwrite {
+  font-family: 'Caveat', cursive;
+  letter-spacing: 0.02em;
+}
+
+.hero-aurora {
+  background-image:
+    radial-gradient(700px 420px at 20% 20%, rgb(var(--c-neon-1) / 0.35), transparent 60%),
+    radial-gradient(700px 420px at 80% 20%, rgb(var(--c-neon-2) / 0.35), transparent 60%),
+    radial-gradient(900px 520px at 50% 80%, rgb(124 255 230 / 0.25), transparent 65%);
+  filter: blur(24px) saturate(1.2);
+  mix-blend-mode: screen;
+  opacity: 0.8;
+  animation: aurora 18s ease-in-out infinite;
+}
+
+@keyframes aurora {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    background-position: 0% 50%;
+  }
+  50% {
+    transform: translate3d(-3%, 2%, 0) scale(1.05);
+    background-position: 100% 50%;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    background-position: 0% 50%;
+  }
 }
