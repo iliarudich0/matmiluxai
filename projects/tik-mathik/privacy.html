@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka prywatności - TikMathik AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        .last-updated {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        .contact {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Polityka prywatności TikMathik AI</h1>
+    <p class="last-updated">Data: 4 lutego 2026</p>
+    <p class="last-updated">Kontakt: matmiluxai@gmail.com</p>
+
+    <h2>1. Kim jesteśmy</h2>
+    <p>TikMathik AI to aplikacja mobilna/WWW wspomagająca rozwiązywanie zadań matematycznych (skan, OCR, wyjaśnienia, kroki). Backend działa na Google Cloud Run, z użyciem Firebase (Auth, Firestore/Storage) oraz usług OpenAI do przetwarzania zapytań.</p>
+
+    <h2>2. Jakie dane zbieramy</h2>
+    <ul>
+        <li><strong>Dane konta:</strong> adres e-mail, uid Firebase, opcjonalnie displayName i avatar z Google/Facebook.</li>
+        <li><strong>Dane zadania:</strong> zdjęcia/obrazy z kamery lub galerii, tekst OCR, wprowadzona treść matematyczna, wygenerowane kroki i odpowiedzi, znaczniki czasu, status przetwarzania.</li>
+        <li><strong>Dane techniczne:</strong> identyfikator urządzenia/przeglądarki nadawany przez Firebase, logi serwera (adres IP, znacznik czasu, nagłówki HTTP) w celach bezpieczeństwa i diagnostyki.</li>
+        <li><strong>Pliki w chmurze:</strong> przesłane obrazy i wyniki mogą być przechowywane w Firebase Storage/Firestore.</li>
+    </ul>
+
+    <h2>3. W jaki sposób zbieramy dane</h2>
+    <ul>
+        <li><strong>Podane przez Ciebie:</strong> rejestracja/logowanie (Google/Facebook/anonimowe), przesłane zdjęcia, teksty i polecenia.</li>
+        <li><strong>Zbierane automatycznie:</strong> dane techniczne niezbędne do uwierzytelniania, obsługi ruchu i zabezpieczeń.</li>
+        <li><strong>Pozyskiwane z urządzenia:</strong> dostęp do kamery/galerii tylko po Twojej zgodzie i wyłącznie do wykonania zadania.</li>
+    </ul>
+
+    <h2>4. Cele przetwarzania</h2>
+    <ul>
+        <li><strong>Realizacja funkcji aplikacji:</strong> uwierzytelnianie, przetwarzanie zadań (OCR, wyjaśnienia, rozwiązywanie), wyświetlenie wyników.</li>
+        <li><strong>Historia i synchronizacja:</strong> zapis zadań i wyników na Twoim koncie.</li>
+        <li><strong>Bezpieczeństwo i nadużycia:</strong> weryfikacja tokenów Firebase, logi serwera, ochrona przed spamem i nadużyciami.</li>
+        <li><strong>Utrzymanie i ulepszanie usługi:</strong> diagnostyka błędów, metryki wydajności.</li>
+    </ul>
+
+    <h2>5. Podstawy prawne (GDPR)</h2>
+    <ul>
+        <li><strong>Wykonanie umowy/usługi</strong> (art. 6 ust. 1 lit. b) – świadczenie funkcji aplikacji.</li>
+        <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f) – bezpieczeństwo, zapobieganie nadużyciom, obsługa logów i statystyk technicznych.</li>
+        <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a) – np. dobrowolne udostępnienie dodatkowych danych profilu lub ewentualne wykorzystanie danych do poprawy modeli (domyślnie wyłączone).</li>
+    </ul>
+
+    <h2>6. Udostępnianie danych podmiotom trzecim</h2>
+    <ul>
+        <li><strong>Firebase (Google LLC):</strong> uwierzytelnianie, baza danych, storage, hosting backendu na Cloud Run. Dane mogą być przetwarzane na serwerach poza EOG (standardowe klauzule umowne UE).</li>
+        <li><strong>OpenAI:</strong> treść zapytań (tekst/wyrażenia, wynik OCR) przesyłana w celu uzyskania odpowiedzi modelu. Nie przesyłamy Twojego e-maila ani identyfikatorów konta.</li>
+        <li><strong>Brak sprzedaży danych:</strong> podmiotom reklamowym; brak SDK reklamowych.</li>
+    </ul>
+
+    <h2>7. Przechowywanie i retencja</h2>
+    <ul>
+        <li><strong>Konto i podstawowe dane profilu:</strong> do czasu usunięcia konta.</li>
+        <li><strong>Historia zadań/obrazów:</strong> do czasu usunięcia przez Ciebie lub usunięcia konta.</li>
+        <li><strong>Logi serwera:</strong> do 90 dni dla celów bezpieczeństwa i diagnostyki.</li>
+    </ul>
+
+    <h2>8. Twoje prawa</h2>
+    <p>Przysługują Ci następujące prawa:</p>
+    <ul>
+        <li>Dostęp do danych, sprostowanie, usunięcie, ograniczenie przetwarzania, przenoszenie danych, sprzeciw wobec przetwarzania.</li>
+        <li>Wycofanie zgody (jeśli przetwarzanie odbywa się na podstawie zgody) w dowolnym momencie.</li>
+        <li>Zgłoszenie naruszeń do organu nadzorczego (PUODO w Polsce).</li>
+    </ul>
+    <p>Aby skorzystać z praw, napisz na: <a href="mailto:matmiluxai@gmail.com">matmiluxai@gmail.com</a>.</p>
+
+    <h2>9. Bezpieczeństwo</h2>
+    <ul>
+        <li>Uwierzytelnianie Firebase i weryfikacja tokenów w backendzie.</li>
+        <li>Szyfrowanie w transporcie (HTTPS). Przechowywanie w Firebase/Cloud z kontrolą dostępu (reguły Firestore/Storage).</li>
+        <li>Dostęp do obrazów i wyników ograniczony do zalogowanego użytkownika.</li>
+    </ul>
+
+    <h2>10. Dzieci</h2>
+    <p>Aplikacja jest przeznaczona dla użytkowników 13+ (lub zgodnie z lokalnymi przepisami). Nie kierujemy usługi do dzieci młodszych; w razie stwierdzenia danych dziecka usuniemy je na wniosek opiekuna.</p>
+
+    <h2>11. Uprawnienia urządzenia</h2>
+    <ul>
+        <li><strong>Kamera:</strong> do wykonania zdjęcia zadania matematycznego.</li>
+        <li><strong>Pamięć/galeria:</strong> do wyboru zdjęcia z galerii; zapisywanie wyników lokalnie (jeśli używasz eksportu/zapisu).</li>
+    </ul>
+    <p>Nie mamy dostępu do innych plików poza tym, co wybierzesz.</p>
+
+    <h2>12. Pliki cookie i analityka</h2>
+    <ul>
+        <li>Aplikacja mobilna nie używa zewnętrznych narzędzi analitycznych ani reklamowych poza usługami Firebase niezbędnymi do działania (Auth/Storage/Firestore). Brak personalizowanych reklam.</li>
+        <li>W wersji web mogą być techniczne cookie Firebase wymagane do logowania i utrzymania sesji.</li>
+    </ul>
+
+    <h2>13. Transfer poza EOG</h2>
+    <p>Firebase (Google) i OpenAI mogą przetwarzać dane poza EOG; stosowane są standardowe klauzule umowne UE i środki techniczne (szyfrowanie).</p>
+
+    <h2>14. Zmiany polityki</h2>
+    <p>W przypadku aktualizacji opublikujemy nową wersję w aplikacji i/lub w sklepie (Google Play). Dalsze korzystanie po zmianach oznacza akceptację nowej wersji.</p>
+
+    <div class="contact">
+        <h2>15. Kontakt</h2>
+        <p>Pytania o prywatność, zgłoszenia błędów, żądania o dostęp/usunięcie danych:</p>
+        <p><strong>E-mail:</strong> <a href="mailto:matmiluxai@gmail.com">matmiluxai@gmail.com</a></p>
+    </div>
+
+    <hr style="margin-top: 50px; border: none; border-top: 1px solid #ddd;">
+    <p style="text-align: center; color: #7f8c8d; font-size: 14px;">
+        © 2026 TikMathik AI. Wszelkie prawa zastrzeżone.
+    </p>
+</body>
+</html>
