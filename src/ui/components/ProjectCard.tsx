@@ -35,11 +35,7 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
       {/* Content overlay */}
-      <div className="relative flex h-full flex-col items-center justify-end p-6 text-center text-white">
-        <div className="mb-4">
-          <div className="text-2xl font-bold mb-2 drop-shadow-lg">{project.name}</div>
-        </div>
-
+      <div className="relative flex h-full flex-col items-end justify-end p-6">
         {/* CTA Button - transparent light on logo */}
         <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300 text-white font-medium shadow-lg hover:shadow-xl">
           {lang === 'pl' ? 'Zobacz projekt' : 'View project'}

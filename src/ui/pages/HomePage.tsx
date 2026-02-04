@@ -11,38 +11,33 @@ export function HomePage() {
 
   return (
     <Layout lang={lang} setLang={setLang} mode="home">
-      <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-panel/40 p-8 shadow-sm">
-        <div className="absolute inset-0 -z-10 opacity-60" aria-hidden="true">
-          <div className="h-full w-full bg-[radial-gradient(circle_at_30%_30%,rgba(124,92,255,0.25),transparent_50%),radial-gradient(circle_at_80%_20%,rgba(0,240,255,0.18),transparent_45%)]" />
-        </div>
-
-        <div className="kicker">MiLux AI Labs</div>
-        
-        {/* Large MiLux AI Labs Logo */}
-        <div className="flex justify-center my-8">
-          <div className="flex h-32 w-32 items-center justify-center rounded-full border-4 border-white/20 bg-white/10 overflow-hidden shadow-2xl">
-            <img
-              src="/icons/logo.png"
-              alt="MiLux AI Labs Logo"
-              className="h-24 w-24 object-contain"
-            />
+      {/* Large MiLux AI Labs Logo Header */}
+      <section className="relative w-full overflow-hidden">
+        <div 
+          className="w-full h-96 md:h-[500px] lg:h-[600px] flex items-end justify-center pb-12"
+          style={{
+            backgroundImage: `url(/icons/logo.png)`,
+            backgroundSize: 'contain',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'rgba(8, 9, 14, 0.95)'
+          }}
+        >
+          {/* Overlay for better button visibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          
+          {/* CTA Button */}
+          <div className="relative z-10">
+            <a 
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300 text-white font-semibold text-lg shadow-2xl hover:shadow-neon-2/30 hover:scale-105"
+              href="#projects"
+            >
+              {lang === 'pl' ? 'Poznaj nasze projekty' : 'Explore our projects'}
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </a>
           </div>
-        </div>
-        
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-5xl">{pick(lang, BRAND.tagline)}</h1>
-        <p className="p mt-4 max-w-2xl">
-          {lang === 'pl'
-            ? 'Budujemy aplikacje edukacyjne nowej generacji: personalizowane, inteligentne i zaprojektowane jak z roku 2050.'
-            : 'We build next-generation education apps: personalized, intelligent, and designed for 2050.'}
-        </p>
-
-        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-          <a className="btn btn-primary" href="#projects">
-            {pick(lang, BRAND.ctaPrimary)}
-          </a>
-          <a className="btn btn-ghost" href="#contact">
-            {pick(lang, BRAND.ctaSecondary)}
-          </a>
         </div>
       </section>
 
