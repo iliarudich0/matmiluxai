@@ -13,7 +13,8 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       'tik-mathik': '/icons/tik-mathik.png',
       'tikdrive': '/icons/tikdrive.png',
       'tikeverylang': '/icons/tikeverylang.png',
-      'tiklawyer': '/icons/tiklawyer.png'
+      'tiklawyer': '/icons/tiklawyer.png',
+      'safezonex': '/icons/safezonex.png'
     };
     return iconMap[slug] || '/icons/default.png';
   };

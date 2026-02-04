@@ -1,4 +1,4 @@
-export type ProjectSlug = 'tik-mathik' | 'tikdrive' | 'tikeverylang' | 'tiklawyer';
+export type ProjectSlug = 'tik-mathik' | 'tikdrive' | 'tikeverylang' | 'tiklawyer' | 'safezonex';
 
 export type Project = {
   slug: ProjectSlug;
@@ -184,6 +184,49 @@ export const projects: Project[] = [
       en: 'Coming soon to Google Play / App Store.'
     },
     accent: 'neon-2'
+  },
+  {
+    slug: 'safezonex',
+    name: 'SafeZoneX',
+    tagline: {
+      pl: 'Aplikacja na każdy wypadek - znajdź bezpieczne schronienie.',
+      en: 'App for every emergency - find safe shelter.'
+    },
+    shortDescription: {
+      pl: 'SafeZoneX to aplikacja survival na każdy wypadek - wojny, trzęsienia ziemi, powodzie, globalne katastrofy. Znajdź najbliższe bezpieczne schronienia i przygotuj się na kryzys.',
+      en: 'SafeZoneX is a survival app for every emergency - wars, earthquakes, floods, global disasters. Find the nearest safe shelters and prepare for crisis.'
+    },
+    description: {
+      pl: 'SafeZoneX to rewolucyjna aplikacja survival, która przygotowuje Cię na każdy scenariusz kryzysowy. W erze globalnych zagrożeń - od wojen i konfliktów zbrojnych, przez trzęsienia ziemi i tsunami, aż po ekstremalne warunki pogodowe i katastrofy ekologiczne - SafeZoneX zapewnia natychmiastowy dostęp do aktualnych informacji o bezpiecznych schronieniach. Aplikacja wykorzystuje AI do analizy zagrożeń w czasie rzeczywistym, mapuje bezpieczne strefy i schrony, oraz dostarcza praktyczne wskazówki survival. Funkcje obejmują: alerty o zagrożeniach, mapy ewakuacyjne, listy niezbędnych przedmiotów, komunikację z grupami sąsiedzkimi, oraz integrację z systemami ratunkowymi. SafeZoneX to nie tylko aplikacja - to Twój osobisty przewodnik przetrwania w świecie pełnym niepewności.',
+      en: 'SafeZoneX is a revolutionary survival app that prepares you for every crisis scenario. In an era of global threats - from wars and armed conflicts, through earthquakes and tsunamis, to extreme weather conditions and ecological disasters - SafeZoneX provides instant access to current information about safe shelters. The app uses AI to analyze threats in real-time, maps safe zones and shelters, and provides practical survival tips. Features include: threat alerts, evacuation maps, essential items lists, communication with neighborhood groups, and integration with emergency systems. SafeZoneX is not just an app - it\'s your personal survival guide in a world full of uncertainty.'
+    },
+    features: {
+      pl: [
+        'AI-powered analiza zagrożeń w czasie rzeczywistym z alertami o niebezpieczeństwach.',
+        'Interaktywne mapy bezpiecznych schronień i stref ewakuacyjnych.',
+        'Kompleksowe listy przedmiotów niezbędnych do przetrwania różnych scenariuszy.',
+        'Komunikacja z grupami sąsiedzkimi i systemami ratunkowymi.',
+        'Wskazówki survival dostosowane do konkretnych typów zagrożeń.',
+        'Offline mode dla obszarów bez dostępu do internetu.'
+      ],
+      en: [
+        'AI-powered real-time threat analysis with danger alerts.',
+        'Interactive maps of safe shelters and evacuation zones.',
+        'Comprehensive lists of essential items for surviving different scenarios.',
+        'Communication with neighborhood groups and emergency systems.',
+        'Survival tips tailored to specific types of threats.',
+        'Offline mode for areas without internet access.'
+      ]
+    },
+    cta: {
+      pl: 'Przygotuj się na kryzys',
+      en: 'Prepare for crisis'
+    },
+    ctaNote: {
+      pl: 'Beta testy wkrótce dostępne.',
+      en: 'Beta testing coming soon.'
+    },
+    accent: 'neon-1'
   }
 ];
 
