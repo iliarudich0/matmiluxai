@@ -39,7 +39,6 @@ body {
     radial-gradient(900px 520px at 85% 0%, rgb(var(--c-neon-2) / 0.10), transparent 50%),
     linear-gradient(to bottom, rgb(var(--c-bg) / 1), rgb(3 4 6 / 1));
   background-size: 160% 160%;
-  animation: aurora 24s ease-in-out infinite;
 }
 
 /* Utility-like component styles */
@@ -88,20 +87,4 @@ body {
   filter: blur(24px) saturate(1.2);
   mix-blend-mode: screen;
   opacity: 0.8;
-  animation: aurora 18s ease-in-out infinite;
-}
-
-@keyframes aurora {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1);
-    background-position: 0% 50%;
-  }
-  50% {
-    transform: translate3d(-3%, 2%, 0) scale(1.05);
-    background-position: 100% 50%;
-  }
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-    background-position: 0% 50%;
-  }
 }
