@@ -2,46 +2,78 @@ import React from 'react';
 import { useLanguage } from '../content/i18n';
 import { BRAND, CONTACT, FAQ, ROADMAP, WHY, pick } from '../content/siteText';
 import { projects } from '../content/projects';
-import { Layout } from '../components/Layout';
+import { Footer } from '../components/Footer';
 import { ProjectCard } from '../components/ProjectCard';
+import { LanguageToggle } from '../components/LanguageToggle';
 import { IconMedal, IconShield, IconSpark, IconUsers } from '../components/Icons';
 
 export function HomePage() {
   const [lang, setLang] = useLanguage();
 
   return (
-    <Layout lang={lang} setLang={setLang} mode="home">
-      {/* Large MiLux AI Labs Logo Header */}
-      <section className="relative w-full overflow-hidden">
-        <div 
-          className="w-full h-96 md:h-[500px] lg:h-[600px] flex items-end justify-center pb-12"
+    <div className="min-h-screen">
+      {/* Futuristic Header Overlay */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
+          <div className="flex items-center gap-4">
+            <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-neon-1 via-neon-2 to-neon-3 bg-clip-text text-transparent">
+              MiLux AI Labs
+            </span>
+          </div>
+          <div className="flex items-center gap-3">
+            <LanguageToggle lang={lang} onChange={setLang} compact />
+          </div>
+        </div>
+      </header>
+
+      {/* Mega Viral Logo Hero Section */}
+      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 w-full h-full"
           style={{
             backgroundImage: `url(/icons/logo.png)`,
-            backgroundSize: 'contain',
+            backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            backgroundColor: 'rgba(8, 9, 14, 0.95)'
+            backgroundColor: '#000000'
           }}
-        >
-          {/* Overlay for better button visibility */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-          
-          {/* CTA Button */}
-          <div className="relative z-10">
-            <a 
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all duration-300 text-white font-semibold text-lg shadow-2xl hover:shadow-neon-2/30 hover:scale-105"
-              href="#projects"
-            >
-              {lang === 'pl' ? 'Poznaj nasze projekty' : 'Explore our projects'}
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </a>
+        />
+
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+
+        {/* Futuristic CTA Button */}
+        <div className="relative z-10 text-center">
+          <div className="mb-8">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter mb-4">
+              <span className="bg-gradient-to-r from-white via-neon-1 to-neon-2 bg-clip-text text-transparent drop-shadow-2xl">
+                MiLux AI Labs
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 font-light tracking-wide max-w-2xl mx-auto">
+              {lang === 'pl' ? 'Innowacyjne rozwiązania AI dla edukacji i bezpieczeństwa' : 'Innovative AI solutions for education and safety'}
+            </p>
           </div>
+
+          <a
+            className="group inline-flex items-center gap-4 px-12 py-6 rounded-2xl bg-gradient-to-r from-neon-2/20 to-neon-1/20 backdrop-blur-xl border-2 border-neon-2/50 hover:border-neon-2 shadow-2xl hover:shadow-neon-2/50 transition-all duration-500 text-white font-bold text-xl hover:scale-110 hover:bg-neon-2/30"
+            href="#projects"
+          >
+            <span className="relative z-10">
+              {lang === 'pl' ? 'Odkryj nasze projekty' : 'Explore our projects'}
+            </span>
+            <div className="relative">
+              <svg className="w-8 h-8 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+              <div className="absolute inset-0 bg-neon-2/30 rounded-full blur-md group-hover:blur-lg transition-all duration-300" />
+            </div>
+          </a>
         </div>
       </section>
 
-      <section id="projects" className="mt-14 scroll-mt-28">
+      <div className="mx-auto w-full max-w-6xl px-5 pb-14 pt-10">
+        <section id="projects" className="mt-14 scroll-mt-28">
         <div className="flex items-end justify-between gap-6">
           <div>
             <div className="kicker">{lang === 'pl' ? 'Projekty' : 'Projects'}</div>
@@ -187,6 +219,10 @@ export function HomePage() {
           </div>
         </form>
       </section>
-    </Layout>
+
+      </div>
+
+      <Footer lang={lang} setLang={setLang} mode="home" />
+    </div>
   );
 }
