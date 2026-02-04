@@ -12,11 +12,14 @@ export default defineConfig({
       input: {
         home: path.resolve(__dirname, 'index.html'),
         privacy: path.resolve(__dirname, 'privacy/index.html'),
-        tikDrivePrivacyPL: path.resolve(__dirname, 'polityka_prywatnosci.html'),
+        tikMathikPrivacyPL: path.resolve(__dirname, 'polityka_prywatnosci.html'),
         tikMathik: path.resolve(__dirname, 'projects/tik-mathik/index.html'),
+        tikMathikPrivacy: path.resolve(__dirname, 'projects/tik-mathik/privacy.html'),
         tikDrive: path.resolve(__dirname, 'projects/tikdrive/index.html'),
+        tikDrivePrivacy: path.resolve(__dirname, 'projects/tikdrive/privacy.html'),
         tikEveryLang: path.resolve(__dirname, 'projects/tikeverylang/index.html'),
-        tikLawyer: path.resolve(__dirname, 'projects/tiklawyer/index.html')
+        tikLawyer: path.resolve(__dirname, 'projects/tiklawyer/index.html'),
+        tikLawyerPrivacy: path.resolve(__dirname, 'projects/tiklawyer/privacy.html')
       }
     }
   }
