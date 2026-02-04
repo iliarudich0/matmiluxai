@@ -17,6 +17,18 @@ export function HomePage() {
         </div>
 
         <div className="kicker">MiLux AI Labs</div>
+        
+        {/* Large MiLux AI Labs Logo */}
+        <div className="flex justify-center my-8">
+          <div className="flex h-32 w-32 items-center justify-center rounded-full border-4 border-white/20 bg-white/10 overflow-hidden shadow-2xl">
+            <img
+              src="/icons/logo.png"
+              alt="MiLux AI Labs Logo"
+              className="h-24 w-24 object-contain"
+            />
+          </div>
+        </div>
+        
         <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-5xl">{pick(lang, BRAND.tagline)}</h1>
         <p className="p mt-4 max-w-2xl">
           {lang === 'pl'
@@ -47,7 +59,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
           {projects.map((p) => (
             <ProjectCard key={p.slug} project={p} lang={lang} />
           ))}
