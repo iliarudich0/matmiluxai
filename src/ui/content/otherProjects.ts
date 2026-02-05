@@ -364,4 +364,4 @@ for (const adjective of adjectives) {
   if (generatedProjects.length >= targetCount) break;
 }
 
-export const otherProjects: OtherProject[] = [...baseOtherProjects, ...generatedProjects];
+export const otherProjects: OtherProject[] = [...generatedProjects, ...baseOtherProjects];
