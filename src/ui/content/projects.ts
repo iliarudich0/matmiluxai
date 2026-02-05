@@ -15,7 +15,8 @@ export type ProjectSlug =
   | 'tikfinance-ai'
   | 'tikspacez-ai'
   | 'tikdietx-ai'
-  | 'tipexam-ai';
+  | 'tipexam-ai'
+  | 'tikcorporate-ai';
 
 export type Project = {
   slug: ProjectSlug;
@@ -981,6 +982,62 @@ export const projects: Project[] = [
       ru: 'Цель: глобальные запуски в 2026.'
     },
     accent: 'neon-1'
+  },
+  {
+    slug: 'tikcorporate-ai',
+    name: 'TikCorporate AI',
+    tagline: {
+      pl: 'Global Business Treasury w Twojej kieszeni.',
+      en: 'Global business treasury in your pocket.',
+      ru: 'Глобальная корпоративная казна в вашем кармане.'
+    },
+    shortDescription: {
+      pl: 'Inteligentna aplikacja finansowo‑skarbowościowa dla firm, która analizuje cashflow, koszty, podatki i płynność w czasie rzeczywistym.',
+      en: 'An intelligent finance and treasury app for companies, tracking cashflow, costs, taxes, and liquidity in real time.',
+      ru: 'Интеллектуальное финансово‑казначейское приложение для бизнеса с анализом cashflow, расходов, налогов и ликвидности.'
+    },
+    description: {
+      pl: 'TikCorporate AI to narzędzie dla firm i przedsiębiorców, które upraszcza zarządzanie finansami. Aplikacja monitoruje przychody i wydatki, pomaga planować budżety, kontrolować podatki oraz optymalizować koszty. Dzięki analizie płynności w czasie rzeczywistym daje szybki obraz kondycji firmy. Działa globalnie i wspiera wiele walut, aby decyzje finansowe były możliwe niezależnie od kraju.',
+      en: 'TikCorporate AI is a finance and treasury tool for companies and entrepreneurs. It monitors income and expenses, supports budgeting, helps track taxes, and optimizes costs. Real‑time liquidity analysis provides a clear view of company health. It works globally with multi‑currency support so you can make fast, informed decisions anywhere.',
+      ru: 'TikCorporate AI — инструмент для компаний и предпринимателей, упрощающий финансы. Приложение отслеживает доходы и расходы, помогает планировать бюджеты, контролировать налоги и оптимизировать издержки. Анализ ликвидности в реальном времени даёт ясную картину состояния бизнеса. Глобальная работа и мультивалютность позволяют принимать быстрые решения в любой стране.'
+    },
+    features: {
+      pl: [
+        'Analiza cashflow i płynności w czasie rzeczywistym.',
+        'Budżety działów i projektów z alertami odchyleń.',
+        'Kontrola podatków i terminów zobowiązań.',
+        'Wielowalutowe raporty i konwersje.',
+        'Wykrywanie anomalii kosztowych i rekomendacje oszczędności.',
+        'Bezpieczne role i dostęp dla zespołu (w planach).' 
+      ],
+      en: [
+        'Real‑time cashflow and liquidity analysis.',
+        'Department/project budgets with variance alerts.',
+        'Tax tracking and obligations calendar.',
+        'Multi‑currency reporting and conversions.',
+        'Cost anomaly detection with savings recommendations.',
+        'Secure team roles and access (planned).'
+      ],
+      ru: [
+        'Анализ cashflow и ликвидности в реальном времени.',
+        'Бюджеты отделов/проектов с уведомлениями об отклонениях.',
+        'Контроль налогов и календарь обязательств.',
+        'Мультивалютные отчёты и конвертация.',
+        'Выявление аномалий расходов и рекомендации по экономии.',
+        'Безопасные роли и доступ для команды (в планах).'
+      ]
+    },
+    cta: {
+      pl: 'Dołącz do listy firm testowych',
+      en: 'Join the business beta',
+      ru: 'Присоединиться к бизнес‑бете'
+    },
+    ctaNote: {
+      pl: 'Model subskrypcyjny. Start pilotażu w 2026.',
+      en: 'Subscription model. Pilot starts in 2026.',
+      ru: 'Подписка. Пилот в 2026.'
+    },
+    accent: 'neon-2'
   }
 ];
 
