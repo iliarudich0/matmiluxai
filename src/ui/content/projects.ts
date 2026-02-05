@@ -15,7 +15,7 @@ export type ProjectSlug =
   | 'tikfinance-ai'
   | 'tikspacez-ai'
   | 'tikdietx-ai'
-  | 'tiksexamz-ai';
+  | 'tipexam-ai';
 
 export type Project = {
   slug: ProjectSlug;
@@ -719,19 +719,19 @@ export const projects: Project[] = [
     accent: 'neon-2'
   },
   {
-    slug: 'tiksexamz-ai',
-    name: 'TikSexamZ AI',
+    slug: 'tipexam-ai',
+    name: 'TipExam AI',
     tagline: {
       pl: 'Globalna nauka do egzaminów zawodowych.',
       en: 'Global vocational exam preparation.'
     },
     shortDescription: {
-      pl: 'TikSexamZ AI pomaga przygotować się do egzaminów zawodowych na całym świecie — od szkół branżowych po służby i szkoły policyjne.',
-      en: 'TikSexamZ AI helps prepare for vocational exams worldwide — from trade schools to services and police academies.'
+      pl: 'TipExam AI pomaga przygotować się do egzaminów zawodowych na całym świecie — od szkół branżowych po służby i szkoły policyjne.',
+      en: 'TipExam AI helps prepare for vocational exams worldwide — from trade schools to services and police academies.'
     },
     description: {
-      pl: 'TikSexamZ AI to platforma do nauki i treningu egzaminów zawodowych w skali globalnej. Aplikacja dobiera materiał do konkretnego kraju, zawodu i programu szkoleniowego, oferując pytania, testy, scenariusze praktyczne oraz krótkie powtórki. Dzięki AI dostajesz personalizowane ścieżki nauki, analizę wyników i rekomendacje, co warto poprawić. To wsparcie dla szkół branżowych, technicznych, kursów certyfikacyjnych oraz szkół służb mundurowych, w tym policyjnych — z naciskiem na realne przygotowanie do egzaminu.',
-      en: 'TikSexamZ AI is a global exam-prep platform for vocational qualifications. The app adapts content to a specific country, profession, and curriculum, offering questions, tests, practical scenarios, and quick reviews. With AI personalization, you get tailored study paths, performance analysis, and targeted improvement tips. It supports trade schools, technical programs, certification courses, and uniformed service academies — with a focus on real-world exam readiness.'
+      pl: 'TipExam AI to platforma do nauki i treningu egzaminów zawodowych w skali globalnej. Aplikacja dobiera materiał do konkretnego kraju, zawodu i programu szkoleniowego, oferując pytania, testy, scenariusze praktyczne oraz krótkie powtórki. Dzięki AI dostajesz personalizowane ścieżki nauki, analizę wyników i rekomendacje, co warto poprawić. To wsparcie dla szkół branżowych, technicznych, kursów certyfikacyjnych oraz szkół służb mundurowych, w tym policyjnych — z naciskiem na realne przygotowanie do egzaminu.',
+      en: 'TipExam AI is a global exam-prep platform for vocational qualifications. The app adapts content to a specific country, profession, and curriculum, offering questions, tests, practical scenarios, and quick reviews. With AI personalization, you get tailored study paths, performance analysis, and targeted improvement tips. It supports trade schools, technical programs, certification courses, and uniformed service academies — with a focus on real-world exam readiness.'
     },
     features: {
       pl: [

@@ -99,7 +99,7 @@ export function HomePage() {
 
       <section id="why" className="mt-14 scroll-mt-28">
         <div className="kicker">{pick(lang, WHY.title)}</div>
-        <h2 className="h2 mt-2">{lang === 'pl' ? 'Technologia, która uczy.' : 'Technology that teaches.'}</h2>
+        <h2 className="h2 mt-2">{lang === 'pl' ? 'Technologia, która realnie pomaga.' : 'Technology that truly helps.'}</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {WHY.items.map((it) => {
             const Icon =
@@ -128,7 +128,7 @@ export function HomePage() {
 
       <section id="roadmap" className="mt-14 scroll-mt-28">
         <div className="kicker">{pick(lang, ROADMAP.title)}</div>
-        <h2 className="h2 mt-2">{lang === 'pl' ? 'Oś czasu rozwoju' : 'Development timeline'}</h2>
+        <h2 className="h2 mt-2">{lang === 'pl' ? 'Plan wdrożeń 2026' : 'Launch plan 2026'}</h2>
         <p className="p mt-2 max-w-3xl">{pick(lang, ROADMAP.subtitle)}</p>
 
         <ol className="mt-6 space-y-4">
@@ -164,7 +164,7 @@ export function HomePage() {
 
       <section id="contact" className="mt-14 scroll-mt-28">
         <div className="kicker">{pick(lang, CONTACT.title)}</div>
-        <h2 className="h2 mt-2">{lang === 'pl' ? 'Porozmawiajmy' : 'Let’s talk'}</h2>
+        <h2 className="h2 mt-2">{lang === 'pl' ? 'Skontaktuj się z nami' : 'Get in touch'}</h2>
         <p className="p mt-2 max-w-2xl">
           {pick(lang, CONTACT.text)}{' '}
           <a className="link" href={`mailto:${CONTACT.email}`}>
