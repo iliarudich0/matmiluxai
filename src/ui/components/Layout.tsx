@@ -11,7 +11,7 @@ export function Layout({
 }: React.PropsWithChildren<{
   lang: Language;
   setLang: (lang: Language) => void;
-  mode: 'home' | 'privacy' | 'project';
+  mode: 'home' | 'privacy' | 'project' | 'other';
 }>) {
   return (
     <div className="min-h-screen">

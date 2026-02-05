@@ -9,7 +9,7 @@ export function Header({
 }: {
   lang: Language;
   setLang: (lang: Language) => void;
-  mode: 'home' | 'privacy' | 'project';
+  mode: 'home' | 'privacy' | 'project' | 'other';
 }) {
   const navLabel = lang === 'pl' ? 'Nawigacja' : lang === 'ru' ? 'Навигация' : 'Navigation';
 

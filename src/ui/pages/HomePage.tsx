@@ -101,6 +101,19 @@ export function HomePage() {
             <ProjectCard key={p.slug} project={p} lang={lang} />
           ))}
         </div>
+
+        <div className="mt-8 flex justify-center">
+          <a
+            className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white/90 shadow-glow transition-all duration-300 hover:scale-105 hover:border-neon-2/60 hover:text-white"
+            href="/other-projects/"
+          >
+            {lang === 'pl'
+              ? 'Pozostałe projekty'
+              : lang === 'ru'
+                ? 'Остальные проекты'
+                : 'Other projects'}
+          </a>
+        </div>
       </section>
 
       <section id="why" className="mt-14 scroll-mt-28">

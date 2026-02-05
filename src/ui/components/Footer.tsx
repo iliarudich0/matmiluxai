@@ -8,7 +8,7 @@ export function Footer({
 }: {
   lang: Language;
   setLang: (lang: Language) => void;
-  mode: 'home' | 'privacy' | 'project';
+  mode: 'home' | 'privacy' | 'project' | 'other';
 }) {
   const homeHref = '/';
   const privacyHref = '/privacy/';
