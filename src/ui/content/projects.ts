@@ -1,4 +1,20 @@
-export type ProjectSlug = 'tik-mathik' | 'tikdrive' | 'tikeverylang' | 'tiklawyer' | 'safezonex';
+export type ProjectSlug =
+  | 'tik-mathik'
+  | 'tikdrive'
+  | 'tikeverylang'
+  | 'tiklawyer'
+  | 'safezonex'
+  | 'carfix-ai'
+  | 'healthsymptom-ai'
+  | 'explainlike-ai'
+  | 'interviewcoach-ai'
+  | 'memoryboost-ai'
+  | 'contractscan-ai'
+  | 'studyplanner-ai'
+  | 'tikplant-ai'
+  | 'tikfinance-ai'
+  | 'tikspacez-ai'
+  | 'tikdietx-ai';
 
 export type Project = {
   slug: ProjectSlug;
@@ -227,6 +243,479 @@ export const projects: Project[] = [
       en: 'Beta testing coming soon.'
     },
     accent: 'neon-1'
+  },
+  {
+    slug: 'carfix-ai',
+    name: 'CarFix AI',
+    tagline: {
+      pl: 'Szybka diagnoza usterek auta z AI.',
+      en: 'Instant car issue diagnosis with AI.'
+    },
+    shortDescription: {
+      pl: 'Inteligentna aplikacja dla kierowców, która analizuje zdjęcia lub dźwięk samochodu, diagnozuje możliwe usterki i sugeruje kroki naprawcze.',
+      en: 'Smart driver app that analyzes photos or car sounds, suggests possible issues, and recommends next repair steps.'
+    },
+    description: {
+      pl: 'CarFix AI to Twoje mobilne wsparcie techniczne, gdy samochód zaczyna zachowywać się nietypowo. Wystarczy zrobić zdjęcie elementu lub nagrać dźwięk silnika, a AI porówna sygnały z bazą typowych usterek. Otrzymujesz jasne wyjaśnienie możliwych przyczyn, priorytet ryzyka oraz listę bezpiecznych kroków do podjęcia (np. sprawdzenie płynów, filtrów, bezpieczników). Aplikacja została zaprojektowana tak, by pomagać w szybkiej ocenie sytuacji przed wizytą w warsztacie.',
+      en: 'CarFix AI is your mobile mechanic helper when something sounds or looks off. Snap a photo of a component or record the engine sound and the AI compares signals against common issue patterns. You get a clear summary of possible causes, a risk priority, and a safe next-step checklist (fluids, filters, fuses, visible leaks). It’s built to help you assess the situation quickly before visiting a mechanic.'
+    },
+    features: {
+      pl: [
+        'Analiza zdjęć i dźwięku samochodu w celu wykrycia możliwych usterek.',
+        'Sugerowane przyczyny problemu wraz z priorytetem bezpieczeństwa.',
+        'Checklisty pierwszych kroków (co sprawdzić samodzielnie i kiedy przerwać jazdę).',
+        'Historia zgłoszeń i porównań objawów w czasie.',
+        'Słownik kodów i objawów w prostym języku.',
+        'Tryb „przed wizytą w warsztacie” z pytaniami do mechanika.'
+      ],
+      en: [
+        'Photo and sound analysis to detect possible car issues.',
+        'Suggested root causes with safety-priority scoring.',
+        'First-step checklists (what to verify yourself and when to stop driving).',
+        'Issue history and symptom comparison over time.',
+        'Plain-language glossary of codes and symptoms.',
+        '“Before the mechanic” mode with key questions to ask.'
+      ]
+    },
+    cta: {
+      pl: 'Dołącz do testów beta',
+      en: 'Join the beta'
+    },
+    ctaNote: {
+      pl: 'Wersja startowa w przygotowaniu.',
+      en: 'Launch version in preparation.'
+    },
+    accent: 'neon-2'
+  },
+  {
+    slug: 'healthsymptom-ai',
+    name: 'HealthSymptom AI',
+    tagline: {
+      pl: 'Inteligentny analizator objawów dla codziennej profilaktyki.',
+      en: 'Smart symptom insights for everyday health.'
+    },
+    shortDescription: {
+      pl: 'Wpisz objawy lub dodaj dane zdrowotne, a AI podpowie możliwe przyczyny i zaleci kolejne kroki — informacyjnie, bez diagnozy medycznej.',
+      en: 'Describe symptoms or add health data to get AI-powered insights and next-step recommendations — informational only, not medical diagnosis.'
+    },
+    description: {
+      pl: 'HealthSymptom AI to praktyczne wsparcie dla osób, które chcą szybko zorientować się w swoich objawach. Aplikacja porządkuje informacje, wskazuje możliwe przyczyny i sugeruje, czy warto skonsultować się z lekarzem. Otrzymujesz też proste wskazówki dotyczące obserwacji, nawodnienia czy odpoczynku. To narzędzie edukacyjne, które pomaga podjąć świadomą decyzję o dalszych krokach.',
+      en: 'HealthSymptom AI is a practical tool for quickly making sense of symptoms. It organizes your inputs, highlights possible causes, and suggests whether it may be worth contacting a professional. You’ll also see simple guidance about monitoring, hydration, and rest. It’s an educational assistant that helps you decide what to do next.'
+    },
+    features: {
+      pl: [
+        'Analiza objawów i możliwych przyczyn w jasnym języku.',
+        'Podpowiedzi dotyczące dalszych kroków i pilności konsultacji.',
+        'Dziennik objawów i obserwacji w czasie.',
+        'Możliwość dodania podstawowych danych zdrowotnych (np. temperatura).',
+        'Edukacyjne wskazówki dotyczące profilaktyki i samopomocy.',
+        'Wyraźne komunikaty: aplikacja nie zastępuje lekarza.'
+      ],
+      en: [
+        'Symptom analysis with clear, plain-language explanations.',
+        'Suggested next steps and urgency guidance.',
+        'Symptom journal to track changes over time.',
+        'Optional basic health metrics input (e.g., temperature).',
+        'Educational self-care and prevention tips.',
+        'Transparent messaging: not a medical diagnosis.'
+      ]
+    },
+    cta: {
+      pl: 'Wkrótce w wersji testowej',
+      en: 'Testing version coming soon'
+    },
+    ctaNote: {
+      pl: 'Planowane otwarte testy w 2026.',
+      en: 'Open testing planned for 2026.'
+    },
+    accent: 'neon-1'
+  },
+  {
+    slug: 'explainlike-ai',
+    name: 'ExplainLikeAI',
+    tagline: {
+      pl: 'Tłumaczenie trudnych tematów krok po kroku.',
+      en: 'Complex topics explained step by step.'
+    },
+    shortDescription: {
+      pl: 'Aplikacja edukacyjna, która tłumaczy trudne pojęcia prostym językiem, z przykładami i analogiami dopasowanymi do Twojego poziomu.',
+      en: 'An educational app that breaks down complex topics into simple, personalized explanations with examples and analogies.'
+    },
+    description: {
+      pl: 'ExplainLikeAI to cyfrowy „tłumacz wiedzy”, który rozbija złożone zagadnienia na krótkie, zrozumiałe kroki. Wpisujesz pojęcie, wzór lub temat, a aplikacja generuje objaśnienie dopasowane do Twojego poziomu — od podstaw po warianty zaawansowane. Dzięki przykładom i analogiom łatwiej zapamiętasz to, czego się uczysz. To idealne narzędzie dla uczniów, studentów oraz osób samodzielnie rozwijających kompetencje.',
+      en: 'ExplainLikeAI is a digital “knowledge translator” that turns complex topics into clear, bite-sized steps. Enter a concept, formula, or subject and the app generates an explanation tailored to your level — from beginner to advanced. With examples and analogies, concepts become easier to understand and remember. Perfect for students and self-learners.'
+    },
+    features: {
+      pl: [
+        'Wyjaśnienia w różnych poziomach trudności: od „dla początkujących” po „zaawansowane”.',
+        'Przykłady i analogie, które ułatwiają zrozumienie tematu.',
+        'Tryb krok-po-kroku z podsumowaniami po każdym etapie.',
+        'Słownik pojęć i szybkie definicje.',
+        'Możliwość zadawania pytań uzupełniających.',
+        'Historia tematów i powtórek.'
+      ],
+      en: [
+        'Difficulty levels from beginner to advanced.',
+        'Examples and analogies that clarify meaning.',
+        'Step-by-step mode with mini summaries.',
+        'Fast glossary and definitions.',
+        'Follow-up questions for deeper understanding.',
+        'Topic history and review support.'
+      ]
+    },
+    cta: {
+      pl: 'Poznaj wersję demo',
+      en: 'See the demo'
+    },
+    ctaNote: {
+      pl: 'Wersja demo w przygotowaniu.',
+      en: 'Demo version in preparation.'
+    },
+    accent: 'neon-2'
+  },
+  {
+    slug: 'interviewcoach-ai',
+    name: 'InterviewCoach AI',
+    tagline: {
+      pl: 'Trenuj rozmowy rekrutacyjne z AI.',
+      en: 'Practice interviews with AI coaching.'
+    },
+    shortDescription: {
+      pl: 'AI symuluje rozmowy kwalifikacyjne, analizuje odpowiedzi i daje feedback, abyś był lepiej przygotowany do prawdziwego interview.',
+      en: 'AI simulates interviews, analyzes your answers, and provides feedback to help you prepare for real hiring conversations.'
+    },
+    description: {
+      pl: 'InterviewCoach AI to wirtualny trener rekrutacyjny, który ćwiczy z Tobą scenariusze rozmów o pracę. Aplikacja zadaje pytania dopasowane do stanowiska i branży, a następnie ocenia treść odpowiedzi, spójność i klarowność. Otrzymujesz konkretne sugestie poprawy: czego unikać, jak lepiej argumentować i jak budować pewność siebie. Idealne narzędzie przed ważną rekrutacją.',
+      en: 'InterviewCoach AI is your virtual hiring trainer. It asks role-specific questions, evaluates the clarity and structure of your answers, and suggests improvements: what to avoid, how to argue your strengths, and how to build confidence. A perfect practice tool before important interviews.'
+    },
+    features: {
+      pl: [
+        'Symulacje rozmów dla różnych stanowisk i poziomów doświadczenia.',
+        'Feedback jakości odpowiedzi oraz proponowane lepsze sformułowania.',
+        'Tryb „pytania behawioralne” i „case study”.',
+        'Analiza tempa i długości odpowiedzi (tekst/voice).',
+        'Lista mocnych stron i obszarów do poprawy.',
+        'Historia sesji i postępów.'
+      ],
+      en: [
+        'Interview simulations for multiple roles and seniority levels.',
+        'Answer quality feedback with better phrasing suggestions.',
+        'Behavioral and case-study question modes.',
+        'Pace and length analysis (text/voice).',
+        'Strengths and improvement areas summary.',
+        'Session history and progress tracking.'
+      ]
+    },
+    cta: {
+      pl: 'Dołącz do listy oczekujących',
+      en: 'Join the waitlist'
+    },
+    ctaNote: {
+      pl: 'Pierwsze testy wkrótce.',
+      en: 'Early tests coming soon.'
+    },
+    accent: 'neon-1'
+  },
+  {
+    slug: 'memoryboost-ai',
+    name: 'MemoryBoost AI',
+    tagline: {
+      pl: 'Trenuj pamięć i koncentrację z AI.',
+      en: 'Train memory and focus with AI.'
+    },
+    shortDescription: {
+      pl: 'Spersonalizowane ćwiczenia pamięciowe, gry i wyzwania, które wzmacniają zapamiętywanie i koncentrację.',
+      en: 'Personalized memory exercises, games, and challenges that strengthen recall and focus.'
+    },
+    description: {
+      pl: 'MemoryBoost AI to aplikacja, która pomaga budować lepszą pamięć dzięki codziennym treningom. AI dobiera zadania do Twojego poziomu i celów, a także monitoruje postępy w czasie. Otrzymujesz krótkie, skuteczne sesje treningowe, które możesz wykonać w kilka minut dziennie. To świetne wsparcie w nauce, pracy i codziennym funkcjonowaniu.',
+      en: 'MemoryBoost AI helps you build stronger memory with daily training sessions. The AI selects tasks based on your level and goals, while tracking your progress over time. Short, effective exercises fit into just a few minutes per day. It’s a perfect support for learning, work, and everyday life.'
+    },
+    features: {
+      pl: [
+        'Personalizowane ćwiczenia pamięciowe i koncentracyjne.',
+        'Tryb powtórek oparty na systemie spaced repetition.',
+        'Gry i wyzwania poprawiające szybkość reakcji i zapamiętywanie.',
+        'Statystyki postępów oraz tygodniowe cele.',
+        'Codzienne mikro-treningi 5–10 minut.',
+        'Tryb relaksacyjny wspierający koncentrację.'
+      ],
+      en: [
+        'Personalized memory and focus workouts.',
+        'Spaced-repetition review mode.',
+        'Games and challenges to improve recall speed.',
+        'Progress stats and weekly goals.',
+        'Daily micro-sessions (5–10 minutes).',
+        'Focus-friendly relaxation mode.'
+      ]
+    },
+    cta: {
+      pl: 'Zacznij trenować',
+      en: 'Start training'
+    },
+    ctaNote: {
+      pl: 'Wersja beta już wkrótce.',
+      en: 'Beta version coming soon.'
+    },
+    accent: 'neon-2'
+  },
+  {
+    slug: 'contractscan-ai',
+    name: 'ContractScan AI',
+    tagline: {
+      pl: 'Umowy w prostym języku.',
+      en: 'Contracts explained in plain language.'
+    },
+    shortDescription: {
+      pl: 'Aplikacja skanuje umowy i tłumaczy je prostym językiem, wskazując ryzykowne zapisy przed podpisaniem.',
+      en: 'Scan contracts and get plain-language summaries with risk highlights before signing.'
+    },
+    description: {
+      pl: 'ContractScan AI pomaga szybciej zrozumieć zapisy w umowach. Wystarczy dodać dokument, a AI streszcza kluczowe punkty, podświetla ryzykowne zapisy i wyjaśnia je prostym językiem. To wsparcie dla osób, które chcą świadomie podpisywać dokumenty, bez żmudnego analizowania długich paragrafów.',
+      en: 'ContractScan AI helps you understand contract clauses faster. Upload a document and the AI summarizes key points, highlights risky clauses, and explains them in plain language. It’s support for anyone who wants to sign documents with confidence, without reading long legal text line by line.'
+    },
+    features: {
+      pl: [
+        'Skan dokumentu i automatyczne streszczenie kluczowych zapisów.',
+        'Wykrywanie ryzykownych klauzul oraz alerty.',
+        'Tłumaczenie zapisów na prosty język.',
+        'Lista punktów do sprawdzenia przed podpisaniem.',
+        'Porównanie wersji dokumentów.',
+        'Historia analiz i eksport notatek.'
+      ],
+      en: [
+        'Document scan with automatic key-point summary.',
+        'Risky clause detection and alerts.',
+        'Plain-language explanations.',
+        'Checklist of what to verify before signing.',
+        'Document version comparison.',
+        'Analysis history and note export.'
+      ]
+    },
+    cta: {
+      pl: 'Sprawdź wersję testową',
+      en: 'Check the test build'
+    },
+    ctaNote: {
+      pl: 'Projekt w trakcie rozwoju.',
+      en: 'Project in development.'
+    },
+    accent: 'neon-1'
+  },
+  {
+    slug: 'studyplanner-ai',
+    name: 'StudyPlanner AI',
+    tagline: {
+      pl: 'Twój osobisty plan nauki.',
+      en: 'Your personal study roadmap.'
+    },
+    shortDescription: {
+      pl: 'AI układa spersonalizowane harmonogramy nauki, przypomina o zadaniach i pomaga w przygotowaniu do egzaminów.',
+      en: 'AI builds personalized study schedules, sends reminders, and guides you toward exam readiness.'
+    },
+    description: {
+      pl: 'StudyPlanner AI to inteligentny asystent, który organizuje naukę w oparciu o Twój czas, cele i tempo. Aplikacja dzieli materiał na mniejsze etapy, planuje powtórki i monitoruje realizację. Dzięki temu uczysz się systematycznie i bez stresu, a AI koryguje plan, gdy zmienia się Twój harmonogram.',
+      en: 'StudyPlanner AI is a smart assistant that organizes your learning based on your time, goals, and pace. It breaks material into smaller steps, schedules reviews, and tracks completion. You learn consistently and with less stress, while the AI adapts the plan as your schedule changes.'
+    },
+    features: {
+      pl: [
+        'Automatyczne tworzenie planu nauki pod egzaminy lub cele.',
+        'System powtórek i priorytetów oparty na postępach.',
+        'Przypomnienia i powiadomienia o zadaniach.',
+        'Elastyczne dostosowanie planu w razie zmian w grafiku.',
+        'Widok kalendarza i listy zadań.',
+        'Raporty skuteczności nauki.'
+      ],
+      en: [
+        'Automatic study plan creation for exams or goals.',
+        'Progress-based review and priority system.',
+        'Task reminders and notifications.',
+        'Flexible rescheduling when your calendar changes.',
+        'Calendar and task list views.',
+        'Study effectiveness reports.'
+      ]
+    },
+    cta: {
+      pl: 'Zaplanuj naukę',
+      en: 'Plan your study'
+    },
+    ctaNote: {
+      pl: 'Wersja beta w przygotowaniu.',
+      en: 'Beta version in preparation.'
+    },
+    accent: 'neon-2'
+  },
+  {
+    slug: 'tikplant-ai',
+    name: 'TikPlant AI',
+    tagline: {
+      pl: 'AI opiekun Twoich roślin.',
+      en: 'AI care for your plants.'
+    },
+    shortDescription: {
+      pl: 'Rozpoznawanie gatunków, diagnoza chorób i personalizowane wskazówki pielęgnacji dla Twoich roślin.',
+      en: 'Plant identification, disease detection, and personalized care tips for healthier growth.'
+    },
+    description: {
+      pl: 'TikPlant AI to przyjazny doradca roślinny, który rozpoznaje gatunki ze zdjęcia i podpowiada, jak je pielęgnować. Aplikacja wskazuje problemy (np. szkodniki, niedobory) i doradza, jak poprawić podlewanie, światło czy nawożenie. Dzięki temu Twoje rośliny rosną zdrowiej, a Ty masz pewność, że dbasz o nie właściwie.',
+      en: 'TikPlant AI is a friendly plant advisor that identifies species from photos and guides your care routine. It flags potential issues (pests, deficiencies) and recommends improvements in watering, light, and fertilization. Your plants grow healthier while you stay confident about their care.'
+    },
+    features: {
+      pl: [
+        'Rozpoznawanie gatunków roślin na podstawie zdjęcia.',
+        'Diagnoza chorób i szkodników z rekomendacjami.',
+        'Personalizowane wskazówki podlewania i nawożenia.',
+        'Harmonogram pielęgnacji i przypomnienia.',
+        'Biblioteka porad dla roślin domowych i ogrodowych.',
+        'Tryb „ratunek rośliny” z szybką checklistą.'
+      ],
+      en: [
+        'Plant species identification from photos.',
+        'Disease and pest diagnosis with recommendations.',
+        'Personalized watering and fertilizing tips.',
+        'Care schedules and reminders.',
+        'Guides for indoor and garden plants.',
+        'Plant rescue mode with quick checklists.'
+      ]
+    },
+    cta: {
+      pl: 'Zadbaj o rośliny',
+      en: 'Care for your plants'
+    },
+    ctaNote: {
+      pl: 'Start publicznych testów wkrótce.',
+      en: 'Public testing coming soon.'
+    },
+    accent: 'neon-1'
+  },
+  {
+    slug: 'tikfinance-ai',
+    name: 'TikFinance AI',
+    tagline: {
+      pl: 'Globalny budżet w Twojej kieszeni.',
+      en: 'Global treasury in your pocket.'
+    },
+    shortDescription: {
+      pl: 'AI pomaga śledzić wydatki, planować budżet i analizować finanse w wielu walutach — przejrzyście i bezpiecznie.',
+      en: 'AI helps track spending, plan budgets, and analyze finances across currencies in a clear, secure way.'
+    },
+    description: {
+      pl: 'TikFinance AI to osobisty asystent finansowy, który porządkuje Twoje wydatki i pomaga planować budżet. Aplikacja prezentuje kategorie kosztów, trendy i prognozy, a także podpowiada, gdzie można zoptymalizować wydatki. Działa globalnie — obsługuje wiele walut i ułatwia kontrolę finansów podczas podróży. To narzędzie informacyjne, nie doradztwo inwestycyjne.',
+      en: 'TikFinance AI is a personal finance assistant that organizes spending and helps you plan budgets. It shows category breakdowns, trends, and projections, while suggesting areas to optimize. It supports multiple currencies, making it useful when you travel. This is an informational tool, not investment advice.'
+    },
+    features: {
+      pl: [
+        'Automatyczna kategoryzacja wydatków i analiza trendów.',
+        'Budżety miesięczne z alertami przekroczeń.',
+        'Obsługa wielu walut i konwersji w czasie rzeczywistym.',
+        'Prognozy cashflow i podsumowania miesięczne.',
+        'Cele oszczędnościowe i śledzenie postępów.',
+        'Bezpieczne przechowywanie danych z szyfrowaniem.'
+      ],
+      en: [
+        'Automatic expense categorization and trend analysis.',
+        'Monthly budgets with over-limit alerts.',
+        'Multi-currency support with real-time conversion.',
+        'Cashflow projections and monthly summaries.',
+        'Savings goals and progress tracking.',
+        'Encrypted, secure data handling.'
+      ]
+    },
+    cta: {
+      pl: 'Sprawdź roadmapę',
+      en: 'View the roadmap'
+    },
+    ctaNote: {
+      pl: 'Funkcje premium planowane na 2026.',
+      en: 'Premium features planned for 2026.'
+    },
+    accent: 'neon-2'
+  },
+  {
+    slug: 'tikspacez-ai',
+    name: 'TikSpaceZ AI',
+    tagline: {
+      pl: 'Kosmos w Twojej dłoni.',
+      en: 'The universe in your palm.'
+    },
+    shortDescription: {
+      pl: 'Identyfikuj gwiazdy i planety, śledź satelity i odkrywaj zjawiska astronomiczne w czasie rzeczywistym.',
+      en: 'Identify stars and planets, track satellites, and explore real-time astronomy events.'
+    },
+    description: {
+      pl: 'TikSpaceZ AI to aplikacja dla miłośników nieba. Wystarczy skierować telefon w stronę nieba, by rozpoznać gwiazdy, planety i konstelacje. Aplikacja podpowiada najlepsze godziny obserwacji, pokazuje aktualne zjawiska i informuje o przelotach satelitów. Idealna dla ciekawych świata, uczniów i fanów astronomii.',
+      en: 'TikSpaceZ AI is a sky companion for astronomy lovers. Point your phone at the sky to identify stars, planets, and constellations. The app suggests the best viewing times, highlights current events, and notifies you about satellite passes. Perfect for curious minds and space fans.'
+    },
+    features: {
+      pl: [
+        'Rozpoznawanie obiektów na niebie w czasie rzeczywistym.',
+        'Mapa nieba z konstelacjami i opisami.',
+        'Powiadomienia o zjawiskach astronomicznych i przelotach satelitów.',
+        'Tryb „nauka” z ciekawostkami i wiedzą o kosmosie.',
+        'Tryb nocny przyjazny dla oczu.',
+        'Historia obserwacji i ulubione obiekty.'
+      ],
+      en: [
+        'Real-time sky object identification.',
+        'Sky map with constellations and info.',
+        'Alerts for astronomy events and satellite passes.',
+        'Learning mode with space facts.',
+        'Eye-friendly night mode.',
+        'Observation history and favorites.'
+      ]
+    },
+    cta: {
+      pl: 'Odkrywaj kosmos',
+      en: 'Explore space'
+    },
+    ctaNote: {
+      pl: 'Premiera planowana na 2026.',
+      en: 'Launch planned for 2026.'
+    },
+    accent: 'neon-1'
+  },
+  {
+    slug: 'tikdietx-ai',
+    name: 'TikDietX AI',
+    tagline: {
+      pl: 'Inteligentny przewodnik dietetyczny.',
+      en: 'Your intelligent nutrition guide.'
+    },
+    shortDescription: {
+      pl: 'Spersonalizowane plany żywieniowe, przepisy i monitoring postępów – wszystko dopasowane do Twoich celów.',
+      en: 'Personalized nutrition plans, recipes, and progress tracking tailored to your goals.'
+    },
+    description: {
+      pl: 'TikDietX AI analizuje Twoje cele, preferencje i styl życia, aby zaproponować dopasowany plan żywieniowy. Aplikacja pomaga planować posiłki, liczyć kalorie i monitorować postępy, jednocześnie dbając o wygodę i równowagę. To narzędzie edukacyjne i motywacyjne wspierające zdrowe nawyki.',
+      en: 'TikDietX AI analyzes your goals, preferences, and lifestyle to generate a tailored nutrition plan. It helps plan meals, track calories, and monitor progress while focusing on balance and convenience. It’s an educational and motivational tool for building healthy habits.'
+    },
+    features: {
+      pl: [
+        'Spersonalizowane plany dietetyczne i listy zakupów.',
+        'Monitorowanie kalorii, makroskładników i nawodnienia.',
+        'Baza przepisów z filtrami (alergie, preferencje).',
+        'Cele zdrowotne i śledzenie postępów.',
+        'Przypomnienia o posiłkach i nawykach.',
+        'Tryb „prosty plan” dla zabieganych.'
+      ],
+      en: [
+        'Personalized meal plans and shopping lists.',
+        'Calorie, macro, and hydration tracking.',
+        'Recipe database with allergy and preference filters.',
+        'Health goals and progress tracking.',
+        'Meal and habit reminders.',
+        '“Simple plan” mode for busy users.'
+      ]
+    },
+    cta: {
+      pl: 'Zacznij zdrowiej jeść',
+      en: 'Start eating smarter'
+    },
+    ctaNote: {
+      pl: 'Testy użytkowników wkrótce.',
+      en: 'User testing coming soon.'
+    },
+    accent: 'neon-2'
   }
 ];
 

@@ -16,8 +16,10 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       'tiklawyer': '/icons/tiklawyer.png',
       'safezonex': '/icons/safezonex.png'
     };
-    return iconMap[slug] || '/icons/default.png';
+    return iconMap[slug];
   };
+
+  const icon = getProjectIcon(project.slug);
 
   return (
     <a
@@ -25,10 +27,11 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       href={href}
       aria-label={`${project.name} — ${lang === 'pl' ? 'Zobacz szczegóły' : 'View details'}`}
       style={{
-        backgroundImage: `url(${getProjectIcon(project.slug)})`,
+        backgroundImage: icon ? `url(${icon})` : 'none',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
+        backgroundColor: icon ? 'transparent' : 'rgba(8, 9, 14, 0.95)',
         minHeight: '300px'
       }}
     >

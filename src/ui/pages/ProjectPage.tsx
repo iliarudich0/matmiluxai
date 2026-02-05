@@ -8,7 +8,7 @@ export function ProjectPage({ project }: { project: Project }) {
 
   const desc = lang === 'pl' ? project.description.pl : project.description.en;
   const features = lang === 'pl' ? project.features.pl : project.features.en;
-  const privacyHref = project.slug === 'tikdrive' ? '/polityka_prywatnosci.html' : '/privacy/';
+  const privacyHref = `/projects/${project.slug}/privacy.html`;
 
   return (
     <Layout lang={lang} setLang={setLang} mode="project">
