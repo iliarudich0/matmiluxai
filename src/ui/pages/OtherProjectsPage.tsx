@@ -42,10 +42,8 @@ export function OtherProjectsPage() {
       <section className="mt-10">
         <div className="kicker">{title}</div>
         <h1 className="h2 mt-2">{title}</h1>
-        <p className="p mt-2 max-w-3xl">{subtitle}</p>
-
         {movedProjects.length > 0 ? (
-          <div className="mt-8">
+          <div className="mt-6">
             <div className="kicker">
               {lang === 'pl'
                 ? 'Przeniesione ze strony głównej'
@@ -77,6 +75,8 @@ export function OtherProjectsPage() {
             </div>
           </div>
         ) : null}
+
+        <p className="p mt-6 max-w-3xl">{subtitle}</p>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {otherProjects.map((project) => (
