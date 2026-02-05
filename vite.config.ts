@@ -43,7 +43,9 @@ export default defineConfig({
         tikSpaceZAI: path.resolve(__dirname, 'projects/tikspacez-ai/index.html'),
         tikSpaceZAIPrivacy: path.resolve(__dirname, 'projects/tikspacez-ai/privacy.html'),
         tikDietXAI: path.resolve(__dirname, 'projects/tikdietx-ai/index.html'),
-        tikDietXAIPrivacy: path.resolve(__dirname, 'projects/tikdietx-ai/privacy.html')
+        tikDietXAIPrivacy: path.resolve(__dirname, 'projects/tikdietx-ai/privacy.html'),
+        tikSexamZAI: path.resolve(__dirname, 'projects/tiksexamz-ai/index.html'),
+        tikSexamZAIPrivacy: path.resolve(__dirname, 'projects/tiksexamz-ai/privacy.html')
       }
     }
   }

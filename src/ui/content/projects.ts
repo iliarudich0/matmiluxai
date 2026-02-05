@@ -14,7 +14,8 @@ export type ProjectSlug =
   | 'tikplant-ai'
   | 'tikfinance-ai'
   | 'tikspacez-ai'
-  | 'tikdietx-ai';
+  | 'tikdietx-ai'
+  | 'tiksexamz-ai';
 
 export type Project = {
   slug: ProjectSlug;
@@ -716,6 +717,49 @@ export const projects: Project[] = [
       en: 'User testing coming soon.'
     },
     accent: 'neon-2'
+  },
+  {
+    slug: 'tiksexamz-ai',
+    name: 'TikSexamZ AI',
+    tagline: {
+      pl: 'Globalna nauka do egzaminów zawodowych.',
+      en: 'Global vocational exam preparation.'
+    },
+    shortDescription: {
+      pl: 'TikSexamZ AI pomaga przygotować się do egzaminów zawodowych na całym świecie — od szkół branżowych po służby i szkoły policyjne.',
+      en: 'TikSexamZ AI helps prepare for vocational exams worldwide — from trade schools to services and police academies.'
+    },
+    description: {
+      pl: 'TikSexamZ AI to platforma do nauki i treningu egzaminów zawodowych w skali globalnej. Aplikacja dobiera materiał do konkretnego kraju, zawodu i programu szkoleniowego, oferując pytania, testy, scenariusze praktyczne oraz krótkie powtórki. Dzięki AI dostajesz personalizowane ścieżki nauki, analizę wyników i rekomendacje, co warto poprawić. To wsparcie dla szkół branżowych, technicznych, kursów certyfikacyjnych oraz szkół służb mundurowych, w tym policyjnych — z naciskiem na realne przygotowanie do egzaminu.',
+      en: 'TikSexamZ AI is a global exam-prep platform for vocational qualifications. The app adapts content to a specific country, profession, and curriculum, offering questions, tests, practical scenarios, and quick reviews. With AI personalization, you get tailored study paths, performance analysis, and targeted improvement tips. It supports trade schools, technical programs, certification courses, and uniformed service academies — with a focus on real-world exam readiness.'
+    },
+    features: {
+      pl: [
+        'Bazy pytań i testów dopasowane do kraju, zawodu i programu nauczania.',
+        'Tryby: nauka, test próbny, egzamin na czas, scenariusze praktyczne.',
+        'AI analizująca błędy i rekomendująca kolejne kroki nauki.',
+        'Szybkie powtórki i fiszki dla kluczowych pojęć zawodowych.',
+        'Panel postępów z raportami i celami tygodniowymi.',
+        'Wsparcie dla szkół i instruktorów (tryb klasowy w planach).'
+      ],
+      en: [
+        'Question banks tailored to country, profession, and curriculum.',
+        'Modes: study, mock test, timed exam, practical scenarios.',
+        'AI error analysis with next-step recommendations.',
+        'Quick reviews and flashcards for key vocational concepts.',
+        'Progress dashboard with reports and weekly goals.',
+        'Support for schools and instructors (classroom mode planned).'
+      ]
+    },
+    cta: {
+      pl: 'Dołącz do programu pilotażowego',
+      en: 'Join the pilot program'
+    },
+    ctaNote: {
+      pl: 'Cel: globalne wdrożenia w 2026.',
+      en: 'Target: global rollouts in 2026.'
+    },
+    accent: 'neon-1'
   }
 ];
 
