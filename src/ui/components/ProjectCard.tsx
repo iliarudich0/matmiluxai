@@ -14,7 +14,14 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       'tikdrive': '/icons/tikdrive.png',
       'tikeverylang': '/icons/tikeverylang.png',
       'tiklawyer': '/icons/tiklawyer.png',
-      'safezonex': '/icons/safezonex.png'
+      'safezonex': '/icons/safezonex.png',
+      'carfix-ai': '/icons/carfix.png',
+      'healthsymptom-ai': '/icons/healthsymptom.png',
+      'explainlike-ai': '/icons/explainlikeai.png',
+      'interviewcoach-ai': '/icons/interviewcoach.png',
+      'memoryboost-ai': '/icons/memoryboost.png',
+      'contractscan-ai': '/icons/contractscan.png',
+      'studyplanner-ai': '/icons/studyplanner.png'
     };
     return iconMap[slug];
   };
