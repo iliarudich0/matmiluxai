@@ -23,21 +23,21 @@ export function Footer({
 
         <div className="flex flex-wrap items-center gap-4">
           <a className="text-sm text-muted hover:text-text" href={homeHref}>
-            {lang === 'pl' ? 'Strona główna' : 'Home'}
+            {lang === 'pl' ? 'Strona główna' : lang === 'ru' ? 'Главная' : 'Home'}
           </a>
           <a className="text-sm text-muted hover:text-text" href={homeHref + '#projects'}>
-            {lang === 'pl' ? 'Projekty' : 'Projects'}
+            {lang === 'pl' ? 'Projekty' : lang === 'ru' ? 'Проекты' : 'Projects'}
           </a>
           <a className="text-sm text-muted hover:text-text" href={privacyHref}>
-            {lang === 'pl' ? 'Polityka prywatności' : 'Privacy'}
+            {lang === 'pl' ? 'Polityka prywatności' : lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy'}
           </a>
           <a className="text-sm text-muted hover:text-text" href={homeHref + '#contact'}>
-            {lang === 'pl' ? 'Kontakt' : 'Contact'}
+            {lang === 'pl' ? 'Kontakt' : lang === 'ru' ? 'Контакты' : 'Contact'}
           </a>
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-3" aria-label={lang === 'pl' ? 'Media społecznościowe' : 'Social media'}>
+          <div className="flex items-center gap-3" aria-label={lang === 'pl' ? 'Media społecznościowe' : lang === 'ru' ? 'Социальные сети' : 'Social media'}>
             <a className="text-sm text-muted hover:text-text" href="https://twitter.com" target="_blank" rel="noreferrer">
               X
             </a>

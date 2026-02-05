@@ -20,12 +20,12 @@ export type ProjectSlug =
 export type Project = {
   slug: ProjectSlug;
   name: string;
-  tagline: { pl: string; en: string };
-  shortDescription: { pl: string; en: string };
-  description: { pl: string; en: string };
-  features: { pl: string[]; en: string[] };
-  cta: { pl: string; en: string };
-  ctaNote?: { pl: string; en: string };
+  tagline: { pl: string; en: string; ru?: string };
+  shortDescription: { pl: string; en: string; ru?: string };
+  description: { pl: string; en: string; ru?: string };
+  features: { pl: string[]; en: string[]; ru?: string[] };
+  cta: { pl: string; en: string; ru?: string };
+  ctaNote?: { pl: string; en: string; ru?: string };
   accent: 'neon-1' | 'neon-2';
 };
 
@@ -35,15 +35,18 @@ export const projects: Project[] = [
     name: 'Tik-Mathik AI',
     tagline: {
       pl: 'Inteligentny nauczyciel matematyki w Twoim telefonie.',
-      en: 'Your AI math tutor in your pocket.'
+      en: 'Your AI math tutor in your pocket.',
+      ru: 'Ваш AI‑репетитор по математике в кармане.'
     },
     shortDescription: {
       pl: 'Inteligentny nauczyciel matematyki w Twoim telefonie – Tik-Mathik AI tworzy zadania i pomaga zrozumieć rozwiązania, dostosowując się do Twojego poziomu.',
-      en: 'Your AI math tutor in your pocket – Tik-Mathik AI generates math problems and guides you through solutions, adapting to your skill level.'
+      en: 'Your AI math tutor in your pocket – Tik-Mathik AI generates math problems and guides you through solutions, adapting to your skill level.',
+      ru: 'Ваш AI‑репетитор по математике в кармане — Tik‑Mathik AI генерирует задачи и помогает понять решения, подстраиваясь под ваш уровень.'
     },
     description: {
       pl: 'Tik-Mathik AI to futurystyczna aplikacja edukacyjna, która zmienia sposób nauki matematyki. Wykorzystując sztuczną inteligencję, aplikacja generuje nieograniczoną liczbę zadań dopasowanych do użytkownika i udziela interaktywnych podpowiedzi krok po kroku. Ucz się algebraicznych równań, geometrii czy statystyki w tempie, które Ci odpowiada. Wirtualny AI-asystent monitoruje Twoje postępy i personalizuje kolejne zadania, koncentrując się na Twoich słabszych obszarach. To jak posiadanie osobistego nauczyciela matematyki dostępnego 24/7 – idealnego zarówno dla uczniów, jak i dorosłych chcących odświeżyć wiedzę. Dzięki Tik-Mathik AI nauka staje się bardziej angażująca, interaktywna i dopasowana do Ciebie niż kiedykolwiek.',
-      en: 'Tik-Mathik AI is a futuristic educational app transforming how you learn mathematics. Powered by artificial intelligence, it generates an unlimited variety of math problems tailored to each learner and provides interactive step-by-step hints for solving them. You can practice anything from algebraic equations to geometry or statistics at your own pace. A virtual AI assistant monitors your progress and personalizes the next challenges, focusing on areas where you need improvement. It’s like having a personal math tutor available 24/7 – perfect for students and adults alike looking to brush up on their skills. With Tik-Mathik AI, learning becomes more engaging, interactive, and personalized than ever before.'
+      en: 'Tik-Mathik AI is a futuristic educational app transforming how you learn mathematics. Powered by artificial intelligence, it generates an unlimited variety of math problems tailored to each learner and provides interactive step-by-step hints for solving them. You can practice anything from algebraic equations to geometry or statistics at your own pace. A virtual AI assistant monitors your progress and personalizes the next challenges, focusing on areas where you need improvement. It’s like having a personal math tutor available 24/7 – perfect for students and adults alike looking to brush up on their skills. With Tik-Mathik AI, learning becomes more engaging, interactive, and personalized than ever before.',
+      ru: 'Tik‑Mathik AI — футуристическое образовательное приложение, которое меняет подход к изучению математики. На базе ИИ оно генерирует неограниченное количество задач под конкретного пользователя и даёт интерактивные подсказки шаг за шагом. Изучайте алгебру, геометрию или статистику в удобном темпе. Виртуальный AI‑ассистент отслеживает прогресс и персонализирует следующие задания, фокусируясь на слабых местах. Это как личный репетитор 24/7 — идеально для школьников, студентов и взрослых. С Tik‑Mathik AI обучение становится более вовлекающим, интерактивным и персональным.'
     },
     features: {
       pl: [
@@ -61,15 +64,25 @@ export const projects: Project[] = [
         'A broad range of topics covering arithmetic, algebra, geometry, statistics, and more.',
         'Challenge and quiz mode to compete with friends or beat your own high scores.',
         'No ads, a clean interface, and gamified experience that motivates regular practice.'
+      ],
+      ru: [
+        'Генерация задач под уровень пользователя (от базовых до продвинутых).',
+        'AI‑ассистент с пошаговыми подсказками и объяснениями.',
+        'Персональные траектории обучения на основе анализа прогресса.',
+        'Темы: арифметика, алгебра, геометрия, статистика и др.',
+        'Режим челленджей и квизов для мотивации и соревнования.',
+        'Без рекламы, чистый интерфейс и геймификация.'
       ]
     },
     cta: {
       pl: 'Dołącz do beta testów',
-      en: 'Join the beta'
+      en: 'Join the beta',
+      ru: 'Присоединиться к бета‑тесту'
     },
     ctaNote: {
       pl: 'Wkrótce dostępne w Google Play / App Store.',
-      en: 'Coming soon to Google Play / App Store.'
+      en: 'Coming soon to Google Play / App Store.',
+      ru: 'Скоро в Google Play / App Store.'
     },
     accent: 'neon-1'
   },
@@ -78,15 +91,18 @@ export const projects: Project[] = [
     name: 'TikDrive',
     tagline: {
       pl: 'Twój wirtualny instruktor nauki jazdy.',
-      en: 'Your virtual driving instructor.'
+      en: 'Your virtual driving instructor.',
+      ru: 'Ваш виртуальный инструктор по теории вождения.'
     },
     shortDescription: {
       pl: 'Twój wirtualny instruktor nauki jazdy – TikDrive pomoże Ci zdać egzamin teoretyczny dzięki interaktywnym testom i inteligentnym wskazówkom.',
-      en: 'Your virtual driving instructor – TikDrive helps you ace your driving theory exam with interactive tests and intelligent guidance.'
+      en: 'Your virtual driving instructor – TikDrive helps you ace your driving theory exam with interactive tests and intelligent guidance.',
+      ru: 'Ваш виртуальный инструктор по вождению — TikDrive помогает сдать теорию благодаря интерактивным тестам и умным подсказкам.'
     },
     description: {
       pl: 'TikDrive to nowoczesny symulator nauki jazdy, który przenosi przygotowanie do egzaminu teoretycznego na wyższy poziom. Aplikacja zawiera aktualną bazę pytań egzaminacyjnych kategorii prawa jazdy, prezentowanych w dynamicznym, interaktywnym formacie. Tryb nauki umożliwia przeglądanie pytań tematycznych z natychmiastową informacją zwrotną i wyjaśnieniami opartymi na AI – aplikacja analizuje Twoje odpowiedzi i podpowiada, na które zagadnienia warto zwrócić większą uwagę. TikDrive oferuje także realistyczny tryb egzaminu odzwierciedlający warunki prawdziwego testu, łącznie z odliczaniem czasu. Dzięki systemowi punktów i osiągnięć nauka staje się grą, która motywuje do regularnych ćwiczeń. Niezależnie czy jesteś tuż przed egzaminem, czy dopiero zaczynasz kurs, TikDrive sprawi, że poczujesz się pewnie za kierownicą wiedzy.',
-      en: 'TikDrive is a next-generation driving theory simulator that takes exam preparation to the next level. The app includes an up-to-date database of driving theory test questions for your license category, presented in a dynamic, interactive format. A learning mode lets you review topic-specific questions with instant feedback and AI-based explanations – the app analyzes your answers and suggests which topics you need to focus on. TikDrive also offers a realistic exam mode mirroring actual test conditions, complete with a countdown timer. A gamified points and achievements system turns learning into a game that motivates you to practice regularly. Whether you\'re about to take your test or just starting your course, TikDrive ensures you’ll feel confident and well-prepared when it\'s time for the real exam.'
+      en: 'TikDrive is a next-generation driving theory simulator that takes exam preparation to the next level. The app includes an up-to-date database of driving theory test questions for your license category, presented in a dynamic, interactive format. A learning mode lets you review topic-specific questions with instant feedback and AI-based explanations – the app analyzes your answers and suggests which topics you need to focus on. TikDrive also offers a realistic exam mode mirroring actual test conditions, complete with a countdown timer. A gamified points and achievements system turns learning into a game that motivates you to practice regularly. Whether you\'re about to take your test or just starting your course, TikDrive ensures you’ll feel confident and well-prepared when it\'s time for the real exam.',
+      ru: 'TikDrive — современный симулятор подготовки к теоретическому экзамену по вождению. В приложении — актуальная база вопросов по категориям, поданных в интерактивном формате. Учебный режим даёт быстрый фидбек и AI‑объяснения: приложение анализирует ответы и подсказывает, на какие темы обратить внимание. Есть реалистичный режим экзамена с таймером. Геймификация и достижения мотивируют учиться регулярно. Подготовка становится уверенной и системной.'
     },
     features: {
       pl: [
@@ -104,15 +120,25 @@ export const projects: Project[] = [
         'Gamified points, badges, and statistics system to track progress and reward consistent practice.',
         'Personalized recommendations on which topics to improve based on your performance (powered by an AI module analyzing your mistakes).',
         'No distracting ads, with a clear, futuristic interface to help you stay focused while learning.'
+      ],
+      ru: [
+        'Полная и актуальная база официальных экзаменационных вопросов (все категории).',
+        'Учебный режим по темам (знаки, правила, первая помощь) с мгновенными объяснениями.',
+        'Экзаменационный режим с таймером и реальным форматом теста.',
+        'Система баллов, достижений и статистики прогресса.',
+        'Персональные рекомендации тем для улучшения (AI анализирует ошибки).',
+        'Без рекламы, чистый футуристический интерфейс для концентрации.'
       ]
     },
     cta: {
       pl: 'Sprawdź premierę wkrótce',
-      en: 'Check launch status'
+      en: 'Check launch status',
+      ru: 'Следить за запуском'
     },
     ctaNote: {
       pl: 'Plan: oficjalny launch Q2 2026.',
-      en: 'Planned: official launch in Q2 2026.'
+      en: 'Planned: official launch in Q2 2026.',
+      ru: 'План: официальный запуск в Q2 2026.'
     },
     accent: 'neon-2'
   },
@@ -121,15 +147,18 @@ export const projects: Project[] = [
     name: 'TikEveryLang AI',
     tagline: {
       pl: 'Uniwersalny tłumacz i nauczyciel językowy w jednym.',
-      en: 'A universal translator and language tutor in one.'
+      en: 'A universal translator and language tutor in one.',
+      ru: 'Универсальный переводчик и языковой наставник в одном.'
     },
     shortDescription: {
       pl: 'Uniwersalny tłumacz i nauczyciel językowy w jednym – TikEveryLang AI otworzy przed Tobą świat języków dzięki mocy sztucznej inteligencji.',
-      en: 'A universal translator and language tutor in one – TikEveryLang AI will open up a world of languages for you, powered by artificial intelligence.'
+      en: 'A universal translator and language tutor in one – TikEveryLang AI will open up a world of languages for you, powered by artificial intelligence.',
+      ru: 'Универсальный переводчик и языковой наставник в одном — TikEveryLang AI открывает мир языков с помощью ИИ.'
     },
     description: {
       pl: 'TikEveryLang AI to wizja przyszłości nauki języków – aplikacja, która wykorzysta AI, aby uczynić naukę dowolnego języka szybką, wciągającą i dostępną dla każdego. Choć projekt jest na etapie planowania, już teraz zdradzimy, czego można się spodziewać. Aplikacja ma oferować interaktywne konwersacje z AI naśladujące dialog z native speakerem oraz personalizowane lekcje dostosowane do Twoich postępów. Planowane są funkcje rozpoznawania mowy i natychmiastowej korekty wymowy, a także tłumaczenia kontekstowe w locie. TikEveryLang AI będzie wspierać wiele języków – od angielskiego i hiszpańskiego, po chiński czy suahili – wszystko w jednym miejscu. Celem jest przekroczenie barier językowych dzięki technologii: gdziekolwiek jesteś, błyskawicznie porozumiesz się w każdym języku. Więcej informacji już wkrótce – śledź nasze aktualizacje!',
-      en: 'TikEveryLang AI is our futuristic vision for language learning – an app that will leverage AI to make learning any language fast, immersive, and accessible to everyone. The project is still in the planning phase, but we can share a glimpse of what\'s to come. The app is set to offer interactive conversations with an AI that simulate talking to a native speaker, as well as personalized lessons tailored to your progress. Planned features include speech recognition with instant pronunciation correction and real-time contextual translations. TikEveryLang AI will support numerous languages – from English and Spanish to Chinese or Swahili – all within one platform. The goal is to break language barriers through technology: wherever you go, you\'ll be able to communicate instantly in any language. More information is coming soon – stay tuned for updates!'
+      en: 'TikEveryLang AI is our futuristic vision for language learning – an app that will leverage AI to make learning any language fast, immersive, and accessible to everyone. The project is still in the planning phase, but we can share a glimpse of what\'s to come. The app is set to offer interactive conversations with an AI that simulate talking to a native speaker, as well as personalized lessons tailored to your progress. Planned features include speech recognition with instant pronunciation correction and real-time contextual translations. TikEveryLang AI will support numerous languages – from English and Spanish to Chinese or Swahili – all within one platform. The goal is to break language barriers through technology: wherever you go, you\'ll be able to communicate instantly in any language. More information is coming soon – stay tuned for updates!',
+      ru: 'TikEveryLang AI — наше видение будущего изучения языков. Приложение на базе ИИ сделает обучение быстрым, увлекательным и доступным. Планируются интерактивные диалоги с AI, персональные уроки, распознавание речи с мгновенной коррекцией произношения и контекстные переводы в реальном времени. Поддержка многих языков — от английского и испанского до китайского и суахили — в одном месте. Цель — снять языковые барьеры с помощью технологий.'
     },
     features: {
       pl: [
@@ -147,15 +176,25 @@ export const projects: Project[] = [
         'Contextual “live” translations during conversations or reading (an integrated smart translator).',
         'Support for many languages (potentially dozens), including both popular and less common ones.',
         'A futuristic interface — AR/VR-style immersion is a future consideration.'
+      ],
+      ru: [
+        'Интерактивные диалоги с AI на выбранном языке для практики разговорной речи.',
+        'Персональные уроки и квизы, адаптирующиеся к прогрессу.',
+        'Распознавание речи с мгновенной обратной связью по произношению.',
+        'Контекстный перевод «вживую» при разговоре или чтении.',
+        'Поддержка многих языков (планируется десятки).',
+        'Футуристичный интерфейс с перспективой AR/VR‑возможностей.'
       ]
     },
     cta: {
       pl: 'Projekt w przygotowaniu',
-      en: 'Project in preparation'
+      en: 'Project in preparation',
+      ru: 'Проект в подготовке'
     },
     ctaNote: {
       pl: 'Prototyp planowany na Q3 2026.',
-      en: 'Prototype planned for Q3 2026.'
+      en: 'Prototype planned for Q3 2026.',
+      ru: 'Прототип планируется на Q3 2026.'
     },
     accent: 'neon-1'
   },
@@ -164,15 +203,18 @@ export const projects: Project[] = [
     name: 'TikLawyer AI',
     tagline: {
       pl: 'Osobisty asystent prawny zasilany AI.',
-      en: 'Your personal AI-powered legal assistant.'
+      en: 'Your personal AI-powered legal assistant.',
+      ru: 'Ваш персональный юридический ассистент на базе ИИ.'
     },
     shortDescription: {
       pl: 'AI-powered legal assistant providing instant legal information and guidance',
-      en: 'AI-powered legal assistant providing instant legal information and guidance'
+      en: 'AI-powered legal assistant providing instant legal information and guidance',
+      ru: 'AI‑ассистент, который быстро дает юридическую информацию и подсказки.'
     },
     description: {
       pl: 'TikLawyer AI to Twój osobisty asystent prawny napędzany zaawansowaną sztuczną inteligencją. Uzyskaj natychmiastowe odpowiedzi na pytania prawne, zrozum skomplikowane dokumenty prawne i otrzymaj wskazówki dotyczące różnych kwestii prawnych - wszystko w prostej, łatwej w użyciu aplikacji mobilnej. Aplikacja została zaprojektowana z myślą o dostarczaniu ogólnych informacji prawnych i ma charakter edukacyjny. TikLawyer AI to idealne narzędzie do zrozumienia swoich praw, uzyskania szybkich odpowiedzi na pytania prawne, nauki o procedurach prawnych oraz analizy dokumentów prawnych. Pamiętaj: TikLawyer AI dostarcza informacji prawnych, NIE porad prawnych. Zawsze konsultuj się z wykwalifikowanym prawnikiem w konkretnych sprawach prawnych.',
-      en: 'TikLawyer AI is your personal legal assistant powered by advanced artificial intelligence. Get instant answers to legal questions, understand complex legal documents, and receive guidance on various legal matters - all in a simple, easy-to-use mobile app. The app is designed for educational purposes and general legal information. TikLawyer AI is perfect for understanding your legal rights, getting quick answers to legal questions, learning about legal procedures, and analyzing legal documents. Remember: TikLawyer AI provides legal information, NOT legal advice. Always consult with a qualified attorney for specific legal matters.'
+      en: 'TikLawyer AI is your personal legal assistant powered by advanced artificial intelligence. Get instant answers to legal questions, understand complex legal documents, and receive guidance on various legal matters - all in a simple, easy-to-use mobile app. The app is designed for educational purposes and general legal information. TikLawyer AI is perfect for understanding your legal rights, getting quick answers to legal questions, learning about legal procedures, and analyzing legal documents. Remember: TikLawyer AI provides legal information, NOT legal advice. Always consult with a qualified attorney for specific legal matters.',
+      ru: 'TikLawyer AI — персональный юридический ассистент на базе ИИ. Он помогает получить быстрые ответы на юридические вопросы, понять сложные документы и получить общие рекомендации. Приложение носит образовательный характер и предоставляет общую информацию. Важно: TikLawyer AI не дает юридических консультаций; для конкретных случаев обращайтесь к юристу.'
     },
     features: {
       pl: [
@@ -190,15 +232,25 @@ export const projects: Project[] = [
         'Multi-language Support — Available in multiple languages.',
         'Privacy First — Your conversations are private and secure.',
         'No ads, clean interface focused on delivering reliable legal information.'
+      ],
+      ru: [
+        'AI‑юридический ассистент — задайте вопрос и получите понятный ответ.',
+        'Анализ документов — загрузка и разбор юридических текстов.',
+        'База правовой информации.',
+        'Поддержка нескольких языков.',
+        'Приватность — ваши запросы защищены.',
+        'Без рекламы, чистый интерфейс.'
       ]
     },
     cta: {
       pl: 'Pobierz wkrótce',
-      en: 'Download soon'
+      en: 'Download soon',
+      ru: 'Скоро доступно'
     },
     ctaNote: {
       pl: 'Wkrótce dostępne w Google Play / App Store.',
-      en: 'Coming soon to Google Play / App Store.'
+      en: 'Coming soon to Google Play / App Store.',
+      ru: 'Скоро в Google Play / App Store.'
     },
     accent: 'neon-2'
   },
@@ -207,15 +259,18 @@ export const projects: Project[] = [
     name: 'SafeZoneX',
     tagline: {
       pl: 'Aplikacja na każdy wypadek - znajdź bezpieczne schronienie.',
-      en: 'App for every emergency - find safe shelter.'
+      en: 'App for every emergency - find safe shelter.',
+      ru: 'Приложение на случай ЧС — найдите безопасное убежище.'
     },
     shortDescription: {
       pl: 'SafeZoneX to aplikacja survival na każdy wypadek - wojny, trzęsienia ziemi, powodzie, globalne katastrofy. Znajdź najbliższe bezpieczne schronienia i przygotuj się na kryzys.',
-      en: 'SafeZoneX is a survival app for every emergency - wars, earthquakes, floods, global disasters. Find the nearest safe shelters and prepare for crisis.'
+      en: 'SafeZoneX is a survival app for every emergency - wars, earthquakes, floods, global disasters. Find the nearest safe shelters and prepare for crisis.',
+      ru: 'SafeZoneX — приложение для выживания при войнах, землетрясениях, наводнениях и других катастрофах. Найдите ближайшие убежища и подготовьтесь к кризису.'
     },
     description: {
       pl: 'SafeZoneX to rewolucyjna aplikacja survival, która przygotowuje Cię na każdy scenariusz kryzysowy. W erze globalnych zagrożeń - od wojen i konfliktów zbrojnych, przez trzęsienia ziemi i tsunami, aż po ekstremalne warunki pogodowe i katastrofy ekologiczne - SafeZoneX zapewnia natychmiastowy dostęp do aktualnych informacji o bezpiecznych schronieniach. Aplikacja wykorzystuje AI do analizy zagrożeń w czasie rzeczywistym, mapuje bezpieczne strefy i schrony, oraz dostarcza praktyczne wskazówki survival. Funkcje obejmują: alerty o zagrożeniach, mapy ewakuacyjne, listy niezbędnych przedmiotów, komunikację z grupami sąsiedzkimi, oraz integrację z systemami ratunkowymi. SafeZoneX to nie tylko aplikacja - to Twój osobisty przewodnik przetrwania w świecie pełnym niepewności.',
-      en: 'SafeZoneX is a revolutionary survival app that prepares you for every crisis scenario. In an era of global threats - from wars and armed conflicts, through earthquakes and tsunamis, to extreme weather conditions and ecological disasters - SafeZoneX provides instant access to current information about safe shelters. The app uses AI to analyze threats in real-time, maps safe zones and shelters, and provides practical survival tips. Features include: threat alerts, evacuation maps, essential items lists, communication with neighborhood groups, and integration with emergency systems. SafeZoneX is not just an app - it\'s your personal survival guide in a world full of uncertainty.'
+      en: 'SafeZoneX is a revolutionary survival app that prepares you for every crisis scenario. In an era of global threats - from wars and armed conflicts, through earthquakes and tsunamis, to extreme weather conditions and ecological disasters - SafeZoneX provides instant access to current information about safe shelters. The app uses AI to analyze threats in real-time, maps safe zones and shelters, and provides practical survival tips. Features include: threat alerts, evacuation maps, essential items lists, communication with neighborhood groups, and integration with emergency systems. SafeZoneX is not just an app - it\'s your personal survival guide in a world full of uncertainty.',
+      ru: 'SafeZoneX готовит к любому кризисному сценарию. ИИ анализирует угрозы в реальном времени, показывает безопасные зоны и убежища, даёт практические советы и чек‑листы. Есть оповещения, карты эвакуации, список необходимых вещей, связь с соседними группами и интеграции с экстренными службами. Это ваш персональный гид по выживанию.'
     },
     features: {
       pl: [
@@ -233,15 +288,25 @@ export const projects: Project[] = [
         'Communication with neighborhood groups and emergency systems.',
         'Survival tips tailored to specific types of threats.',
         'Offline mode for areas without internet access.'
+      ],
+      ru: [
+        'AI‑анализ угроз в реальном времени и оповещения.',
+        'Интерактивные карты убежищ и зон эвакуации.',
+        'Чек‑листы необходимых вещей для разных сценариев.',
+        'Связь с соседскими группами и экстренными службами.',
+        'Советы по выживанию под конкретные угрозы.',
+        'Офлайн‑режим без интернета.'
       ]
     },
     cta: {
       pl: 'Przygotuj się na kryzys',
-      en: 'Prepare for crisis'
+      en: 'Prepare for crisis',
+      ru: 'Подготовиться к кризису'
     },
     ctaNote: {
       pl: 'Beta testy wkrótce dostępne.',
-      en: 'Beta testing coming soon.'
+      en: 'Beta testing coming soon.',
+      ru: 'Бета‑тестирование скоро.'
     },
     accent: 'neon-1'
   },
@@ -250,15 +315,18 @@ export const projects: Project[] = [
     name: 'CarFix AI',
     tagline: {
       pl: 'Szybka diagnoza usterek auta z AI.',
-      en: 'Instant car issue diagnosis with AI.'
+      en: 'Instant car issue diagnosis with AI.',
+      ru: 'Быстрая диагностика авто с ИИ.'
     },
     shortDescription: {
       pl: 'Inteligentna aplikacja dla kierowców, która analizuje zdjęcia lub dźwięk samochodu, diagnozuje możliwe usterki i sugeruje kroki naprawcze.',
-      en: 'Smart driver app that analyzes photos or car sounds, suggests possible issues, and recommends next repair steps.'
+      en: 'Smart driver app that analyzes photos or car sounds, suggests possible issues, and recommends next repair steps.',
+      ru: 'Умное приложение для водителей: анализ фото/звука, возможные неисправности и следующие шаги.'
     },
     description: {
       pl: 'CarFix AI to Twoje mobilne wsparcie techniczne, gdy samochód zaczyna zachowywać się nietypowo. Wystarczy zrobić zdjęcie elementu lub nagrać dźwięk silnika, a AI porówna sygnały z bazą typowych usterek. Otrzymujesz jasne wyjaśnienie możliwych przyczyn, priorytet ryzyka oraz listę bezpiecznych kroków do podjęcia (np. sprawdzenie płynów, filtrów, bezpieczników). Aplikacja została zaprojektowana tak, by pomagać w szybkiej ocenie sytuacji przed wizytą w warsztacie.',
-      en: 'CarFix AI is your mobile mechanic helper when something sounds or looks off. Snap a photo of a component or record the engine sound and the AI compares signals against common issue patterns. You get a clear summary of possible causes, a risk priority, and a safe next-step checklist (fluids, filters, fuses, visible leaks). It’s built to help you assess the situation quickly before visiting a mechanic.'
+      en: 'CarFix AI is your mobile mechanic helper when something sounds or looks off. Snap a photo of a component or record the engine sound and the AI compares signals against common issue patterns. You get a clear summary of possible causes, a risk priority, and a safe next-step checklist (fluids, filters, fuses, visible leaks). It’s built to help you assess the situation quickly before visiting a mechanic.',
+      ru: 'CarFix AI — мобильный помощник, когда машина ведет себя странно. Сфотографируйте деталь или запишите звук двигателя, и ИИ сравнит сигнал с базой типичных неисправностей. Вы получите возможные причины, приоритет риска и безопасный чек‑лист следующих действий.'
     },
     features: {
       pl: [
@@ -276,15 +344,25 @@ export const projects: Project[] = [
         'Issue history and symptom comparison over time.',
         'Plain-language glossary of codes and symptoms.',
         '“Before the mechanic” mode with key questions to ask.'
+      ],
+      ru: [
+        'Анализ фото и звука для поиска возможных проблем.',
+        'Вероятные причины с приоритетом безопасности.',
+        'Чек‑листы первых шагов и когда лучше остановиться.',
+        'История проблем и сравнение симптомов.',
+        'Словарь кодов и симптомов простым языком.',
+        'Режим «перед сервисом» с вопросами к механику.'
       ]
     },
     cta: {
       pl: 'Dołącz do testów beta',
-      en: 'Join the beta'
+      en: 'Join the beta',
+      ru: 'Присоединиться к бета‑тесту'
     },
     ctaNote: {
       pl: 'Wersja startowa w przygotowaniu.',
-      en: 'Launch version in preparation.'
+      en: 'Launch version in preparation.',
+      ru: 'Стартовая версия в подготовке.'
     },
     accent: 'neon-2'
   },
@@ -293,15 +371,18 @@ export const projects: Project[] = [
     name: 'HealthSymptom AI',
     tagline: {
       pl: 'Inteligentny analizator objawów dla codziennej profilaktyki.',
-      en: 'Smart symptom insights for everyday health.'
+      en: 'Smart symptom insights for everyday health.',
+      ru: 'Умный анализ симптомов для ежедневной заботы о здоровье.'
     },
     shortDescription: {
       pl: 'Wpisz objawy lub dodaj dane zdrowotne, a AI podpowie możliwe przyczyny i zaleci kolejne kroki — informacyjnie, bez diagnozy medycznej.',
-      en: 'Describe symptoms or add health data to get AI-powered insights and next-step recommendations — informational only, not medical diagnosis.'
+      en: 'Describe symptoms or add health data to get AI-powered insights and next-step recommendations — informational only, not medical diagnosis.',
+      ru: 'Опишите симптомы или добавьте данные — ИИ подскажет возможные причины и следующие шаги (информационно, не диагноз).'
     },
     description: {
       pl: 'HealthSymptom AI to praktyczne wsparcie dla osób, które chcą szybko zorientować się w swoich objawach. Aplikacja porządkuje informacje, wskazuje możliwe przyczyny i sugeruje, czy warto skonsultować się z lekarzem. Otrzymujesz też proste wskazówki dotyczące obserwacji, nawodnienia czy odpoczynku. To narzędzie edukacyjne, które pomaga podjąć świadomą decyzję o dalszych krokach.',
-      en: 'HealthSymptom AI is a practical tool for quickly making sense of symptoms. It organizes your inputs, highlights possible causes, and suggests whether it may be worth contacting a professional. You’ll also see simple guidance about monitoring, hydration, and rest. It’s an educational assistant that helps you decide what to do next.'
+      en: 'HealthSymptom AI is a practical tool for quickly making sense of symptoms. It organizes your inputs, highlights possible causes, and suggests whether it may be worth contacting a professional. You’ll also see simple guidance about monitoring, hydration, and rest. It’s an educational assistant that helps you decide what to do next.',
+      ru: 'HealthSymptom AI помогает быстро разобраться в симптомах. Приложение структурирует информацию, показывает возможные причины и подсказывает, стоит ли обратиться к специалисту. Также есть простые рекомендации по наблюдению, гидратации и отдыху. Это образовательный помощник для осознанных решений.'
     },
     features: {
       pl: [
@@ -319,15 +400,25 @@ export const projects: Project[] = [
         'Optional basic health metrics input (e.g., temperature).',
         'Educational self-care and prevention tips.',
         'Transparent messaging: not a medical diagnosis.'
+      ],
+      ru: [
+        'Анализ симптомов простым языком.',
+        'Рекомендации следующих шагов и срочности.',
+        'Дневник симптомов с динамикой.',
+        'Добавление базовых показателей (например, температура).',
+        'Советы по профилактике и самопомощи.',
+        'Прозрачное сообщение: это не медицинский диагноз.'
       ]
     },
     cta: {
       pl: 'Wkrótce w wersji testowej',
-      en: 'Testing version coming soon'
+      en: 'Testing version coming soon',
+      ru: 'Тестовая версия скоро'
     },
     ctaNote: {
       pl: 'Planowane otwarte testy w 2026.',
-      en: 'Open testing planned for 2026.'
+      en: 'Open testing planned for 2026.',
+      ru: 'Открытое тестирование в 2026.'
     },
     accent: 'neon-1'
   },
@@ -336,15 +427,18 @@ export const projects: Project[] = [
     name: 'ExplainLikeAI',
     tagline: {
       pl: 'Tłumaczenie trudnych tematów krok po kroku.',
-      en: 'Complex topics explained step by step.'
+      en: 'Complex topics explained step by step.',
+      ru: 'Сложные темы простыми словами — шаг за шагом.'
     },
     shortDescription: {
       pl: 'Aplikacja edukacyjna, która tłumaczy trudne pojęcia prostym językiem, z przykładami i analogiami dopasowanymi do Twojego poziomu.',
-      en: 'An educational app that breaks down complex topics into simple, personalized explanations with examples and analogies.'
+      en: 'An educational app that breaks down complex topics into simple, personalized explanations with examples and analogies.',
+      ru: 'Образовательное приложение, которое объясняет сложные понятия простым языком, с примерами и аналогиями.'
     },
     description: {
       pl: 'ExplainLikeAI to cyfrowy „tłumacz wiedzy”, który rozbija złożone zagadnienia na krótkie, zrozumiałe kroki. Wpisujesz pojęcie, wzór lub temat, a aplikacja generuje objaśnienie dopasowane do Twojego poziomu — od podstaw po warianty zaawansowane. Dzięki przykładom i analogiom łatwiej zapamiętasz to, czego się uczysz. To idealne narzędzie dla uczniów, studentów oraz osób samodzielnie rozwijających kompetencje.',
-      en: 'ExplainLikeAI is a digital “knowledge translator” that turns complex topics into clear, bite-sized steps. Enter a concept, formula, or subject and the app generates an explanation tailored to your level — from beginner to advanced. With examples and analogies, concepts become easier to understand and remember. Perfect for students and self-learners.'
+      en: 'ExplainLikeAI is a digital “knowledge translator” that turns complex topics into clear, bite-sized steps. Enter a concept, formula, or subject and the app generates an explanation tailored to your level — from beginner to advanced. With examples and analogies, concepts become easier to understand and remember. Perfect for students and self-learners.',
+      ru: 'ExplainLikeAI — цифровой «переводчик знаний», который разбивает сложные темы на понятные шаги. Введите понятие или формулу — и получите объяснение под ваш уровень, с примерами и аналогиями. Идеально для учеников, студентов и самообучения.'
     },
     features: {
       pl: [
@@ -362,15 +456,25 @@ export const projects: Project[] = [
         'Fast glossary and definitions.',
         'Follow-up questions for deeper understanding.',
         'Topic history and review support.'
+      ],
+      ru: [
+        'Уровни сложности: от новичка до продвинутого.',
+        'Примеры и аналогии для лучшего понимания.',
+        'Пошаговый режим с краткими итогами.',
+        'Быстрые определения и словарь.',
+        'Уточняющие вопросы для углубления.',
+        'История тем и повторений.'
       ]
     },
     cta: {
       pl: 'Poznaj wersję demo',
-      en: 'See the demo'
+      en: 'See the demo',
+      ru: 'Посмотреть демо'
     },
     ctaNote: {
       pl: 'Wersja demo w przygotowaniu.',
-      en: 'Demo version in preparation.'
+      en: 'Demo version in preparation.',
+      ru: 'Демо‑версия в подготовке.'
     },
     accent: 'neon-2'
   },
@@ -379,15 +483,18 @@ export const projects: Project[] = [
     name: 'InterviewCoach AI',
     tagline: {
       pl: 'Trenuj rozmowy rekrutacyjne z AI.',
-      en: 'Practice interviews with AI coaching.'
+      en: 'Practice interviews with AI coaching.',
+      ru: 'Тренируй собеседования с AI‑коучем.'
     },
     shortDescription: {
       pl: 'AI symuluje rozmowy kwalifikacyjne, analizuje odpowiedzi i daje feedback, abyś był lepiej przygotowany do prawdziwego interview.',
-      en: 'AI simulates interviews, analyzes your answers, and provides feedback to help you prepare for real hiring conversations.'
+      en: 'AI simulates interviews, analyzes your answers, and provides feedback to help you prepare for real hiring conversations.',
+      ru: 'ИИ симулирует интервью, анализирует ответы и даёт обратную связь для лучшей подготовки.'
     },
     description: {
       pl: 'InterviewCoach AI to wirtualny trener rekrutacyjny, który ćwiczy z Tobą scenariusze rozmów o pracę. Aplikacja zadaje pytania dopasowane do stanowiska i branży, a następnie ocenia treść odpowiedzi, spójność i klarowność. Otrzymujesz konkretne sugestie poprawy: czego unikać, jak lepiej argumentować i jak budować pewność siebie. Idealne narzędzie przed ważną rekrutacją.',
-      en: 'InterviewCoach AI is your virtual hiring trainer. It asks role-specific questions, evaluates the clarity and structure of your answers, and suggests improvements: what to avoid, how to argue your strengths, and how to build confidence. A perfect practice tool before important interviews.'
+      en: 'InterviewCoach AI is your virtual hiring trainer. It asks role-specific questions, evaluates the clarity and structure of your answers, and suggests improvements: what to avoid, how to argue your strengths, and how to build confidence. A perfect practice tool before important interviews.',
+      ru: 'InterviewCoach AI — виртуальный тренер собеседований. Он задаёт вопросы по роли, оценивает ясность ответов и предлагает улучшения: что избегать, как лучше аргументировать и повысить уверенность.'
     },
     features: {
       pl: [
@@ -405,15 +512,25 @@ export const projects: Project[] = [
         'Pace and length analysis (text/voice).',
         'Strengths and improvement areas summary.',
         'Session history and progress tracking.'
+      ],
+      ru: [
+        'Симуляции для разных ролей и уровней.',
+        'Фидбек по качеству ответов и улучшенные формулировки.',
+        'Режимы: поведенческие вопросы и кейсы.',
+        'Анализ темпа и длины ответа (текст/голос).',
+        'Сильные стороны и зоны роста.',
+        'История сессий и прогресса.'
       ]
     },
     cta: {
       pl: 'Dołącz do listy oczekujących',
-      en: 'Join the waitlist'
+      en: 'Join the waitlist',
+      ru: 'Присоединиться к листу ожидания'
     },
     ctaNote: {
       pl: 'Pierwsze testy wkrótce.',
-      en: 'Early tests coming soon.'
+      en: 'Early tests coming soon.',
+      ru: 'Ранние тесты скоро.'
     },
     accent: 'neon-1'
   },
@@ -422,15 +539,18 @@ export const projects: Project[] = [
     name: 'MemoryBoost AI',
     tagline: {
       pl: 'Trenuj pamięć i koncentrację z AI.',
-      en: 'Train memory and focus with AI.'
+      en: 'Train memory and focus with AI.',
+      ru: 'Тренируй память и концентрацию с ИИ.'
     },
     shortDescription: {
       pl: 'Spersonalizowane ćwiczenia pamięciowe, gry i wyzwania, które wzmacniają zapamiętywanie i koncentrację.',
-      en: 'Personalized memory exercises, games, and challenges that strengthen recall and focus.'
+      en: 'Personalized memory exercises, games, and challenges that strengthen recall and focus.',
+      ru: 'Персональные тренировки памяти, игры и челленджи для лучшей концентрации.'
     },
     description: {
       pl: 'MemoryBoost AI to aplikacja, która pomaga budować lepszą pamięć dzięki codziennym treningom. AI dobiera zadania do Twojego poziomu i celów, a także monitoruje postępy w czasie. Otrzymujesz krótkie, skuteczne sesje treningowe, które możesz wykonać w kilka minut dziennie. To świetne wsparcie w nauce, pracy i codziennym funkcjonowaniu.',
-      en: 'MemoryBoost AI helps you build stronger memory with daily training sessions. The AI selects tasks based on your level and goals, while tracking your progress over time. Short, effective exercises fit into just a few minutes per day. It’s a perfect support for learning, work, and everyday life.'
+      en: 'MemoryBoost AI helps you build stronger memory with daily training sessions. The AI selects tasks based on your level and goals, while tracking your progress over time. Short, effective exercises fit into just a few minutes per day. It’s a perfect support for learning, work, and everyday life.',
+      ru: 'MemoryBoost AI помогает укреплять память с ежедневными тренировками. ИИ подбирает задания под ваш уровень и цели, отслеживает прогресс. Короткие сессии занимают всего несколько минут в день.'
     },
     features: {
       pl: [
@@ -448,15 +568,25 @@ export const projects: Project[] = [
         'Progress stats and weekly goals.',
         'Daily micro-sessions (5–10 minutes).',
         'Focus-friendly relaxation mode.'
+      ],
+      ru: [
+        'Персональные тренировки памяти и внимания.',
+        'Режим повторения по методике spaced repetition.',
+        'Игры и челленджи для скорости и запоминания.',
+        'Статистика прогресса и недельные цели.',
+        'Ежедневные микро‑тренировки 5–10 минут.',
+        'Релакс‑режим для концентрации.'
       ]
     },
     cta: {
       pl: 'Zacznij trenować',
-      en: 'Start training'
+      en: 'Start training',
+      ru: 'Начать тренировки'
     },
     ctaNote: {
       pl: 'Wersja beta już wkrótce.',
-      en: 'Beta version coming soon.'
+      en: 'Beta version coming soon.',
+      ru: 'Бета‑версия скоро.'
     },
     accent: 'neon-2'
   },
@@ -465,15 +595,18 @@ export const projects: Project[] = [
     name: 'ContractScan AI',
     tagline: {
       pl: 'Umowy w prostym języku.',
-      en: 'Contracts explained in plain language.'
+      en: 'Contracts explained in plain language.',
+      ru: 'Договоры простым языком.'
     },
     shortDescription: {
       pl: 'Aplikacja skanuje umowy i tłumaczy je prostym językiem, wskazując ryzykowne zapisy przed podpisaniem.',
-      en: 'Scan contracts and get plain-language summaries with risk highlights before signing.'
+      en: 'Scan contracts and get plain-language summaries with risk highlights before signing.',
+      ru: 'Сканируйте договоры и получайте простые объяснения с отмеченными рисками.'
     },
     description: {
       pl: 'ContractScan AI pomaga szybciej zrozumieć zapisy w umowach. Wystarczy dodać dokument, a AI streszcza kluczowe punkty, podświetla ryzykowne zapisy i wyjaśnia je prostym językiem. To wsparcie dla osób, które chcą świadomie podpisywać dokumenty, bez żmudnego analizowania długich paragrafów.',
-      en: 'ContractScan AI helps you understand contract clauses faster. Upload a document and the AI summarizes key points, highlights risky clauses, and explains them in plain language. It’s support for anyone who wants to sign documents with confidence, without reading long legal text line by line.'
+      en: 'ContractScan AI helps you understand contract clauses faster. Upload a document and the AI summarizes key points, highlights risky clauses, and explains them in plain language. It’s support for anyone who wants to sign documents with confidence, without reading long legal text line by line.',
+      ru: 'ContractScan AI помогает быстрее понять условия договора. Загрузите документ — ИИ выделит ключевые пункты, рискованные формулировки и объяснит их простым языком.'
     },
     features: {
       pl: [
@@ -491,15 +624,25 @@ export const projects: Project[] = [
         'Checklist of what to verify before signing.',
         'Document version comparison.',
         'Analysis history and note export.'
+      ],
+      ru: [
+        'Скан документа и автоматическое резюме.',
+        'Выявление рискованных пунктов и предупреждения.',
+        'Пояснения простым языком.',
+        'Чек‑лист перед подписанием.',
+        'Сравнение версий документов.',
+        'История анализов и экспорт заметок.'
       ]
     },
     cta: {
       pl: 'Sprawdź wersję testową',
-      en: 'Check the test build'
+      en: 'Check the test build',
+      ru: 'Посмотреть тестовую версию'
     },
     ctaNote: {
       pl: 'Projekt w trakcie rozwoju.',
-      en: 'Project in development.'
+      en: 'Project in development.',
+      ru: 'Проект в разработке.'
     },
     accent: 'neon-1'
   },
@@ -508,15 +651,18 @@ export const projects: Project[] = [
     name: 'StudyPlanner AI',
     tagline: {
       pl: 'Twój osobisty plan nauki.',
-      en: 'Your personal study roadmap.'
+      en: 'Your personal study roadmap.',
+      ru: 'Ваш персональный план обучения.'
     },
     shortDescription: {
       pl: 'AI układa spersonalizowane harmonogramy nauki, przypomina o zadaniach i pomaga w przygotowaniu do egzaminów.',
-      en: 'AI builds personalized study schedules, sends reminders, and guides you toward exam readiness.'
+      en: 'AI builds personalized study schedules, sends reminders, and guides you toward exam readiness.',
+      ru: 'ИИ строит персональные планы обучения, напоминания и подготовку к экзаменам.'
     },
     description: {
       pl: 'StudyPlanner AI to inteligentny asystent, który organizuje naukę w oparciu o Twój czas, cele i tempo. Aplikacja dzieli materiał na mniejsze etapy, planuje powtórki i monitoruje realizację. Dzięki temu uczysz się systematycznie i bez stresu, a AI koryguje plan, gdy zmienia się Twój harmonogram.',
-      en: 'StudyPlanner AI is a smart assistant that organizes your learning based on your time, goals, and pace. It breaks material into smaller steps, schedules reviews, and tracks completion. You learn consistently and with less stress, while the AI adapts the plan as your schedule changes.'
+      en: 'StudyPlanner AI is a smart assistant that organizes your learning based on your time, goals, and pace. It breaks material into smaller steps, schedules reviews, and tracks completion. You learn consistently and with less stress, while the AI adapts the plan as your schedule changes.',
+      ru: 'StudyPlanner AI организует обучение по вашему времени, целям и темпу. Делит материал на этапы, планирует повторения и отслеживает выполнение, адаптируя план при изменениях графика.'
     },
     features: {
       pl: [
@@ -534,15 +680,25 @@ export const projects: Project[] = [
         'Flexible rescheduling when your calendar changes.',
         'Calendar and task list views.',
         'Study effectiveness reports.'
+      ],
+      ru: [
+        'Автоматическое создание плана обучения.',
+        'Система повторений и приоритетов по прогрессу.',
+        'Напоминания о задачах.',
+        'Гибкое изменение плана при смене графика.',
+        'Календарь и список задач.',
+        'Отчёты эффективности обучения.'
       ]
     },
     cta: {
       pl: 'Zaplanuj naukę',
-      en: 'Plan your study'
+      en: 'Plan your study',
+      ru: 'Спланировать обучение'
     },
     ctaNote: {
       pl: 'Wersja beta w przygotowaniu.',
-      en: 'Beta version in preparation.'
+      en: 'Beta version in preparation.',
+      ru: 'Бета‑версия в подготовке.'
     },
     accent: 'neon-2'
   },
@@ -551,15 +707,18 @@ export const projects: Project[] = [
     name: 'TikPlant AI',
     tagline: {
       pl: 'AI opiekun Twoich roślin.',
-      en: 'AI care for your plants.'
+      en: 'AI care for your plants.',
+      ru: 'ИИ‑забота о ваших растениях.'
     },
     shortDescription: {
       pl: 'Rozpoznawanie gatunków, diagnoza chorób i personalizowane wskazówki pielęgnacji dla Twoich roślin.',
-      en: 'Plant identification, disease detection, and personalized care tips for healthier growth.'
+      en: 'Plant identification, disease detection, and personalized care tips for healthier growth.',
+      ru: 'Определение вида, диагностика болезней и персональные советы по уходу.'
     },
     description: {
       pl: 'TikPlant AI to przyjazny doradca roślinny, który rozpoznaje gatunki ze zdjęcia i podpowiada, jak je pielęgnować. Aplikacja wskazuje problemy (np. szkodniki, niedobory) i doradza, jak poprawić podlewanie, światło czy nawożenie. Dzięki temu Twoje rośliny rosną zdrowiej, a Ty masz pewność, że dbasz o nie właściwie.',
-      en: 'TikPlant AI is a friendly plant advisor that identifies species from photos and guides your care routine. It flags potential issues (pests, deficiencies) and recommends improvements in watering, light, and fertilization. Your plants grow healthier while you stay confident about their care.'
+      en: 'TikPlant AI is a friendly plant advisor that identifies species from photos and guides your care routine. It flags potential issues (pests, deficiencies) and recommends improvements in watering, light, and fertilization. Your plants grow healthier while you stay confident about their care.',
+      ru: 'TikPlant AI распознаёт растения по фото и подсказывает уход. Приложение выявляет проблемы (вредители, дефициты) и рекомендует полив, свет и питание, чтобы растения росли здоровыми.'
     },
     features: {
       pl: [
@@ -577,15 +736,25 @@ export const projects: Project[] = [
         'Care schedules and reminders.',
         'Guides for indoor and garden plants.',
         'Plant rescue mode with quick checklists.'
+      ],
+      ru: [
+        'Распознавание вида по фото.',
+        'Диагностика болезней и вредителей с рекомендациями.',
+        'Персональные советы по поливу и удобрениям.',
+        'График ухода и напоминания.',
+        'Библиотека советов для домашних и садовых растений.',
+        'Режим «спасение растения» с быстрым чек‑листом.'
       ]
     },
     cta: {
       pl: 'Zadbaj o rośliny',
-      en: 'Care for your plants'
+      en: 'Care for your plants',
+      ru: 'Позаботиться о растениях'
     },
     ctaNote: {
       pl: 'Start publicznych testów wkrótce.',
-      en: 'Public testing coming soon.'
+      en: 'Public testing coming soon.',
+      ru: 'Публичные тесты скоро.'
     },
     accent: 'neon-1'
   },
@@ -594,15 +763,18 @@ export const projects: Project[] = [
     name: 'TikFinance AI',
     tagline: {
       pl: 'Globalny budżet w Twojej kieszeni.',
-      en: 'Global treasury in your pocket.'
+      en: 'Global treasury in your pocket.',
+      ru: 'Глобальный бюджет в вашем кармане.'
     },
     shortDescription: {
       pl: 'AI pomaga śledzić wydatki, planować budżet i analizować finanse w wielu walutach — przejrzyście i bezpiecznie.',
-      en: 'AI helps track spending, plan budgets, and analyze finances across currencies in a clear, secure way.'
+      en: 'AI helps track spending, plan budgets, and analyze finances across currencies in a clear, secure way.',
+      ru: 'ИИ помогает учитывать расходы, планировать бюджет и анализировать финансы в разных валютах.'
     },
     description: {
       pl: 'TikFinance AI to osobisty asystent finansowy, który porządkuje Twoje wydatki i pomaga planować budżet. Aplikacja prezentuje kategorie kosztów, trendy i prognozy, a także podpowiada, gdzie można zoptymalizować wydatki. Działa globalnie — obsługuje wiele walut i ułatwia kontrolę finansów podczas podróży. To narzędzie informacyjne, nie doradztwo inwestycyjne.',
-      en: 'TikFinance AI is a personal finance assistant that organizes spending and helps you plan budgets. It shows category breakdowns, trends, and projections, while suggesting areas to optimize. It supports multiple currencies, making it useful when you travel. This is an informational tool, not investment advice.'
+      en: 'TikFinance AI is a personal finance assistant that organizes spending and helps you plan budgets. It shows category breakdowns, trends, and projections, while suggesting areas to optimize. It supports multiple currencies, making it useful when you travel. This is an informational tool, not investment advice.',
+      ru: 'TikFinance AI — персональный финансовый помощник. Он структурирует расходы, показывает категории, тренды и прогнозы, а также предлагает, где можно оптимизировать бюджет. Поддерживает многие валюты. Это информационный инструмент, не инвестиционный совет.'
     },
     features: {
       pl: [
@@ -620,15 +792,25 @@ export const projects: Project[] = [
         'Cashflow projections and monthly summaries.',
         'Savings goals and progress tracking.',
         'Encrypted, secure data handling.'
+      ],
+      ru: [
+        'Автокатегоризация расходов и анализ трендов.',
+        'Месячные бюджеты с уведомлениями о превышении.',
+        'Поддержка валют и конвертация в реальном времени.',
+        'Прогнозы cash‑flow и месячные отчёты.',
+        'Цели накоплений и отслеживание прогресса.',
+        'Безопасное хранение с шифрованием.'
       ]
     },
     cta: {
       pl: 'Sprawdź roadmapę',
-      en: 'View the roadmap'
+      en: 'View the roadmap',
+      ru: 'Посмотреть дорожную карту'
     },
     ctaNote: {
       pl: 'Funkcje premium planowane na 2026.',
-      en: 'Premium features planned for 2026.'
+      en: 'Premium features planned for 2026.',
+      ru: 'Премиум‑функции планируются на 2026.'
     },
     accent: 'neon-2'
   },
@@ -637,15 +819,18 @@ export const projects: Project[] = [
     name: 'TikSpaceZ AI',
     tagline: {
       pl: 'Kosmos w Twojej dłoni.',
-      en: 'The universe in your palm.'
+      en: 'The universe in your palm.',
+      ru: 'Космос на ладони.'
     },
     shortDescription: {
       pl: 'Identyfikuj gwiazdy i planety, śledź satelity i odkrywaj zjawiska astronomiczne w czasie rzeczywistym.',
-      en: 'Identify stars and planets, track satellites, and explore real-time astronomy events.'
+      en: 'Identify stars and planets, track satellites, and explore real-time astronomy events.',
+      ru: 'Определяйте звёзды и планеты, отслеживайте спутники и события в реальном времени.'
     },
     description: {
       pl: 'TikSpaceZ AI to aplikacja dla miłośników nieba. Wystarczy skierować telefon w stronę nieba, by rozpoznać gwiazdy, planety i konstelacje. Aplikacja podpowiada najlepsze godziny obserwacji, pokazuje aktualne zjawiska i informuje o przelotach satelitów. Idealna dla ciekawych świata, uczniów i fanów astronomii.',
-      en: 'TikSpaceZ AI is a sky companion for astronomy lovers. Point your phone at the sky to identify stars, planets, and constellations. The app suggests the best viewing times, highlights current events, and notifies you about satellite passes. Perfect for curious minds and space fans.'
+      en: 'TikSpaceZ AI is a sky companion for astronomy lovers. Point your phone at the sky to identify stars, planets, and constellations. The app suggests the best viewing times, highlights current events, and notifies you about satellite passes. Perfect for curious minds and space fans.',
+      ru: 'TikSpaceZ AI — помощник для любителей неба. Наведите телефон на небо, чтобы распознать звёзды, планеты и созвездия. Приложение подсказывает лучшие часы наблюдения и сообщает о пролётах спутников.'
     },
     features: {
       pl: [
@@ -663,15 +848,25 @@ export const projects: Project[] = [
         'Learning mode with space facts.',
         'Eye-friendly night mode.',
         'Observation history and favorites.'
+      ],
+      ru: [
+        'Распознавание объектов на небе в реальном времени.',
+        'Карта неба с созвездиями и описаниями.',
+        'Оповещения о астрономических событиях и пролётах спутников.',
+        'Обучающий режим с фактами о космосе.',
+        'Ночной режим, комфортный для глаз.',
+        'История наблюдений и избранное.'
       ]
     },
     cta: {
       pl: 'Odkrywaj kosmos',
-      en: 'Explore space'
+      en: 'Explore space',
+      ru: 'Открывать космос'
     },
     ctaNote: {
       pl: 'Premiera planowana na 2026.',
-      en: 'Launch planned for 2026.'
+      en: 'Launch planned for 2026.',
+      ru: 'Запуск планируется в 2026.'
     },
     accent: 'neon-1'
   },
@@ -680,15 +875,18 @@ export const projects: Project[] = [
     name: 'TikDietX AI',
     tagline: {
       pl: 'Inteligentny przewodnik dietetyczny.',
-      en: 'Your intelligent nutrition guide.'
+      en: 'Your intelligent nutrition guide.',
+      ru: 'Ваш умный диетический гид.'
     },
     shortDescription: {
       pl: 'Spersonalizowane plany żywieniowe, przepisy i monitoring postępów – wszystko dopasowane do Twoich celów.',
-      en: 'Personalized nutrition plans, recipes, and progress tracking tailored to your goals.'
+      en: 'Personalized nutrition plans, recipes, and progress tracking tailored to your goals.',
+      ru: 'Персональные планы питания, рецепты и отслеживание прогресса под ваши цели.'
     },
     description: {
       pl: 'TikDietX AI analizuje Twoje cele, preferencje i styl życia, aby zaproponować dopasowany plan żywieniowy. Aplikacja pomaga planować posiłki, liczyć kalorie i monitorować postępy, jednocześnie dbając o wygodę i równowagę. To narzędzie edukacyjne i motywacyjne wspierające zdrowe nawyki.',
-      en: 'TikDietX AI analyzes your goals, preferences, and lifestyle to generate a tailored nutrition plan. It helps plan meals, track calories, and monitor progress while focusing on balance and convenience. It’s an educational and motivational tool for building healthy habits.'
+      en: 'TikDietX AI analyzes your goals, preferences, and lifestyle to generate a tailored nutrition plan. It helps plan meals, track calories, and monitor progress while focusing on balance and convenience. It’s an educational and motivational tool for building healthy habits.',
+      ru: 'TikDietX AI анализирует цели и привычки, чтобы предложить персональный план питания. Помогает планировать приёмы пищи, считать калории и отслеживать прогресс, поддерживая баланс и удобство.'
     },
     features: {
       pl: [
@@ -706,15 +904,25 @@ export const projects: Project[] = [
         'Health goals and progress tracking.',
         'Meal and habit reminders.',
         '“Simple plan” mode for busy users.'
+      ],
+      ru: [
+        'Персональные планы питания и списки покупок.',
+        'Отслеживание калорий, БЖУ и воды.',
+        'База рецептов с фильтрами (аллергии, предпочтения).',
+        'Цели здоровья и мониторинг прогресса.',
+        'Напоминания о питании и привычках.',
+        'Режим «простой план» для занятых.'
       ]
     },
     cta: {
       pl: 'Zacznij zdrowiej jeść',
-      en: 'Start eating smarter'
+      en: 'Start eating smarter',
+      ru: 'Начать питаться лучше'
     },
     ctaNote: {
       pl: 'Testy użytkowników wkrótce.',
-      en: 'User testing coming soon.'
+      en: 'User testing coming soon.',
+      ru: 'Пользовательские тесты скоро.'
     },
     accent: 'neon-2'
   },
@@ -723,15 +931,18 @@ export const projects: Project[] = [
     name: 'TipExam AI',
     tagline: {
       pl: 'Globalna nauka do egzaminów zawodowych.',
-      en: 'Global vocational exam preparation.'
+      en: 'Global vocational exam preparation.',
+      ru: 'Глобальная подготовка к профессиональным экзаменам.'
     },
     shortDescription: {
       pl: 'TipExam AI pomaga przygotować się do egzaminów zawodowych na całym świecie — od szkół branżowych po służby i szkoły policyjne.',
-      en: 'TipExam AI helps prepare for vocational exams worldwide — from trade schools to services and police academies.'
+      en: 'TipExam AI helps prepare for vocational exams worldwide — from trade schools to services and police academies.',
+      ru: 'TipExam AI помогает готовиться к профессиональным экзаменам по всему миру — от колледжей до полицейских школ.'
     },
     description: {
       pl: 'TipExam AI to platforma do nauki i treningu egzaminów zawodowych w skali globalnej. Aplikacja dobiera materiał do konkretnego kraju, zawodu i programu szkoleniowego, oferując pytania, testy, scenariusze praktyczne oraz krótkie powtórki. Dzięki AI dostajesz personalizowane ścieżki nauki, analizę wyników i rekomendacje, co warto poprawić. To wsparcie dla szkół branżowych, technicznych, kursów certyfikacyjnych oraz szkół służb mundurowych, w tym policyjnych — z naciskiem na realne przygotowanie do egzaminu.',
-      en: 'TipExam AI is a global exam-prep platform for vocational qualifications. The app adapts content to a specific country, profession, and curriculum, offering questions, tests, practical scenarios, and quick reviews. With AI personalization, you get tailored study paths, performance analysis, and targeted improvement tips. It supports trade schools, technical programs, certification courses, and uniformed service academies — with a focus on real-world exam readiness.'
+      en: 'TipExam AI is a global exam-prep platform for vocational qualifications. The app adapts content to a specific country, profession, and curriculum, offering questions, tests, practical scenarios, and quick reviews. With AI personalization, you get tailored study paths, performance analysis, and targeted improvement tips. It supports trade schools, technical programs, certification courses, and uniformed service academies — with a focus on real-world exam readiness.',
+      ru: 'TipExam AI — платформа подготовки к профессиональным экзаменам. Материалы подбираются по стране, профессии и программе обучения: тесты, практические сценарии, краткие повторения. ИИ персонализирует обучение, анализирует результаты и подсказывает, что улучшить.'
     },
     features: {
       pl: [
@@ -749,15 +960,25 @@ export const projects: Project[] = [
         'Quick reviews and flashcards for key vocational concepts.',
         'Progress dashboard with reports and weekly goals.',
         'Support for schools and instructors (classroom mode planned).'
+      ],
+      ru: [
+        'Базы вопросов и тестов по стране, профессии и программе.',
+        'Режимы: обучение, пробный тест, экзамен на время, практические сценарии.',
+        'Анализ ошибок и рекомендации следующих шагов.',
+        'Быстрые повторения и карточки по ключевым понятиям.',
+        'Панель прогресса с отчётами и недельными целями.',
+        'Поддержка школ и инструкторов (классный режим в планах).'
       ]
     },
     cta: {
       pl: 'Dołącz do programu pilotażowego',
-      en: 'Join the pilot program'
+      en: 'Join the pilot program',
+      ru: 'Присоединиться к пилотной программе'
     },
     ctaNote: {
       pl: 'Cel: globalne wdrożenia w 2026.',
-      en: 'Target: global rollouts in 2026.'
+      en: 'Target: global rollouts in 2026.',
+      ru: 'Цель: глобальные запуски в 2026.'
     },
     accent: 'neon-1'
   }

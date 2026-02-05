@@ -11,7 +11,7 @@ export function Header({
   setLang: (lang: Language) => void;
   mode: 'home' | 'privacy' | 'project';
 }) {
-  const navLabel = lang === 'pl' ? 'Nawigacja' : 'Navigation';
+  const navLabel = lang === 'pl' ? 'Nawigacja' : lang === 'ru' ? 'Навигация' : 'Navigation';
 
   const homeHref = '/';
   const privacyHref = '/privacy/';
@@ -30,28 +30,28 @@ export function Header({
           {mode === 'home' ? (
             <>
               <a className="text-sm text-muted hover:text-text" href="#projects">
-                {lang === 'pl' ? 'Projekty' : 'Projects'}
+                {lang === 'pl' ? 'Projekty' : lang === 'ru' ? 'Проекты' : 'Projects'}
               </a>
               <a className="text-sm text-muted hover:text-text" href="#why">
-                {lang === 'pl' ? 'Dlaczego' : 'Why'}
+                {lang === 'pl' ? 'Dlaczego' : lang === 'ru' ? 'Почему' : 'Why'}
               </a>
               <a className="text-sm text-muted hover:text-text" href="#roadmap">
-                Roadmap
+                {lang === 'ru' ? 'Дорожная карта' : 'Roadmap'}
               </a>
               <a className="text-sm text-muted hover:text-text" href="#faq">
-                FAQ
+                {lang === 'ru' ? 'Вопросы и ответы' : 'FAQ'}
               </a>
               <a className="text-sm text-muted hover:text-text" href="#contact">
-                {lang === 'pl' ? 'Kontakt' : 'Contact'}
+                {lang === 'pl' ? 'Kontakt' : lang === 'ru' ? 'Контакты' : 'Contact'}
               </a>
             </>
           ) : (
             <>
               <a className="text-sm text-muted hover:text-text" href={homeHref}>
-                {lang === 'pl' ? 'Strona główna' : 'Home'}
+                {lang === 'pl' ? 'Strona główna' : lang === 'ru' ? 'Главная' : 'Home'}
               </a>
               <a className="text-sm text-muted hover:text-text" href={privacyHref}>
-                {lang === 'pl' ? 'Polityka prywatności' : 'Privacy'}
+                {lang === 'pl' ? 'Polityka prywatności' : lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy'}
               </a>
             </>
           )}

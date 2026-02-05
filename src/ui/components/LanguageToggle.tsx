@@ -31,6 +31,14 @@ export function LanguageToggle({
       >
         EN
       </button>
+      <button
+        type="button"
+        className={`${btn} ${lang === 'ru' ? 'shadow-glow' : ''}`}
+        onClick={() => onChange('ru')}
+        aria-pressed={lang === 'ru'}
+      >
+        RU
+      </button>
     </div>
   );
 }

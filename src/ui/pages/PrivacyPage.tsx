@@ -9,17 +9,27 @@ export function PrivacyPage() {
 
   return (
     <Layout lang={lang} setLang={setLang} mode="privacy">
-      <div className="kicker">{lang === 'pl' ? 'Polityka prywatności' : 'Privacy Policy'}</div>
-      <h1 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">{lang === 'pl' ? 'Polityka prywatności' : 'Privacy Policy'}</h1>
-      <p className="p mt-3">{lang === 'pl' ? `Ostatnia aktualizacja: ${LAST_UPDATED}` : `Last updated: ${LAST_UPDATED}`}</p>
+      <div className="kicker">
+        {lang === 'pl' ? 'Polityka prywatności' : lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy Policy'}
+      </div>
+      <h1 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
+        {lang === 'pl' ? 'Polityka prywatności' : lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy Policy'}
+      </h1>
+      <p className="p mt-3">
+        {lang === 'pl'
+          ? `Ostatnia aktualizacja: ${LAST_UPDATED}`
+          : lang === 'ru'
+            ? `Последнее обновление: ${LAST_UPDATED}`
+            : `Last updated: ${LAST_UPDATED}`}
+      </p>
 
       <div className="mt-8 space-y-6">
-        {lang === 'pl' ? <PrivacyPL /> : <PrivacyEN />}
+        {lang === 'pl' ? <PrivacyPL /> : lang === 'ru' ? <PrivacyRU /> : <PrivacyEN />}
       </div>
 
       <div className="mt-10">
         <a className="link" href="/">
-          ← {lang === 'pl' ? 'Powrót na stronę główną' : 'Back to home'}
+          ← {lang === 'pl' ? 'Powrót na stronę główną' : lang === 'ru' ? 'Назад на главную' : 'Back to home'}
         </a>
       </div>
     </Layout>
@@ -134,8 +144,8 @@ function PrivacyPL() {
           <div>Adres: [adres firmy / siedziby, jeśli dotyczy]</div>
           <div>
             E-mail ds. prywatności:{' '}
-            <a className="link" href="mailto:privacy@miluxlabs.com">
-              privacy@miluxlabs.com
+            <a className="link" href="mailto:matmiluxai@gmail.com">
+              matmiluxai@gmail.com
             </a>
           </div>
         </div>
@@ -246,8 +256,8 @@ function PrivacyEN() {
           <div>Address: [Company address, if applicable]</div>
           <div>
             Privacy contact email:{' '}
-            <a className="link" href="mailto:privacy@miluxlabs.com">
-              privacy@miluxlabs.com
+            <a className="link" href="mailto:matmiluxai@gmail.com">
+              matmiluxai@gmail.com
             </a>
           </div>
         </div>
@@ -267,6 +277,102 @@ function PrivacyEN() {
           We may update this policy as our apps evolve or legal requirements change. We will notify users by updating the
           date at the top of this document.
         </p>
+      </Section>
+    </>
+  );
+}
+
+function PrivacyRU() {
+  return (
+    <>
+      <Section title="1. Введение">
+        <p>
+          Настоящая Политика конфиденциальности объясняет, как MiLux AI Labs ("мы", "нас") собирает,
+          использует и защищает данные пользователей наших мобильных приложений и сайта. Мы уважаем вашу
+          приватность и стремимся защищать информацию.
+        </p>
+        <p className="mt-3">
+          Примечание: приложения предназначены для пользователей 13+; использование детьми младше 13 лет
+          должно происходить под контролем взрослых. Мы не собираем персональные данные детей.
+        </p>
+      </Section>
+
+      <Section title="2. Какие данные мы собираем">
+        <p>
+          Сейчас мы не собираем персональные данные (имя, email, телефон) через приложения и не требуем
+          регистрации аккаунта.
+        </p>
+        <p className="mt-3">Мы можем автоматически собирать технические и диагностические данные:</p>
+        <List
+          items={[
+            'Crash logs — данные о сбоях, помогающие выявлять и устранять проблемы.',
+            'Usage telemetry — анонимная статистика использования функций.'
+          ]}
+        />
+        <p className="mt-3">
+          Эти данные обезличены и не позволяют идентифицировать пользователя. При добавлении новых типов
+          сбора данных мы обновим политику и запросим согласие, если это требуется.
+        </p>
+      </Section>
+
+      <Section title="3. Как мы используем данные">
+        <p>Технические данные используются только для:</p>
+        <List
+          items={[
+            'Повышения стабильности и безопасности приложений.',
+            'Улучшения функциональности и пользовательского опыта.'
+          ]}
+        />
+      </Section>
+
+      <Section title="4. Реклама">
+        <p>Мы не показываем рекламу третьих сторон. При изменении подхода обновим документ.</p>
+      </Section>
+
+      <Section title="5. Платежи">
+        <p>
+          Приложения могут поддерживать покупки внутри приложения. Платежи обрабатываются Google Play или
+          Apple App Store. Мы не храним платежные данные.
+        </p>
+      </Section>
+
+      <Section title="6. Безопасность данных">
+        <p>
+          Мы применяем организационные и технические меры защиты. Так как персональные данные не
+          сохраняются, риск утечки минимален.
+        </p>
+      </Section>
+
+      <Section title="7. Права пользователей">
+        <p>
+          Поскольку персональные данные не собираются, запросы на доступ/удаление обычно не требуются.
+          Если вы пишете нам по email, данные используются только для ответа.
+        </p>
+      </Section>
+
+      <Section title="8. Контакты">
+        <p className="font-medium text-text">Администратор данных:</p>
+        <div className="mt-2">
+          <div>MiLux AI Labs</div>
+          <div>Адрес: [адрес компании, если применимо]</div>
+          <div>
+            Email по вопросам конфиденциальности:{' '}
+            <a className="link" href="mailto:matmiluxai@gmail.com">
+              matmiluxai@gmail.com
+            </a>
+          </div>
+        </div>
+      </Section>
+
+      <Section title="9. Сроки хранения">
+        <p>
+          Технические данные хранятся только столько, сколько необходимо для целей, указанных выше. Crash
+          logs могут храниться несколько месяцев, затем удаляются или обезличиваются.
+        </p>
+      </Section>
+
+      <Section title="10. Изменения политики">
+        <p>Мы можем обновлять политику по мере развития продуктов или изменения законодательства.</p>
       </Section>
     </>
   );

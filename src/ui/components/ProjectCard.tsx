@@ -32,7 +32,7 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
     <a
       className={`group relative block overflow-hidden rounded-3xl border-2 border-white/20 bg-white/5 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-neon-2/20`}
       href={href}
-      aria-label={`${project.name} — ${lang === 'pl' ? 'Zobacz szczegóły' : 'View details'}`}
+      aria-label={`${project.name} — ${lang === 'pl' ? 'Zobacz szczegóły' : lang === 'ru' ? 'Смотреть детали' : 'View details'}`}
       style={{
         backgroundImage: icon ? `url(${icon})` : 'none',
         backgroundSize: 'cover',
@@ -57,7 +57,7 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       <div className="relative flex h-full flex-col items-end justify-end p-6">
         {/* CTA Button - transparent light on logo */}
         <div className="inline-flex items-center gap-2 text-white/90 text-sm handwrite">
-          {lang === 'pl' ? 'Zobacz projekt' : 'View project'}
+          {lang === 'pl' ? 'Zobacz projekt' : lang === 'ru' ? 'Смотреть проект' : 'View project'}
           <span className="cta-arrow opacity-0 transition-opacity duration-300 group-hover:opacity-100">→</span>
         </div>
       </div>

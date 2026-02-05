@@ -55,7 +55,9 @@ export function HomePage() {
             <p className="text-2xl md:text-3xl text-white/90 font-semibold tracking-wide max-w-3xl mx-auto handwrite">
               {lang === 'pl'
                 ? 'Tworzymy pomocne aplikacje i narzędzia IT, które realnie wspierają ludzi.'
-                : 'We build helpful apps and IT tools that genuinely support people.'}
+                : lang === 'ru'
+                  ? 'Мы создаём полезные приложения и IT‑инструменты, которые реально помогают людям.'
+                  : 'We build helpful apps and IT tools that genuinely support people.'}
             </p>
           </div>
 
@@ -64,7 +66,7 @@ export function HomePage() {
             href="#projects"
           >
             <span className="relative z-10">
-              {lang === 'pl' ? 'Odkryj nasze projekty' : 'Explore our projects'}
+              {lang === 'pl' ? 'Odkryj nasze projekty' : lang === 'ru' ? 'Смотреть проекты' : 'Explore our projects'}
             </span>
             <div className="relative">
               <svg className="w-8 h-8 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,12 +82,16 @@ export function HomePage() {
         <section id="projects" className="mt-14 scroll-mt-28">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <div className="kicker">{lang === 'pl' ? 'Projekty' : 'Projects'}</div>
-            <h2 className="h2 mt-2">{lang === 'pl' ? 'Wiele aplikacji. Jedna misja.' : 'Many apps. One mission.'}</h2>
+            <div className="kicker">{lang === 'pl' ? 'Projekty' : lang === 'ru' ? 'Проекты' : 'Projects'}</div>
+            <h2 className="h2 mt-2">
+              {lang === 'pl' ? 'Wiele aplikacji. Jedna misja.' : lang === 'ru' ? 'Много приложений. Одна миссия.' : 'Many apps. One mission.'}
+            </h2>
             <p className="p mt-2 max-w-3xl">
               {lang === 'pl'
                 ? 'Budujemy ekosystem praktycznych aplikacji AI — od edukacji i zdrowia po bezpieczeństwo i produktywność. Chcemy wypuścić je jak najszybciej, najpóźniej do końca 2026.'
-                : 'We build a practical AI app ecosystem — from education and health to safety and productivity. Our goal is to release them as soon as possible, no later than the end of 2026.'}
+                : lang === 'ru'
+                  ? 'Мы строим экосистему практичных AI‑приложений — от образования и здоровья до безопасности и продуктивности. Наша цель — выпустить их как можно быстрее, не позднее конца 2026.'
+                  : 'We build a practical AI app ecosystem — from education and health to safety and productivity. Our goal is to release them as soon as possible, no later than the end of 2026.'}
             </p>
           </div>
         </div>
@@ -99,7 +105,9 @@ export function HomePage() {
 
       <section id="why" className="mt-14 scroll-mt-28">
         <div className="kicker">{pick(lang, WHY.title)}</div>
-        <h2 className="h2 mt-2">{lang === 'pl' ? 'Technologia, która realnie pomaga.' : 'Technology that truly helps.'}</h2>
+        <h2 className="h2 mt-2">
+          {lang === 'pl' ? 'Technologia, która realnie pomaga.' : lang === 'ru' ? 'Технологии, которые реально помогают.' : 'Technology that truly helps.'}
+        </h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {WHY.items.map((it) => {
             const Icon =
@@ -128,7 +136,7 @@ export function HomePage() {
 
       <section id="roadmap" className="mt-14 scroll-mt-28">
         <div className="kicker">{pick(lang, ROADMAP.title)}</div>
-        <h2 className="h2 mt-2">{lang === 'pl' ? 'Plan wdrożeń 2026' : 'Launch plan 2026'}</h2>
+        <h2 className="h2 mt-2">{lang === 'pl' ? 'Plan wdrożeń 2026' : lang === 'ru' ? 'План запусков 2026' : 'Launch plan 2026'}</h2>
         <p className="p mt-2 max-w-3xl">{pick(lang, ROADMAP.subtitle)}</p>
 
         <ol className="mt-6 space-y-4">
@@ -145,7 +153,9 @@ export function HomePage() {
 
       <section id="faq" className="mt-14 scroll-mt-28">
         <div className="kicker">{pick(lang, FAQ.title)}</div>
-        <h2 className="h2 mt-2">{lang === 'pl' ? 'Najczęstsze pytania' : 'Most common questions'}</h2>
+        <h2 className="h2 mt-2">
+          {lang === 'pl' ? 'Najczęstsze pytania' : lang === 'ru' ? 'Частые вопросы' : 'Most common questions'}
+        </h2>
 
         <div className="mt-6 space-y-3">
           {FAQ.items.map((item, idx) => (
@@ -164,7 +174,7 @@ export function HomePage() {
 
       <section id="contact" className="mt-14 scroll-mt-28">
         <div className="kicker">{pick(lang, CONTACT.title)}</div>
-        <h2 className="h2 mt-2">{lang === 'pl' ? 'Skontaktuj się z nami' : 'Get in touch'}</h2>
+        <h2 className="h2 mt-2">{lang === 'pl' ? 'Skontaktuj się z nami' : lang === 'ru' ? 'Свяжитесь с нами' : 'Get in touch'}</h2>
         <p className="p mt-2 max-w-2xl">
           {pick(lang, CONTACT.text)}{' '}
           <a className="link" href={`mailto:${CONTACT.email}`}>
@@ -188,19 +198,19 @@ export function HomePage() {
         >
           <div className="md:col-span-1">
             <label className="block text-sm font-semibold" htmlFor="name">
-              {lang === 'pl' ? 'Imię (opcjonalnie)' : 'Name (optional)'}
+              {lang === 'pl' ? 'Imię (opcjonalnie)' : lang === 'ru' ? 'Имя (необязательно)' : 'Name (optional)'}
             </label>
             <input
               id="name"
               name="name"
               className="mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-text placeholder:text-muted"
-              placeholder={lang === 'pl' ? 'Jak mamy się do Ciebie zwracać?' : 'How should we address you?'}
+              placeholder={lang === 'pl' ? 'Jak mamy się do Ciebie zwracać?' : lang === 'ru' ? 'Как к вам обращаться?' : 'How should we address you?'}
               autoComplete="name"
             />
           </div>
           <div className="md:col-span-1">
             <label className="block text-sm font-semibold" htmlFor="message">
-              {lang === 'pl' ? 'Wiadomość' : 'Message'}
+              {lang === 'pl' ? 'Wiadomość' : lang === 'ru' ? 'Сообщение' : 'Message'}
             </label>
             <textarea
               id="message"
@@ -208,17 +218,19 @@ export function HomePage() {
               required
               rows={4}
               className="mt-2 w-full resize-y rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-text placeholder:text-muted"
-              placeholder={lang === 'pl' ? 'Napisz, w czym możemy pomóc…' : 'Tell us how we can help…'}
+              placeholder={lang === 'pl' ? 'Napisz, w czym możemy pomóc…' : lang === 'ru' ? 'Напишите, чем мы можем помочь…' : 'Tell us how we can help…'}
             />
           </div>
           <div className="md:col-span-2 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <button type="submit" className="btn btn-primary">
-              {lang === 'pl' ? 'Wyślij e-mail' : 'Send email'}
+              {lang === 'pl' ? 'Wyślij e-mail' : lang === 'ru' ? 'Отправить письмо' : 'Send email'}
             </button>
             <div className="text-xs text-muted">
               {lang === 'pl'
                 ? 'Formularz otworzy Twojego klienta poczty — nie przechowujemy treści wiadomości na stronie.'
-                : 'This form opens your mail client — the website does not store your message.'}
+                : lang === 'ru'
+                  ? 'Форма откроет ваш почтовый клиент — сайт не хранит содержимое сообщений.'
+                  : 'This form opens your mail client — the website does not store your message.'}
             </div>
           </div>
         </form>
