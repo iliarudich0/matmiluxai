@@ -17,24 +17,24 @@ export const WHY = {
       key: 'ai',
       title: { pl: 'Najnowocześniejsza technologia AI', en: 'Cutting-edge AI Technology' },
       text: {
-        pl: 'Wykorzystujemy AI najnowszej generacji, aby dopasować edukację do potrzeb każdego użytkownika.',
-        en: 'We use next-generation AI to tailor learning to each user.'
+        pl: 'Wykorzystujemy AI najnowszej generacji, aby dostarczać realną wartość w edukacji, zdrowiu, bezpieczeństwie i produktywności.',
+        en: 'We use next-generation AI to deliver real value across education, health, safety, and productivity.'
       }
     },
     {
       key: 'learn',
       title: { pl: 'Innowacyjne podejście do nauki', en: 'Innovative Learning Approach' },
       text: {
-        pl: 'Łączymy naukę z grywalizacją i interaktywnymi doświadczeniami, aby zwiększać zaangażowanie.',
-        en: 'We blend education with gamification and interactive experiences.'
+        pl: 'Łączymy naukę z grywalizacją i interaktywnymi doświadczeniami, aby zwiększać zaangażowanie i skuteczność.',
+        en: 'We blend learning with gamification and interactive experiences to boost engagement and results.'
       }
     },
     {
       key: 'team',
       title: { pl: 'Doświadczenie i pasja', en: 'Expertise and Passion' },
       text: {
-        pl: 'Tworzymy rozwiązania na styku AI i edukacji, oparte o praktykę i research.',
-        en: 'We build at the intersection of AI and education, grounded in practice and research.'
+        pl: 'Tworzymy rozwiązania na styku AI i realnych potrzeb użytkowników, oparte o praktykę i research.',
+        en: 'We build at the intersection of AI and real user needs, grounded in practice and research.'
       }
     },
     {
@@ -51,8 +51,8 @@ export const WHY = {
 export const ROADMAP = {
   title: { pl: 'Roadmap', en: 'Roadmap' },
   subtitle: {
-    pl: 'Plan rozwoju na 12–18 miesięcy — aktualizowany wraz z postępem prac.',
-    en: 'A 12–18 month plan — updated as we ship.'
+    pl: 'Plan rozwoju na 12–18 miesięcy — naszym celem jest wypuścić wszystkie aplikacje najpóźniej do końca 2026.',
+    en: 'A 12–18 month plan — our goal is to launch all apps by the end of 2026.'
   },
   items: [
     {
@@ -77,8 +77,8 @@ export const ROADMAP = {
     },
     {
       date: '2027',
-      pl: 'Planowane wydanie TikEveryLang AI (1.0) oraz ciągłe usprawnienia Tik-Mathik AI i TikDrive.',
-      en: 'Planned TikEveryLang AI 1.0 release and continuous improvements to Tik-Mathik AI and TikDrive.'
+      pl: 'Ciągłe usprawnienia, nowe funkcje i rozwój ekosystemu MiLux AI Labs.',
+      en: 'Continuous improvements, new features, and ecosystem growth for MiLux AI Labs.'
     }
   ]
 } as const;
@@ -92,8 +92,8 @@ export const FAQ = {
         en: 'What is MiLux AI Labs and what projects are you developing?'
       },
       a: {
-        pl: 'MiLux AI Labs to innowacyjne laboratorium technologiczne skupione na wykorzystaniu sztucznej inteligencji w edukacji. Rozwijamy trzy projekty: Tik-Mathik AI (matematyka), TikDrive (teoria jazdy) i TikEveryLang AI (języki). Naszym celem jest tworzenie aplikacji, które uczą skuteczniej i ciekawiej dzięki nowoczesnym technologiom.',
-        en: 'MiLux AI Labs is an innovative technology lab focused on applying AI to education. We are building three projects: Tik-Mathik AI (mathematics), TikDrive (driving theory), and TikEveryLang AI (languages). Our goal is to make learning more effective and engaging through modern technology.'
+        pl: 'MiLux AI Labs to laboratorium technologiczne tworzące praktyczne aplikacje AI. Rozwijamy m.in. Tik-Mathik AI, TikDrive, TikEveryLang AI, TikLawyer AI, SafeZoneX, CarFix AI, HealthSymptom AI, ExplainLikeAI, InterviewCoach AI, MemoryBoost AI, ContractScan AI, StudyPlanner AI, TikPlant AI, TikFinance AI, TikSpaceZ AI i TikDietX AI. Naszym celem jest tworzenie aplikacji, które realnie pomagają ludziom w nauce, pracy i codziennym życiu.',
+        en: 'MiLux AI Labs is a technology lab building practical AI apps. We develop Tik-Mathik AI, TikDrive, TikEveryLang AI, TikLawyer AI, SafeZoneX, CarFix AI, HealthSymptom AI, ExplainLikeAI, InterviewCoach AI, MemoryBoost AI, ContractScan AI, StudyPlanner AI, TikPlant AI, TikFinance AI, TikSpaceZ AI, and TikDietX AI. Our goal is to create apps that genuinely help people in learning, work, and everyday life.'
       }
     },
     {
@@ -102,8 +102,8 @@ export const FAQ = {
         en: 'When and where will your apps be available?'
       },
       a: {
-        pl: 'Planujemy udostępnić aplikacje na Androida i iOS. Tik-Mathik AI i TikDrive są w fazie beta i wkrótce pojawią się w Google Play i App Store. TikEveryLang AI jest w fazie konceptu; więcej informacji opublikujemy po dopracowaniu pierwszych dwóch projektów.',
-        en: 'We plan to release on Android and iOS. Tik-Mathik AI and TikDrive are in beta and will be available on Google Play and the App Store soon. TikEveryLang AI is in concept; we’ll share more after refining the first two projects.'
+        pl: 'Planujemy udostępnić aplikacje na Androida i iOS. Wypuszczamy kolejne projekty etapami, a naszym celem jest udostępnienie całego portfolio jak najszybciej, najpóźniej do końca 2026.',
+        en: 'We plan to release on Android and iOS. We ship projects in stages, and our goal is to make the full portfolio available as soon as possible, no later than the end of 2026.'
       }
     },
     {
@@ -122,8 +122,8 @@ export const FAQ = {
         en: 'How do your apps use artificial intelligence?'
       },
       a: {
-        pl: 'AI jest sercem naszych produktów: w Tik-Mathik AI generuje zadania i podpowiada krok po kroku, w TikDrive analizuje wyniki i rekomenduje obszary do poprawy, a TikEveryLang AI będzie symulować rozmowy i korygować wymowę. Dzięki temu nauka jest bardziej dopasowana i angażująca.',
-        en: 'AI is at the core: Tik-Mathik AI generates practice and guides step-by-step, TikDrive analyzes results and recommends improvements, and TikEveryLang AI will simulate conversations and correct pronunciation. This makes learning more personalized and engaging.'
+        pl: 'AI jest sercem naszych produktów: personalizuje naukę (Tik-Mathik AI, TikEveryLang AI), analizuje dane i podpowiada decyzje (TikDrive, TikFinance AI), tłumaczy złożone treści (ContractScan AI, ExplainLikeAI) oraz wspiera bezpieczeństwo (SafeZoneX).',
+        en: 'AI is the core of our products: it personalizes learning (Tik-Mathik AI, TikEveryLang AI), analyzes data and recommends decisions (TikDrive, TikFinance AI), explains complex content (ContractScan AI, ExplainLikeAI), and supports safety (SafeZoneX).'
       }
     },
     {

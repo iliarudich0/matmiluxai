@@ -81,11 +81,11 @@ export function HomePage() {
         <div className="flex items-end justify-between gap-6">
           <div>
             <div className="kicker">{lang === 'pl' ? 'Projekty' : 'Projects'}</div>
-            <h2 className="h2 mt-2">{lang === 'pl' ? 'Trzy kierunki. Jedna misja.' : 'Three directions. One mission.'}</h2>
-            <p className="p mt-2 max-w-2xl">
+            <h2 className="h2 mt-2">{lang === 'pl' ? 'Wiele aplikacji. Jedna misja.' : 'Many apps. One mission.'}</h2>
+            <p className="p mt-2 max-w-3xl">
               {lang === 'pl'
-                ? 'Poznaj nasze kluczowe produkty — każdy zaprojektowany z myślą o skutecznej nauce i świetnym UX.'
-                : 'Explore our core products — each designed for effective learning and great UX.'}
+                ? 'Budujemy ekosystem praktycznych aplikacji AI — od edukacji i zdrowia po bezpieczeństwo i produktywność. Chcemy wypuścić je jak najszybciej, najpóźniej do końca 2026.'
+                : 'We build a practical AI app ecosystem — from education and health to safety and productivity. Our goal is to release them as soon as possible, no later than the end of 2026.'}
             </p>
           </div>
         </div>

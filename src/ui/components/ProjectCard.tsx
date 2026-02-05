@@ -48,11 +48,9 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       {/* Content overlay */}
       <div className="relative flex h-full flex-col items-end justify-end p-6">
         {/* CTA Button - transparent light on logo */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 transition-all duration-300 text-white text-sm font-medium shadow-lg hover:shadow-xl">
+        <div className="inline-flex items-center gap-2 text-white/90 text-sm handwrite">
           {lang === 'pl' ? 'Zobacz projekt' : 'View project'}
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
+          <span className="cta-arrow opacity-0 transition-opacity duration-300 group-hover:opacity-100">→</span>
         </div>
       </div>
     </a>
