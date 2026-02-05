@@ -149,7 +149,46 @@ const adjectives = [
   'Base',
   'Point',
   'Nest',
-  'Boost'
+  'Boost',
+  'Civic',
+  'Unity',
+  'Clever',
+  'People',
+  'Harmony',
+  'Friendly',
+  'Balance',
+  'Stable',
+  'Brighten',
+  'Pure',
+  'Safe',
+  'Good',
+  'Golden',
+  'Local',
+  'Open',
+  'Fair',
+  'Caring',
+  'Sunny',
+  'Light',
+  'Focus',
+  'Assist',
+  'Noble',
+  'Steady',
+  'Beacon',
+  'Clarity',
+  'Vivid',
+  'Timely',
+  'Crisp',
+  'Swift',
+  'Ready',
+  'Connect',
+  'Neighbor',
+  'Bridge',
+  'Step',
+  'Lift',
+  'Anchor',
+  'Careful',
+  'Hope',
+  'Peace'
 ];
 
 const domains: Array<{ name: string; focus: OtherProject['focus'] }> = [
@@ -253,10 +292,66 @@ const domains: Array<{ name: string; focus: OtherProject['focus'] }> = [
   { name: 'RepairMatch', focus: { pl: 'naprawach i usługach', en: 'repair services', ru: 'ремонте' } },
   { name: 'HomeService', focus: { pl: 'usługach domowych', en: 'home services', ru: 'домашних услугах' } },
   { name: 'EventPlan', focus: { pl: 'planowaniu wydarzeń', en: 'event planning', ru: 'мероприятиях' } }
+  ,
+  { name: 'Neighborhood', focus: { pl: 'sąsiedzkiej współpracy', en: 'neighborhood cooperation', ru: 'соседских сообществах' } },
+  { name: 'ElderCare', focus: { pl: 'wsparciu seniorów', en: 'elder care support', ru: 'поддержке пожилых' } },
+  { name: 'Caregiver', focus: { pl: 'opiece nad bliskimi', en: 'caregiving', ru: 'уходе за близкими' } },
+  { name: 'CommunityHelp', focus: { pl: 'pomocy społecznej', en: 'community help', ru: 'социальной помощи' } },
+  { name: 'Mentor', focus: { pl: 'mentoringu', en: 'mentoring', ru: 'наставничестве' } },
+  { name: 'TutorMatch', focus: { pl: 'dopasowaniu korepetytorów', en: 'tutor matching', ru: 'подборе репетиторов' } },
+  { name: 'LocalJobs', focus: { pl: 'lokalnych ofertach pracy', en: 'local jobs', ru: 'местной работе' } },
+  { name: 'SmallBizGrowth', focus: { pl: 'rozwoju małych firm', en: 'small business growth', ru: 'росте малого бизнеса' } },
+  { name: 'ShopInsights', focus: { pl: 'analizie sprzedaży', en: 'sales insights', ru: 'анализе продаж' } },
+  { name: 'TeamSync', focus: { pl: 'koordynacji zespołu', en: 'team coordination', ru: 'координации команды' } },
+  { name: 'TaskFlow', focus: { pl: 'zarządzaniu zadaniami', en: 'task management', ru: 'задачах' } },
+  { name: 'DecisionAid', focus: { pl: 'wspieraniu decyzji', en: 'decision support', ru: 'поддержке решений' } },
+  { name: 'ProjectTrack', focus: { pl: 'śledzeniu projektów', en: 'project tracking', ru: 'проектном учёте' } },
+  { name: 'QualityCheck', focus: { pl: 'kontroli jakości', en: 'quality checks', ru: 'контроле качества' } },
+  { name: 'DocWriter', focus: { pl: 'tworzeniu dokumentów', en: 'document writing', ru: 'документах' } },
+  { name: 'PolicyGuide', focus: { pl: 'politykach i procedurach', en: 'policies and procedures', ru: 'политиках' } },
+  { name: 'Compliance', focus: { pl: 'zgodności z zasadami', en: 'compliance', ru: 'соответствии' } },
+  { name: 'Checklist', focus: { pl: 'listach kontrolnych', en: 'checklists', ru: 'чек‑листах' } },
+  { name: 'KnowledgeBase', focus: { pl: 'bazie wiedzy', en: 'knowledge bases', ru: 'базе знаний' } },
+  { name: 'FAQBuilder', focus: { pl: 'tworzeniu FAQ', en: 'FAQ building', ru: 'FAQ' } },
+  { name: 'SupportScripts', focus: { pl: 'skryptach obsługi', en: 'support scripts', ru: 'скриптах поддержки' } },
+  { name: 'Wellness', focus: { pl: 'dobrostanie', en: 'wellness', ru: 'благополучии' } },
+  { name: 'Nutrition', focus: { pl: 'zdrowym odżywianiu', en: 'healthy nutrition', ru: 'здоровом питании' } },
+  { name: 'Grocery', focus: { pl: 'listach zakupów', en: 'grocery lists', ru: 'списках покупок' } },
+  { name: 'HomeEnergy', focus: { pl: 'zużyciu energii w domu', en: 'home energy use', ru: 'энергии дома' } },
+  { name: 'ApplianceCare', focus: { pl: 'konserwacji sprzętu', en: 'appliance care', ru: 'технике' } },
+  { name: 'HomeSafety', focus: { pl: 'bezpieczeństwie mieszkania', en: 'home safety', ru: 'безопасности дома' } },
+  { name: 'ChildSafety', focus: { pl: 'bezpieczeństwie dzieci', en: 'child safety', ru: 'безопасности детей' } },
+  { name: 'SchoolTools', focus: { pl: 'organizacji szkoły', en: 'school organization', ru: 'школе' } },
+  { name: 'TeacherTools', focus: { pl: 'wsparciu nauczycieli', en: 'teacher support', ru: 'учителях' } },
+  { name: 'ParentHelp', focus: { pl: 'wsparciu rodziców', en: 'parent support', ru: 'родителях' } },
+  { name: 'YouthCareer', focus: { pl: 'rozwoju kariery młodzieży', en: 'youth career growth', ru: 'карьере молодёжи' } },
+  { name: 'Scholarship', focus: { pl: 'stypendiach', en: 'scholarships', ru: 'стипендиях' } },
+  { name: 'GrantHelper', focus: { pl: 'wnioskach o granty', en: 'grant applications', ru: 'грантах' } },
+  { name: 'VolunteerMatch', focus: { pl: 'dopasowaniu wolontariatu', en: 'volunteer matching', ru: 'подборе волонтёрства' } },
+  { name: 'CharityEvents', focus: { pl: 'akcjach dobroczynnych', en: 'charity events', ru: 'благотворительных акциях' } },
+  { name: 'DonationPlan', focus: { pl: 'planowaniu darowizn', en: 'donation planning', ru: 'планировании пожертвований' } },
+  { name: 'ResourceShare', focus: { pl: 'dzieleniu zasobów', en: 'resource sharing', ru: 'обмене ресурсами' } },
+  { name: 'ToolShare', focus: { pl: 'wypożyczaniu narzędzi', en: 'tool sharing', ru: 'обмене инструментами' } },
+  { name: 'Carpool', focus: { pl: 'wspólnych dojazdach', en: 'carpooling', ru: 'совместных поездках' } },
+  { name: 'Transit', focus: { pl: 'transporcie publicznym', en: 'public transit', ru: 'транспорте' } },
+  { name: 'Commute', focus: { pl: 'dojazdach do pracy', en: 'commuting', ru: 'поездках на работу' } },
+  { name: 'RoadSafety', focus: { pl: 'bezpieczeństwie na drodze', en: 'road safety', ru: 'безопасности на дороге' } },
+  { name: 'AccessibilityMap', focus: { pl: 'mapach dostępności', en: 'accessibility maps', ru: 'картах доступности' } },
+  { name: 'LocalEvents', focus: { pl: 'lokalnych wydarzeniach', en: 'local events', ru: 'локальных событиях' } },
+  { name: 'FarmCoop', focus: { pl: 'współpracy rolniczej', en: 'farm cooperation', ru: 'фермерских кооперативах' } },
+  { name: 'FoodShare', focus: { pl: 'dzieleniu żywności', en: 'food sharing', ru: 'обмене продуктами' } },
+  { name: 'MealShare', focus: { pl: 'wspólnych posiłkach', en: 'meal sharing', ru: 'совместных обедах' } },
+  { name: 'Kindness', focus: { pl: 'dobrych uczynkach', en: 'acts of kindness', ru: 'добрых делах' } },
+  { name: 'ThankYou', focus: { pl: 'docenianiu i podziękowaniach', en: 'appreciation', ru: 'благодарности' } },
+  { name: 'Peaceful', focus: { pl: 'spokojnych relacjach', en: 'peaceful relationships', ru: 'мирных отношениях' } },
+  { name: 'ConflictSolve', focus: { pl: 'rozwiązywaniu konfliktów', en: 'conflict resolution', ru: 'разрешении конфликтов' } },
+  { name: 'TimeCare', focus: { pl: 'mądrym gospodarowaniu czasem', en: 'time stewardship', ru: 'управлении временем' } }
 ];
 
 const generatedProjects: OtherProject[] = [];
 const usedNames = new Set(baseOtherProjects.map((project) => project.name.toLowerCase()));
+
+const targetCount = 2000;
 
 for (const adjective of adjectives) {
   for (const domain of domains) {
@@ -264,9 +359,9 @@ for (const adjective of adjectives) {
     if (usedNames.has(name.toLowerCase())) continue;
     generatedProjects.push({ name, focus: domain.focus });
     usedNames.add(name.toLowerCase());
-    if (generatedProjects.length >= 1000) break;
+    if (generatedProjects.length >= targetCount) break;
   }
-  if (generatedProjects.length >= 1000) break;
+  if (generatedProjects.length >= targetCount) break;
 }
 
 export const otherProjects: OtherProject[] = [...baseOtherProjects, ...generatedProjects];
