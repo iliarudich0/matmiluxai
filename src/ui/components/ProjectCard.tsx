@@ -45,6 +45,14 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
+      {!icon ? (
+        <div className="absolute inset-0 flex items-center justify-center px-4">
+          <span className="text-center text-3xl md:text-4xl font-black tracking-tight bg-gradient-to-r from-neon-1 via-neon-2 to-neon-3 bg-clip-text text-transparent drop-shadow-2xl">
+            {project.name}
+          </span>
+        </div>
+      ) : null}
+
       {/* Content overlay */}
       <div className="relative flex h-full flex-col items-end justify-end p-6">
         {/* CTA Button - transparent light on logo */}
