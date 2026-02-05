@@ -131,9 +131,9 @@ export const FAQ = {
         pl: 'Czy aplikacje MiLux są bezpieczne dla dzieci? Jak chronicie prywatność użytkowników?',
         en: 'Are MiLux apps safe for children? How do you protect user privacy?'
       },
+      a: {
         pl: 'Bezpieczeństwo i prywatność traktujemy priorytetowo. Minimalizujemy dane, nie sprzedajemy informacji i nie wyświetlamy reklam. Jeśli zbieramy dane techniczne, to wyłącznie w celu poprawy jakości. Szczegóły zawsze publikujemy w politykach prywatności.',
         en: 'Safety and privacy come first. We minimize data, never sell information, and do not show ads. If we collect technical data, it’s only to improve quality. Full details are always in our privacy policies.'
-        en: 'Privacy and safety are top priorities. We do not require accounts or sensitive data; we may collect anonymous technical data (e.g., crash logs) to improve quality. No ads. We recommend age 13+ (regulatory reasons) — details in the Privacy Policy.'
       }
     }
   ]
