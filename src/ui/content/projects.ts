@@ -16,7 +16,8 @@ export type ProjectSlug =
   | 'tikspacez-ai'
   | 'tikdietx-ai'
   | 'tipexam-ai'
-  | 'tikcorporate-ai';
+  | 'tikcorporate-ai'
+  | 'ai-house-redesign';
 
 export type Project = {
   slug: ProjectSlug;
@@ -1038,6 +1039,54 @@ export const projects: Project[] = [
       ru: 'Подписка. Пилот в 2026.'
     },
     accent: 'neon-2'
+  },
+  {
+    slug: 'ai-house-redesign',
+    name: 'AI House Redesign',
+    tagline: {
+      pl: 'Przeprojektuj swój dom z AI.',
+      en: 'Redesign your home with AI.',
+      ru: 'Перепроектируйте дом с AI.'
+    },
+    shortDescription: {
+      pl: 'AI House Redesign to aplikacja mobilna oparta na sztucznej inteligencji, która pozwala użytkownikom na przeprojektowanie i wizualizację wnętrz i zewnętrz domu.',
+      en: 'AI House Redesign is an AI-powered mobile app that allows users to redesign and visualize home interiors and exteriors.',
+      ru: 'AI House Redesign — мобильное приложение на базе ИИ, позволяющее пользователям перепроектировать и визуализировать интерьеры и экстерьеры дома.'
+    },
+    description: {
+      pl: 'AI House Redesign to aplikacja mobilna oparta na sztucznej inteligencji, która pozwala użytkownikom na przeprojektowanie i wizualizację wnętrz i zewnętrz domu. Użytkownicy mogą przesyłać zdjęcia, maski, podpowiedzi i generować redesigny z wykorzystaniem AI.',
+      en: 'AI House Redesign is an AI-powered mobile app that allows users to redesign and visualize home interiors and exteriors. Users can upload photos, masks, prompts, and generate AI-powered redesigns.',
+      ru: 'AI House Redesign — мобильное приложение на базе ИИ, позволяющее пользователям перепроектировать и визуализировать интерьеры и экстерьеры дома. Пользователи могут загружать фото, маски, подсказки и генерировать redesignы с помощью ИИ.'
+    },
+    features: {
+      pl: [
+        'Przesyłanie zdjęć wnętrz i zewnętrz domu.',
+        'Generowanie redesignów z AI.',
+        'Personalizowane podpowiedzi i maski.',
+        'Wizualizacja zmian w czasie rzeczywistym.',
+        'Bezpieczne przechowywanie danych.'
+      ],
+      en: [
+        'Upload photos of home interiors and exteriors.',
+        'Generate AI-powered redesigns.',
+        'Personalized prompts and masks.',
+        'Real-time visualization of changes.',
+        'Secure data storage.'
+      ],
+      ru: [
+        'Загрузка фото интерьеров и экстерьеров дома.',
+        'Генерация redesignов с помощью ИИ.',
+        'Персонализированные подсказки и маски.',
+        'Визуализация изменений в реальном времени.',
+        'Безопасное хранение данных.'
+      ]
+    },
+    cta: {
+      pl: 'Dołącz do bety',
+      en: 'Join the beta',
+      ru: 'Присоединиться к бете'
+    },
+    accent: 'neon-1'
   }
 ];
 
