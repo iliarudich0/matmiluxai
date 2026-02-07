@@ -48,7 +48,9 @@ export default defineConfig({
         tipExamAI: path.resolve(__dirname, 'projects/tipexam-ai/index.html'),
         tipExamAIPrivacy: path.resolve(__dirname, 'projects/tipexam-ai/privacy.html'),
         tikCorporateAI: path.resolve(__dirname, 'projects/tikcorporate-ai/index.html'),
-        tikCorporateAIPrivacy: path.resolve(__dirname, 'projects/tikcorporate-ai/privacy.html')
+        tikCorporateAIPrivacy: path.resolve(__dirname, 'projects/tikcorporate-ai/privacy.html'),
+        aiHouseRedesign: path.resolve(__dirname, 'projects/ai-house-redesign/index.html'),
+        aiHouseRedesignPrivacy: path.resolve(__dirname, 'projects/ai-house-redesign/privacy.html')
       }
     }
   }
