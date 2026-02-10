@@ -17,7 +17,8 @@ export type ProjectSlug =
   | 'tikdietx-ai'
   | 'tipexam-ai'
   | 'tikcorporate-ai'
-  | 'ai-house-redesign';
+  | 'ai-house-redesign'
+  | 'taxpilot-ai';
 
 export type Project = {
   slug: ProjectSlug;
@@ -1087,6 +1088,62 @@ export const projects: Project[] = [
       ru: 'Присоединиться к бете'
     },
     accent: 'neon-1'
+  },
+  {
+    slug: 'taxpilot-ai',
+    name: 'TaxPilot AI',
+    tagline: {
+      pl: 'Twój osobisty asystent podatkowy w telefonie.',
+      en: 'Your personal tax assistant in your pocket.',
+      ru: 'Ваш личный налоговый помощник в кармане.'
+    },
+    shortDescription: {
+      pl: 'TaxPilot AI to inteligentna aplikacja, która zastępuje tradycyjnego księgowego – pomaga w rozliczeniach podatkowych, monitoruje terminy i optymalizuje odliczenia.',
+      en: 'TaxPilot AI is an intelligent app that replaces traditional accountants – helps with tax settlements, monitors deadlines, and optimizes deductions.',
+      ru: 'TaxPilot AI — интеллектуальное приложение, заменяющее традиционного бухгалтера – помогает с налоговыми расчётами, отслеживает сроки и оптимизирует вычеты.'
+    },
+    description: {
+      pl: 'TaxPilot AI to rewolucyjna aplikacja podatkowa wykorzystująca sztuczną inteligencję do uproszczenia rozliczeń podatkowych. Aplikacja automatycznie analizuje Twoje przychody i wydatki, sugeruje optymalne odliczenia i przypomina o terminach płatności. Dzięki zaawansowanym algorytmom AI możesz mieć pewność, że nie przepłacasz podatków i nie przegapiasz żadnych ulg. TaxPilot AI monitoruje zmiany w przepisach podatkowych i automatycznie dostosowuje rekomendacje do aktualnych regulacji. To jak posiadanie osobistego doradcy podatkowego dostępnego 24/7 – idealne dla przedsiębiorców, freelancerów i wszystkich, którzy chcą mieć pełną kontrolę nad swoimi finansami. Z TaxPilot AI rozliczenia podatkowe stają się prostsze, szybsze i bardziej precyzyjne niż kiedykolwiek.',
+      en: 'TaxPilot AI is a revolutionary tax application using artificial intelligence to simplify tax settlements. The app automatically analyzes your income and expenses, suggests optimal deductions, and reminds you of payment deadlines. Thanks to advanced AI algorithms, you can be sure you\'re not overpaying taxes and not missing any benefits. TaxPilot AI monitors changes in tax regulations and automatically adjusts recommendations to current laws. It\'s like having a personal tax advisor available 24/7 – perfect for entrepreneurs, freelancers, and anyone who wants full control over their finances. With TaxPilot AI, tax settlements become simpler, faster, and more accurate than ever before.',
+      ru: 'TaxPilot AI — революционное налоговое приложение, использующее искусственный интеллект для упрощения налоговых расчётов. Приложение автоматически анализирует ваши доходы и расходы, предлагает оптимальные вычеты и напоминает о сроках платежей. Благодаря продвинутым AI-алгоритмам вы можете быть уверены, что не переплачиваете налоги и не упускаете льготы. TaxPilot AI отслеживает изменения в налоговом законодательстве и автоматически адаптирует рекомендации к актуальным нормам. Это как личный налоговый консультант 24/7 – идеально для предпринимателей, фрилансеров и всех, кто хочет полный контроль над финансами. С TaxPilot AI налоговые расчёты становятся проще, быстрее и точнее.'
+    },
+    features: {
+      pl: [
+        'Automatyczna analiza przychodów i wydatków z inteligentną kategoryzacją.',
+        'AI-asystent sugerujący optymalne odliczenia i ulgi podatkowe.',
+        'Monitorowanie terminów płatności i automatyczne przypomnienia.',
+        'Śledzenie zmian w przepisach podatkowych i dostosowywanie rekomendacji.',
+        'Generowanie raportów podatkowych i przygotowywanie deklaracji.',
+        'Bezpieczne przechowywanie dokumentów i szyfrowanie danych osobowych.'
+      ],
+      en: [
+        'Automatic income and expense analysis with intelligent categorization.',
+        'AI assistant suggesting optimal deductions and tax benefits.',
+        'Payment deadline monitoring with automatic reminders.',
+        'Tracking tax law changes and adjusting recommendations.',
+        'Generating tax reports and preparing declarations.',
+        'Secure document storage and personal data encryption.'
+      ],
+      ru: [
+        'Автоматический анализ доходов и расходов с умной категоризацией.',
+        'AI-ассистент для оптимальных вычетов и налоговых льгот.',
+        'Отслеживание сроков платежей с автоматическими напоминаниями.',
+        'Мониторинг изменений в налоговом законодательстве и корректировка рекомендаций.',
+        'Генерация налоговых отчётов и подготовка деклараций.',
+        'Безопасное хранение документов и шифрование персональных данных.'
+      ]
+    },
+    cta: {
+      pl: 'Dołącz do wczesnego dostępu',
+      en: 'Join early access',
+      ru: 'Присоединиться к раннему доступу'
+    },
+    ctaNote: {
+      pl: 'Aplikacja w fazie rozwoju. Planowany start w 2026.',
+      en: 'App in development. Planned launch in 2026.',
+      ru: 'Приложение в разработке. Планируемый запуск в 2026.'
+    },
+    accent: 'neon-2'
   }
 ];
 
