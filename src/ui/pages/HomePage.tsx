@@ -98,7 +98,7 @@ export function HomePage() {
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {projects
-            .filter((p) => ['tik-mathik', 'tiklawyer', 'tikdrive', 'tikeverylang', 'ai-house-redesign'].includes(p.slug))
+            .filter((p) => ['tik-mathik', 'tiklawyer', 'tikdrive', 'tikeverylang', 'ai-house-redesign', 'taxpilot-ai'].includes(p.slug))
             .map((p) => (
             <ProjectCard key={p.slug} project={p} lang={lang} />
           ))}

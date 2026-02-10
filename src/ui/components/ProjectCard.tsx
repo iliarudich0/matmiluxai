@@ -7,7 +7,7 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
 
   const accentRing = project.accent === 'neon-2' ? 'hover:shadow-[0_0_0_1px_rgb(var(--c-neon-2)/0.25),0_0_32px_rgb(var(--c-neon-2)/0.12)]' : 'hover:shadow-glow';
 
-  const confirmedSlugs = new Set(['tik-mathik', 'tikdrive', 'tiklawyer', 'tikeverylang', 'ai-house-redesign']);
+  const confirmedSlugs = new Set(['tik-mathik', 'tikdrive', 'tiklawyer', 'tikeverylang', 'ai-house-redesign', 'taxpilot-ai']);
   const isConfirmed = confirmedSlugs.has(project.slug);
   const statusLabel = isConfirmed
     ? {
