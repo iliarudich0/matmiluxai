@@ -19,6 +19,26 @@ export function ProjectPage({ project }: { project: Project }) {
         ? project.features.ru ?? project.features.en
         : project.features.en;
   const privacyHref = `/projects/${project.slug}/privacy.html`;
+  const showPrivacy = project.hasPrivacy ?? true;
+  const screenshotCaption =
+    lang === 'pl'
+      ? 'Mockup ekranu lockera AdTikLocker (rozszerzenie Chrome).'
+      : lang === 'ru'
+        ? 'Макет экрана локера AdTikLocker для Chrome-расширения.'
+      : 'Mockup of the AdTikLocker locker overlay (Chrome extension).';
+  const placeholderSubtitle =
+    lang === 'pl'
+      ? 'Placeholder â€” podmień na prawdziwe grafiki, gdy będą dostępne.'
+      : lang === 'ru'
+        ? 'Заполнитель — замените на реальные визуалы, когда они появятся.'
+        : 'Placeholder — replace with real visuals when available.';
+  const mockSubtitle = project.mockScreenshot
+    ? lang === 'pl'
+      ? 'Mockup lockera AdTikLocker poniżej pokazuje, jak rozszerzenie Chrome blokuje reklamy.'
+      : lang === 'ru'
+        ? 'Макет локера AdTikLocker ниже показывает, как расширение Chrome блокирует рекламу.'
+        : 'The mock below shows how the Chrome extension locks ads with the locker overlay.'
+    : placeholderSubtitle;
 
   return (
     <Layout lang={lang} setLang={setLang} mode="project">
@@ -56,9 +76,11 @@ export function ProjectPage({ project }: { project: Project }) {
               {lang === 'pl' ? 'CTA' : lang === 'ru' ? 'Призыв' : 'CTA'}
             </div>
             <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <a className="btn btn-primary" href={privacyHref}>
-                {lang === 'pl' ? 'Polityka prywatności' : lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy policy'}
-              </a>
+              {showPrivacy && (
+                <a className="btn btn-primary" href={privacyHref}>
+                  {lang === 'pl' ? 'Polityka prywatności' : lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy policy'}
+                </a>
+              )}
               <a className="btn btn-ghost" href="/#contact">
                 {lang === 'pl' ? 'Skontaktuj się' : lang === 'ru' ? 'Связаться' : 'Contact'}
               </a>
@@ -88,27 +110,30 @@ export function ProjectPage({ project }: { project: Project }) {
         <aside className="lg:col-span-5">
           <div className="card">
             <div className="text-sm font-semibold">{lang === 'pl' ? 'Mockupy / zrzuty ekranu' : lang === 'ru' ? 'Мокапы / скриншоты' : 'Mockups / screenshots'}</div>
-            <p className="p mt-2">
-              {lang === 'pl'
-                ? 'Placeholder — podmień na prawdziwe grafiki, gdy będą dostępne.'
-                : lang === 'ru'
-                  ? 'Плейсхолдер — замените на реальные изображения, когда будут доступны.'
-                  : 'Placeholder — replace with real visuals when available.'}
-            </p>
+            <p className="p mt-2">{mockSubtitle}</p>
 
-            <div className="mt-4 grid gap-3">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <svg viewBox="0 0 320 180" className="h-auto w-full" aria-label={lang === 'pl' ? 'Placeholder mockupu' : lang === 'ru' ? 'Плейсхолдер макета' : 'Mockup placeholder'}>
-                    <rect x="0" y="0" width="320" height="180" rx="18" fill="rgba(255,255,255,0.04)" />
-                    <rect x="24" y="26" width="150" height="14" rx="7" fill="rgba(0,240,255,0.25)" />
-                    <rect x="24" y="54" width="260" height="10" rx="5" fill="rgba(255,255,255,0.12)" />
-                    <rect x="24" y="72" width="210" height="10" rx="5" fill="rgba(255,255,255,0.10)" />
-                    <rect x="24" y="104" width="120" height="32" rx="12" fill="rgba(124,92,255,0.25)" />
-                  </svg>
+            {project.mockScreenshot ? (
+              <figure className="mt-4 space-y-3">
+                <div className="overflow-hidden rounded-3xl border border-white/10 bg-black/60 shadow-[0_20px_45px_rgba(0,0,0,0.25)]">
+                  <img src={project.mockScreenshot} alt={`${project.name} mock screenshot`} className="h-auto w-full object-cover" />
                 </div>
-              ))}
-            </div>
+                <figcaption className="text-xs text-muted">{screenshotCaption}</figcaption>
+              </figure>
+            ) : (
+              <div className="mt-4 grid gap-3">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <svg viewBox="0 0 320 180" className="h-auto w-full" aria-label={lang === 'pl' ? 'Placeholder mockupu' : lang === 'ru' ? 'Плейсхолдер макета' : 'Mockup placeholder'}>
+                      <rect x="0" y="0" width="320" height="180" rx="18" fill="rgba(255,255,255,0.04)" />
+                      <rect x="24" y="26" width="150" height="14" rx="7" fill="rgba(0,240,255,0.25)" />
+                      <rect x="24" y="54" width="260" height="10" rx="5" fill="rgba(255,255,255,0.12)" />
+                      <rect x="24" y="72" width="210" height="10" rx="5" fill="rgba(255,255,255,0.10)" />
+                      <rect x="24" y="104" width="120" height="32" rx="12" fill="rgba(124,92,255,0.25)" />
+                    </svg>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </aside>
       </div>

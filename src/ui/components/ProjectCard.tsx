@@ -28,6 +28,7 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
   // Get the appropriate icon for each project
   const getProjectIcon = (slug: string) => {
     const iconMap: Record<string, string> = {
+      'adtiklocker': '/icons/adtiklocker.png',
       'tik-mathik': '/icons/tik-mathik.png',
       'tikdrive': '/icons/tikdrive.png',
       'tikeverylang': '/icons/tikeverylang.png',

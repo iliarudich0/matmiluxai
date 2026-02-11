@@ -1,4 +1,5 @@
 export type ProjectSlug =
+  | 'adtiklocker'
   | 'tik-mathik'
   | 'tikdrive'
   | 'tikeverylang'
@@ -29,10 +30,70 @@ export type Project = {
   features: { pl: string[]; en: string[]; ru?: string[] };
   cta: { pl: string; en: string; ru?: string };
   ctaNote?: { pl: string; en: string; ru?: string };
+  mockScreenshot?: string;
+  hasPrivacy?: boolean;
   accent: 'neon-1' | 'neon-2';
 };
 
 export const projects: Project[] = [
+  {
+    slug: 'adtiklocker',
+    name: 'AdTikLocker',
+    tagline: {
+      pl: 'Chrome extension blokujący reklamy jednym lockerem.',
+      en: 'Chrome extension that locks ads behind one smart locker.',
+      ru: 'Chrome-расширение, скрывающее рекламу через AI-локер.'
+    },
+    shortDescription: {
+      pl: 'Rozszerzenie Chrome, które przejmuje kontrolę nad natrętnymi reklamami i pokazuje tylko treść, którą chcesz czytać.',
+      en: 'A Chrome extension that takes over aggressive ads and keeps only the content you want to read.',
+      ru: 'Chrome-расширение, которое блокирует навязчивую рекламу и оставляет только полезную страницу.'
+    },
+    description: {
+      pl: 'AdTikLocker to locker typu „tarcza” dla Chrome, który zatrzymuje banery i wideo przed ich wyrenderowaniem i zastępuje je czystym, ciemnym ekranem. Projekt jest obecnie w fazie publikacji w sklepie Chrome â€” dopracowujemy metadane, certyfikaty i wnioski, zanim udostępnimy go użytkownikom. Mock ekranu lockera: /icons/mockscreenshot.jpg',
+      en: 'AdTikLocker is a Chrome locker extension that stops banners and video ads before they render, replacing them with a calm, dark overlay. The project is currently in the publication phase for the Chrome Web Store â€” we are polishing metadata, certificates, and filings before shipping it to users. Mock screenshot of the locker overlay: /icons/mockscreenshot.jpg',
+      ru: 'AdTikLocker â€” это Chrome-локер, который блокирует баннеры и видеорекламу до их отображения и показывает спокойный тёмный экран. Сейчас проект находится на этапе публикации в Chrome Web Store â€” мы полируем метаданные, сертификаты и документы перед релизом. Макет экрана локера: /icons/mockscreenshot.jpg'
+    },
+    features: {
+      pl: [
+        'AI detekuje natrętne reklamy i zamyka je jeszcze zanim pojawią się w witrynie.',
+        'Locker w stylu neonowym otacza główną treść i pozostawia ją czytelną.',
+        'Jedno kliknięcie odblokowuje reklamę, by sprawdzić źródło lub wybrać wyjątek.',
+        'Synchronizacja z profilem Chrome ułatwia zarządzanie whitelistą.',
+        'Lekki skrypt w tle z telemetrią wyłączoną domyślnie, ukierunkowany na prywatność.',
+        'Panel szybkich akcji pozwala wstrzymać locker, dodać wyjątek lub zgłosić podejrzaną kreację.'
+      ],
+      en: [
+        'AI-driven detection locks down intrusive ads before they ever clutter the page.',
+        'A neon-style locker keeps the main content visible while hiding the noise.',
+        'One tap unlocks the ad so you can inspect its source or add an exception.',
+        'Chrome profile sync makes it easy to manage the whitelist and share rules.',
+        'Lightweight background script with telemetry off by default, focused on privacy.',
+        'Quick-action panel to pause the locker, whitelist a domain, or report a sketchy creative.'
+      ],
+      ru: [
+        'ИИ-детектор блокирует назойливую рекламу до её появления на странице.',
+        'Неоновый локер оставляет основной контент видимым и скрывает шум.',
+        'Одно нажатие открывает рекламу, чтобы проверить источник или добавить исключение.',
+        'Синхронизация с профилем Chrome упрощает управление белым списком.',
+        'Лёгкий фоновой скрипт без телеметрии по умолчанию, конфиденциальность в приоритете.',
+        'Панель быстрых действий: пауза, белый список или репорт необычного креатива.'
+      ]
+    },
+    cta: {
+      pl: 'Powiadom mnie o publikacji',
+      en: 'Notify me at launch',
+      ru: 'Сообщите о релизе'
+    },
+    ctaNote: {
+      pl: 'Projekt w fazie publikacji w Chrome Web Store.',
+      en: 'Currently in the publication phase for the Chrome Web Store.',
+      ru: 'Проект на этапе публикации в Chrome Web Store.'
+    },
+    mockScreenshot: '/icons/mockscreenshot.jpg',
+    hasPrivacy: false,
+    accent: 'neon-2'
+  },
   {
     slug: 'tik-mathik',
     name: 'Tik-Mathik AI',

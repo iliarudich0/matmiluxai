@@ -7,7 +7,7 @@ import { Layout } from '../components/Layout';
 export function OtherProjectsPage() {
   const [lang, setLang] = useLanguage();
 
-  const coreSlugs = new Set(['tik-mathik', 'tiklawyer', 'tikdrive', 'tikeverylang']);
+  const coreSlugs = new Set(['adtiklocker', 'tik-mathik', 'tiklawyer', 'tikdrive', 'tikeverylang']);
   const movedProjects = projects.filter((project) => !coreSlugs.has(project.slug));
 
   const title = lang === 'pl' ? 'Pozostałe projekty' : lang === 'ru' ? 'Остальные проекты' : 'Other projects';
