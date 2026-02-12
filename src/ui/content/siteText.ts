@@ -94,6 +94,47 @@ export const ROADMAP = {
   ]
 } as const;
 
+export const TODO = {
+  title: { pl: 'Aktualne zadania', en: 'Current tasks', ru: 'Текущие задачи' },
+  subtitle: {
+    pl: 'Lista rzeczy do zrobienia w najbliższym czasie.',
+    en: 'List of things to do in the near future.',
+    ru: 'Список дел на ближайшее время.'
+  },
+  items: [
+    {
+      task: 'Finalizować AdTikLocker dla Chrome Web Store',
+      pl: 'Finalizować AdTikLocker dla Chrome Web Store',
+      en: 'Finalize AdTikLocker for Chrome Web Store',
+      ru: 'Завершить AdTikLocker для Chrome Web Store'
+    },
+    {
+      task: 'Rozpocząć beta testy Tik-Mathik AI',
+      pl: 'Rozpocząć beta testy Tik-Mathik AI',
+      en: 'Start beta testing for Tik-Mathik AI',
+      ru: 'Начать бета-тестирование Tik-Mathik AI'
+    },
+    {
+      task: 'Przygotować TikDrive do premiery',
+      pl: 'Przygotować TikDrive do premiery',
+      en: 'Prepare TikDrive for launch',
+      ru: 'Подготовить TikDrive к запуску'
+    },
+    {
+      task: 'Dodać więcej języków do aplikacji',
+      pl: 'Dodać więcej języków do aplikacji',
+      en: 'Add more languages to apps',
+      ru: 'Добавить больше языков в приложения'
+    },
+    {
+      task: 'Optymalizować UX w aplikacjach mobilnych',
+      pl: 'Optymalizować UX w aplikacjach mobilnych',
+      en: 'Optimize UX in mobile apps',
+      ru: 'Оптимизировать UX в мобильных приложениях'
+    }
+  ]
+} as const;
+
 export const FAQ = {
   title: { pl: 'FAQ', en: 'FAQ', ru: 'Вопросы и ответы' },
   items: [

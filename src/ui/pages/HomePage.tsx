@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../content/i18n';
-import { BRAND, CONTACT, FAQ, ROADMAP, WHY, pick } from '../content/siteText';
+import { BRAND, CONTACT, FAQ, ROADMAP, TODO, WHY, pick } from '../content/siteText';
 import { projects } from '../content/projects';
 import { Footer } from '../components/Footer';
 import { ProjectCard } from '../components/ProjectCard';
@@ -164,6 +164,23 @@ export function HomePage() {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section id="todo" className="mt-14 scroll-mt-28">
+        <div className="kicker">{pick(lang, TODO.title)}</div>
+        <h2 className="h2 mt-2">{lang === 'pl' ? 'Co robimy teraz' : lang === 'ru' ? 'Что делаем сейчас' : 'What we\'re doing now'}</h2>
+        <p className="p mt-2 max-w-3xl">{pick(lang, TODO.subtitle)}</p>
+
+        <ul className="mt-6 space-y-3">
+          {TODO.items.map((item, idx) => (
+            <li key={idx} className="card flex items-center gap-3">
+              <div className="flex h-6 w-6 items-center justify-center rounded-full bg-neon-2/20 border border-neon-2/50">
+                <span className="text-xs font-bold text-neon-2">•</span>
+              </div>
+              <div className="text-sm">{lang === 'pl' ? item.pl : item.en}</div>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section id="faq" className="mt-14 scroll-mt-28">
