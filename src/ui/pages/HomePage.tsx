@@ -178,54 +178,54 @@ export function HomePage() {
         <div className="mt-8 grid gap-4 grid-cols-3">
           <Reveal>
             <div className="card text-center">
-            <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-2 flex items-center justify-center text-lg font-bold text-white mb-2 overflow-hidden">
-              <img 
-                src="/icons/iconiliarudich.png" 
-                alt="Ilia Rudich" 
-                className="h-full w-full object-cover pointer-events-none select-none" 
-                draggable="false"
-                onContextMenu={(e) => e.preventDefault()}
-              />
-            </div>
-            <div className="text-xs md:text-sm font-semibold">Ilia Rudich</div>
-            <div className="text-[10px] md:text-xs text-muted mt-1">
-              {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
-            </div>
-            <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
-              {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
-            </div>
+              <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-2 flex items-center justify-center text-lg font-bold text-white mb-2 overflow-hidden">
+                <img 
+                  src="/icons/iconiliarudich.png" 
+                  alt="Ilia Rudich" 
+                  className="h-full w-full object-cover pointer-events-none select-none" 
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                />
+              </div>
+              <div className="text-xs md:text-sm font-semibold">Ilia Rudich</div>
+              <div className="text-[10px] md:text-xs text-muted mt-1">
+                {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+              </div>
+              <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
+                {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
+              </div>
             </div>
           </Reveal>
 
           <Reveal delay={120}>
             <div className="card text-center">
-            <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-2 to-neon-3 flex items-center justify-center text-sm md:text-lg font-bold text-white mb-2">
-              MK
-            </div>
-            <div className="text-xs md:text-sm font-semibold">Maksim Koturanov</div>
-            <div className="text-[10px] md:text-xs text-muted mt-1">
-              {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
-            </div>
-            <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
-              {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
-            </div>
+              <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-2 to-neon-3 flex items-center justify-center text-sm md:text-lg font-bold text-white mb-2">
+                MK
+              </div>
+              <div className="text-xs md:text-sm font-semibold">Maksim Koturanov</div>
+              <div className="text-[10px] md:text-xs text-muted mt-1">
+                {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+              </div>
+              <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
+                {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
+              </div>
             </div>
           </Reveal>
 
           <Reveal delay={240}>
             <div className="card text-center">
-            <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-3 to-neon-1 flex items-center justify-center text-sm md:text-lg font-bold text-white mb-2">
-              NP
-            </div>
-            <div className="text-xs md:text-sm font-semibold">Nikita Palunchanka</div>
-            <div className="text-[10px] md:text-xs text-muted mt-1">
-              {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
-            </div>
-            <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
-              {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
+              <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-3 to-neon-1 flex items-center justify-center text-sm md:text-lg font-bold text-white mb-2">
+                NP
               </div>
-            </Reveal>
-          </div>
+              <div className="text-xs md:text-sm font-semibold">Nikita Palunchanka</div>
+              <div className="text-[10px] md:text-xs text-muted mt-1">
+                {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+              </div>
+              <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
+                {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
+              </div>
+            </div>
+          </Reveal>
         </div>
 
         <hr className="my-4 border-white/10" />
@@ -233,16 +233,16 @@ export function HomePage() {
         <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           <Reveal delay={360}>
             <div className="card text-center">
-            <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-3 flex items-center justify-center text-lg font-bold text-white mb-2">
-              VK
-            </div>
-            <div className="text-sm font-semibold">Vova Kornienko</div>
-            <div className="text-xs text-muted mt-1">
-              {lang === 'pl' ? 'Członek zespołu' : lang === 'ru' ? 'Член команды' : 'Team member'}
-            </div>
-            <div className="text-xs text-white/60 mt-1">
-              {lang === 'pl' ? 'Udziały nieustalone' : lang === 'ru' ? 'Доля не определена' : 'Equity TBD'}
-            </div>
+              <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-3 flex items-center justify-center text-lg font-bold text-white mb-2">
+                VK
+              </div>
+              <div className="text-sm font-semibold">Vova Kornienko</div>
+              <div className="text-xs text-muted mt-1">
+                {lang === 'pl' ? 'Członek zespołu' : lang === 'ru' ? 'Член команды' : 'Team member'}
+              </div>
+              <div className="text-xs text-white/60 mt-1">
+                {lang === 'pl' ? 'Udziały nieustalone' : lang === 'ru' ? 'Доля не определена' : 'Equity TBD'}
+              </div>
             </div>
           </Reveal>
         </div>
