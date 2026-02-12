@@ -181,7 +181,7 @@ export function HomePage() {
               MK
             </div>
             <div className="text-sm font-semibold">Maksim K.</div>
-            <div className="text-sm text-muted mt-1">
+            <div className="text-xs text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
             <div className="text-xs text-neon-2 mt-1">
@@ -194,7 +194,7 @@ export function HomePage() {
               NP
             </div>
             <div className="text-sm font-semibold">Nikita P.</div>
-            <div className="text-sm text-muted mt-1">
+            <div className="text-xs text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
             <div className="text-xs text-neon-2 mt-1">
@@ -212,7 +212,7 @@ export function HomePage() {
               <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-3 flex items-center justify-center text-lg font-bold text-white mb-2">
                 VK
               </div>
-              <div className="text-sm font-semibold">Vova K.</div>
+              <div className="text-sm font-semibold">Vova Kornienko</div>
               <div className="text-xs text-muted mt-1">
                 {lang === 'pl' ? 'Członek zespołu' : lang === 'ru' ? 'Член команды' : 'Team member'}
               </div>
