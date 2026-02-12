@@ -22,9 +22,9 @@ const baseOtherProjects: OtherProject[] = [
       ru: 'выживании в кризисных ситуациях и катастрофах'
     },
     description: {
-      pl: 'Dostarcza wskazówki, mapy ewakuacji i narzędzia do komunikacji w sytuacjach awaryjnych.',
-      en: 'Provides guidance, evacuation maps, and communication tools for emergency situations.',
-      ru: 'Предоставляет рекомендации, карты эвакуации и инструменты связи для чрезвычайных ситуаций.'
+      pl: 'Aplikacja w fazie rozwoju - jeszcze niepotwierdzona.',
+      en: 'App in development phase - not yet confirmed.',
+      ru: 'Приложение на стадии разработки - ещё не подтверждено.'
     },
     status: 'unconfirmed'
   },

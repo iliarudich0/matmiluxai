@@ -167,9 +167,12 @@ export function HomePage() {
                 onContextMenu={(e) => e.preventDefault()}
               />
             </div>
-            <div className="text-sm font-semibold">Ilia Rudich – 10%</div>
+            <div className="text-sm font-semibold">Ilia Rudich</div>
             <div className="text-xs text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+            </div>
+            <div className="text-xs text-neon-2 mt-1 text-center">
+              10%
             </div>
           </div>
 
@@ -177,9 +180,12 @@ export function HomePage() {
             <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-2 to-neon-3 flex items-center justify-center text-lg font-bold text-white mb-2">
               MK
             </div>
-            <div className="text-sm font-semibold">Maksim Koturanov – 10%</div>
+            <div className="text-sm font-semibold">Maksim Koturanov</div>
             <div className="text-xs text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+            </div>
+            <div className="text-xs text-neon-2 mt-1 text-center">
+              10%
             </div>
           </div>
 
@@ -187,9 +193,12 @@ export function HomePage() {
             <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-3 to-neon-1 flex items-center justify-center text-lg font-bold text-white mb-2">
               NP
             </div>
-            <div className="text-sm font-semibold">Nikita Palunchanka – 10%</div>
+            <div className="text-sm font-semibold">Nikita Palunchanka</div>
             <div className="text-xs text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+            </div>
+            <div className="text-xs text-neon-2 mt-1 text-center">
+              10%
             </div>
           </div>
         </div>
