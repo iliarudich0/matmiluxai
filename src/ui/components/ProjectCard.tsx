@@ -41,7 +41,7 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       'memoryboost-ai': '/icons/memoryboost.png',
       'contractscan-ai': '/icons/contractscan.png',
       'studyplanner-ai': '/icons/studyplanner.png',
-      'taxpilot-ai': '/icons/logotaxpilot.png',
+      'taxpilot-ai': '/icons/logotaxpiot.png',
       'ai-house-redesign': '/icons/homeredesign.png',
       'audio-summariser': '/icons/sumxaudioai.png'
     };
