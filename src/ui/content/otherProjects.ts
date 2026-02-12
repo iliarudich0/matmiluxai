@@ -22,9 +22,9 @@ const baseOtherProjects: OtherProject[] = [
       ru: 'выживании в кризисных ситуациях и катастрофах'
     },
     description: {
-      pl: 'Aplikacja w fazie rozwoju - jeszcze niepotwierdzona.',
-      en: 'App in development phase - not yet confirmed.',
-      ru: 'Приложение на стадии разработки - ещё не подтверждено.'
+      pl: 'Rewolucyjna aplikacja AI ratująca życie w sytuacjach kryzysowych. Zapewnia natychmiastową pomoc, mapy ewakuacji, komunikację awaryjną i wskazówki przetrwania.',
+      en: 'Revolutionary AI app saving lives in crisis situations. Provides instant help, evacuation maps, emergency communication, and survival guidance.',
+      ru: 'Революционное приложение ИИ, спасающее жизни в кризисных ситуациях. Обеспечивает мгновенную помощь, карты эвакуации, аварийную связь и рекомендации по выживанию.'
     },
     status: 'unconfirmed'
   },
