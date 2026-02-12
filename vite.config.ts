@@ -50,7 +50,8 @@ export default defineConfig({
         tikCorporateAI: path.resolve(__dirname, 'projects/tikcorporate-ai/index.html'),
         tikCorporateAIPrivacy: path.resolve(__dirname, 'projects/tikcorporate-ai/privacy.html'),
         aiHouseRedesign: path.resolve(__dirname, 'projects/ai-house-redesign/index.html'),
-        aiHouseRedesignPrivacy: path.resolve(__dirname, 'projects/ai-house-redesign/privacy.html')
+        aiHouseRedesignPrivacy: path.resolve(__dirname, 'projects/ai-house-redesign/privacy.html'),
+        adTikLocker: path.resolve(__dirname, 'projects/adtiklocker/index.html')
       }
     }
   }
