@@ -161,6 +161,52 @@ export function HomePage() {
         </div>
       </section>
 
+      <section id="team" className="mt-14 scroll-mt-28">
+        <div className="kicker">{lang === 'pl' ? 'Zespół' : lang === 'ru' ? 'Команда' : 'Team'}</div>
+        <h2 className="h2 mt-2">
+          {lang === 'pl' ? 'Poznaj naszych współzałożycieli' : lang === 'ru' ? 'Познакомьтесь с нашими сооснователями' : 'Meet our co-founders'}
+        </h2>
+        <p className="p mt-2 max-w-3xl">
+          {lang === 'pl'
+            ? 'MiLux AI Labs zostało założone przez trójkę pasjonatów technologii, którzy łączą wiedzę techniczną z wizją tworzenia narzędzi AI, które naprawdę pomagają ludziom.'
+            : lang === 'ru'
+              ? 'MiLux AI Labs основана тремя энтузиастами технологий, которые сочетают технические знания с видением создания AI-инструментов, которые действительно помогают людям.'
+              : 'MiLux AI Labs was founded by three technology enthusiasts who combine technical expertise with the vision of creating AI tools that truly help people.'}
+        </p>
+
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="card text-center">
+            <div className="mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-neon-1 to-neon-2 flex items-center justify-center text-2xl font-bold text-white mb-4">
+              IR
+            </div>
+            <div className="text-lg font-semibold">Ilia Rudich</div>
+            <div className="text-sm text-muted mt-1">
+              {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+            </div>
+          </div>
+
+          <div className="card text-center">
+            <div className="mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-neon-2 to-neon-3 flex items-center justify-center text-2xl font-bold text-white mb-4">
+              MK
+            </div>
+            <div className="text-lg font-semibold">Maksim K.</div>
+            <div className="text-sm text-muted mt-1">
+              {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+            </div>
+          </div>
+
+          <div className="card text-center">
+            <div className="mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-neon-3 to-neon-1 flex items-center justify-center text-2xl font-bold text-white mb-4">
+              NP
+            </div>
+            <div className="text-lg font-semibold">Nikita P.</div>
+            <div className="text-sm text-muted mt-1">
+              {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="roadmap" className="mt-14 scroll-mt-28">
         <div className="kicker">{pick(lang, ROADMAP.title)}</div>
         <h2 className="h2 mt-2">{lang === 'pl' ? 'Plan wdrożeń 2026' : lang === 'ru' ? 'План запусков 2026' : 'Launch plan 2026'}</h2>
