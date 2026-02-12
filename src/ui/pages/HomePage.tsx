@@ -94,12 +94,17 @@ export function HomePage() {
             <span className="relative z-10">
               {lang === 'pl' ? 'Odkryj nasze projekty' : lang === 'ru' ? 'Смотреть проекты' : 'Explore our projects'}
             </span>
-            <div className="relative">
-              <svg className="w-8 h-8 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-              <div className="absolute inset-0 bg-neon-2/30 rounded-full blur-md group-hover:blur-lg transition-all duration-300" />
-            </div>
+          </a>
+
+          <a
+            className="group inline-flex items-center gap-4 px-12 py-6 rounded-2xl bg-gradient-to-r from-neon-2/20 to-neon-1/20 backdrop-blur-xl border-2 border-neon-2/50 hover:border-neon-2 shadow-2xl hover:shadow-neon-2/50 transition-all duration-500 text-white font-bold text-xl hover:scale-110 hover:bg-neon-2/30"
+            href="https://buymeacoffee.com/miluxailabs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="relative z-10">
+              {lang === 'pl' ? 'Kup nam kawę' : lang === 'ru' ? 'Купите нам кофе' : 'Buy us a coffee'}
+            </span>
           </a>
         </div>
       </section>
