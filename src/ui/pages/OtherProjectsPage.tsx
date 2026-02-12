@@ -29,12 +29,12 @@ export function OtherProjectsPage() {
                 </div>
               )}
 
-              <div className="relative z-10 pt-20">
-                <div className="text-xl font-bold text-white drop-shadow">{project.name}</div>
-                <div className="mt-2 text-sm text-white/80">
+              <div className="relative z-10 pt-24">
+                <div className="text-xl font-bold text-white drop-shadow mb-3">{project.name}</div>
+                <div className="text-sm text-white/90 mb-3 leading-relaxed">
                   {project.focus[lang]}
                 </div>
-                <div className="mt-2 text-xs text-white/60 italic">
+                <div className="text-sm text-white/70 italic leading-relaxed">
                   {project.description[lang]}
                 </div>
               </div>
