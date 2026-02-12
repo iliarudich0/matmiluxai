@@ -146,14 +146,14 @@ export function HomePage() {
       <section id="team" className="mt-14 scroll-mt-28">
         <div className="kicker">{lang === 'pl' ? 'Zespół' : lang === 'ru' ? 'Команда' : 'Team'}</div>
         <h2 className="h2 mt-2">
-          {lang === 'pl' ? 'Poznaj naszych współzałożycieli' : lang === 'ru' ? 'Познакомьтесь с нашими сооснователями' : 'Meet our co-founders'}
+          {lang === 'pl' ? 'Poznaj nasz zespół' : lang === 'ru' ? 'Познакомьтесь с нашей командой' : 'Meet our team'}
         </h2>
         <p className="p mt-2 max-w-3xl">
           {lang === 'pl'
-            ? 'MiLux AI Labs zostało założone przez trójkę pasjonatów technologii, którzy łączą wiedzę techniczną z wizją tworzenia narzędzi AI, które naprawdę pomagają ludziom.'
+            ? 'MiLux AI Labs zostało założone przez czwórkę pasjonatów technologii, którzy łączą wiedzę techniczną z wizją tworzenia narzędzi AI, które naprawdę pomagają ludziom.'
             : lang === 'ru'
-              ? 'MiLux AI Labs основана тремя энтузиастами технологий, которые сочетают технические знания с видением создания AI-инструментов, которые действительно помогают людям.'
-              : 'MiLux AI Labs was founded by three technology enthusiasts who combine technical expertise with the vision of creating AI tools that truly help people.'}
+              ? 'MiLux AI Labs основана четырьмя энтузиастами технологий, которые сочетают технические знания с видением создания AI-инструментов, которые действительно помогают людям.'
+              : 'MiLux AI Labs was founded by four technology enthusiasts who combine technical expertise with the vision of creating AI tools that truly help people.'}
         </p>
 
         <div className="mt-8 grid gap-4 grid-cols-3">
@@ -199,6 +199,26 @@ export function HomePage() {
             </div>
             <div className="text-xs text-neon-2 mt-1">
               {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <h3 className="text-xl font-semibold text-white mb-6">
+            {lang === 'pl' ? 'Pozostali członkowie zespołu' : lang === 'ru' ? 'Остальные члены команды' : 'Other team members'}
+          </h3>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="card text-center">
+              <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-3 flex items-center justify-center text-lg font-bold text-white mb-2">
+                VK
+              </div>
+              <div className="text-sm font-semibold">Vova K.</div>
+              <div className="text-xs text-muted mt-1">
+                {lang === 'pl' ? 'Członek zespołu' : lang === 'ru' ? 'Член команды' : 'Team member'}
+              </div>
+              <div className="text-xs text-white/60 mt-1">
+                {lang === 'pl' ? 'Udziały nieustalone' : lang === 'ru' ? 'Доля не определена' : 'Equity TBD'}
+              </div>
             </div>
           </div>
         </div>
