@@ -151,10 +151,22 @@ export function HomePage() {
           </h2>
         <p className="p mt-2 max-w-3xl">
           {lang === 'pl'
-            ? <>MiLux AI Labs zostało założone <span className="text-neon-2 font-semibold">przez trójkę</span> pasjonatów technologii, którzy łączą wiedzę techniczną z wizją tworzenia narzędzi AI, które naprawdę pomagają ludziom.</>
+            ? <>
+                MiLux AI Labs zostało założone
+                <span className="block text-neon-2 font-semibold text-lg my-2">przez trójkę</span>
+                pasjonatów technologii, którzy łączą wiedzę techniczną z wizją tworzenia narzędzi AI, które naprawdę pomagają ludziom.
+              </>
             : lang === 'ru'
-              ? <>MiLux AI Labs основана <span className="text-neon-2 font-semibold">тремя</span> энтузиастами технологий, которые сочетают технические знания с видением создания AI-инструментов, которые действительно помогают людям.</>
-              : <>MiLux AI Labs was founded <span className="text-neon-2 font-semibold">by three</span> technology enthusiasts who combine technical expertise with the vision of creating AI tools that truly help people.</>}
+              ? <>
+                  MiLux AI Labs основана
+                  <span className="block text-neon-2 font-semibold text-lg my-2">тремя</span>
+                  энтузиастами технологий, которые сочетают технические знания с видением создания AI-инструментов, которые действительно помогают людям.
+                </>
+              : <>
+                  MiLux AI Labs was founded
+                  <span className="block text-neon-2 font-semibold text-lg my-2">by three</span>
+                  technology enthusiasts who combine technical expertise with the vision of creating AI tools that truly help people.
+                </>}
         </p>
 
         <div className="mt-8 grid gap-4 grid-cols-3">
@@ -204,9 +216,9 @@ export function HomePage() {
           </div>
         </div>
 
-        <hr className="my-6 border-white/10" />
+        <hr className="my-4 border-white/10" />
 
-        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           <div className="card text-center">
             <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-3 flex items-center justify-center text-lg font-bold text-white mb-2">
               VK
