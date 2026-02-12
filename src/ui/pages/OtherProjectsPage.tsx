@@ -24,12 +24,12 @@ export function OtherProjectsPage() {
               </div>
 
               {project.status === 'unconfirmed' && (
-                <div className="absolute right-4 top-4 z-20 rounded-md bg-red-500/20 px-2 py-1 text-xs font-semibold text-red-300 border border-red-500/30">
+                <div className="absolute right-2 top-2 z-30 rounded-md bg-red-500/20 px-2 py-1 text-xs font-semibold text-red-300 border border-red-500/30">
                   Unconfirmed
                 </div>
               )}
 
-              <div className="relative z-10 pt-24">
+              <div className="relative z-10 pt-20">
                 <div className="text-xl font-bold text-white drop-shadow mb-3">{project.name}</div>
                 <div className="text-sm text-white/90 mb-3 leading-relaxed">
                   {project.focus[lang]}
