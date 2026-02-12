@@ -6,6 +6,7 @@ import { Footer } from '../components/Footer';
 import { ProjectCard } from '../components/ProjectCard';
 import { LanguageToggle } from '../components/LanguageToggle';
 import { IconMedal, IconShield, IconSpark, IconUsers } from '../components/Icons';
+import { Reveal } from '../components/Reveal';
 
 export function HomePage() {
   const [lang, setLang] = useLanguage();
@@ -170,7 +171,8 @@ export function HomePage() {
         </p>
 
         <div className="mt-8 grid gap-4 grid-cols-3">
-          <div className="card text-center">
+          <Reveal>
+            <div className="card text-center">
             <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-2 flex items-center justify-center text-lg font-bold text-white mb-2 overflow-hidden">
               <img 
                 src="/icons/iconiliarudich.png" 
@@ -187,9 +189,11 @@ export function HomePage() {
             <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
               {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
             </div>
-          </div>
+            </div>
+          </Reveal>
 
-          <div className="card text-center">
+          <Reveal delay={120}>
+            <div className="card text-center">
             <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-2 to-neon-3 flex items-center justify-center text-sm md:text-lg font-bold text-white mb-2">
               MK
             </div>
@@ -200,9 +204,11 @@ export function HomePage() {
             <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
               {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
             </div>
-          </div>
+            </div>
+          </Reveal>
 
-          <div className="card text-center">
+          <Reveal delay={240}>
+            <div className="card text-center">
             <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-3 to-neon-1 flex items-center justify-center text-sm md:text-lg font-bold text-white mb-2">
               NP
             </div>
@@ -212,14 +218,16 @@ export function HomePage() {
             </div>
             <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
               {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
-            </div>
+              </div>
+            </Reveal>
           </div>
         </div>
 
         <hr className="my-4 border-white/10" />
 
         <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <div className="card text-center">
+          <Reveal delay={360}>
+            <div className="card text-center">
             <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-3 flex items-center justify-center text-lg font-bold text-white mb-2">
               VK
             </div>
@@ -230,7 +238,8 @@ export function HomePage() {
             <div className="text-xs text-white/60 mt-1">
               {lang === 'pl' ? 'Udziały nieustalone' : lang === 'ru' ? 'Доля не определена' : 'Equity TBD'}
             </div>
-          </div>
+            </div>
+          </Reveal>
         </div>
         </div>
       </section>
