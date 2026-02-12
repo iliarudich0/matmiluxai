@@ -41,10 +41,10 @@ export function Footer({
             <a className="text-sm text-muted hover:text-text" href="https://twitter.com" target="_blank" rel="noreferrer">
               X
             </a>
-            <a className="text-sm text-muted hover:text-text" href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a className="text-sm text-muted hover:text-text" href="https://www.linkedin.com/company/milux-ai-labs/" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
-            <a className="text-sm text-muted hover:text-text" href="https://github.com" target="_blank" rel="noreferrer">
+            <a className="text-sm text-muted hover:text-text" href="https://github.com/Milux-AI-Labs" target="_blank" rel="noreferrer">
               GitHub
             </a>
           </div>
