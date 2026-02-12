@@ -145,8 +145,14 @@ export function HomePage() {
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <div className="card text-center">
-            <div className="mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-neon-1 to-neon-2 flex items-center justify-center text-2xl font-bold text-white mb-4">
-              IR
+            <div className="mx-auto h-20 w-20 rounded-full bg-gradient-to-br from-neon-1 to-neon-2 flex items-center justify-center text-2xl font-bold text-white mb-4 overflow-hidden">
+              <img 
+                src="/icons/iconiliarudich.png" 
+                alt="Ilia Rudich" 
+                className="h-full w-full object-cover pointer-events-none select-none" 
+                draggable="false"
+                onContextMenu={(e) => e.preventDefault()}
+              />
             </div>
             <div className="text-lg font-semibold">Ilia Rudich</div>
             <div className="text-sm text-muted mt-1">
