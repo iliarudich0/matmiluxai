@@ -12,13 +12,26 @@ export function HomePage() {
 
   return (
     <div className="min-h-screen">
-      {/* Futuristic Header Overlay */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-8">
             <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-neon-1 via-neon-2 to-neon-3 bg-clip-text text-transparent">
               MiLux AI Labs
             </span>
+            <nav className="hidden md:flex items-center gap-6">
+              <a className="text-sm text-white/70 hover:text-white transition-colors" href="/">
+                {lang === 'pl' ? 'Strona główna' : lang === 'ru' ? 'Главная' : 'Home'}
+              </a>
+              <a className="text-sm text-white/70 hover:text-white transition-colors" href="#projects">
+                {lang === 'pl' ? 'Projekty' : lang === 'ru' ? 'Проекты' : 'Projects'}
+              </a>
+              <a className="text-sm text-white/70 hover:text-white transition-colors" href="/privacy/">
+                {lang === 'pl' ? 'Polityka prywatności' : lang === 'ru' ? 'Политика конфиденциальности' : 'Privacy Policy'}
+              </a>
+              <a className="text-sm text-white/70 hover:text-white transition-colors" href="#contact">
+                {lang === 'pl' ? 'Kontakt' : lang === 'ru' ? 'Контакт' : 'Contact'}
+              </a>
+            </nav>
           </div>
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-3" aria-label="Social media">
