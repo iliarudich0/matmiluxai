@@ -394,6 +394,35 @@ export function HomePage() {
         </form>
       </section>
 
+      <section id="support" className="mt-14 scroll-mt-28">
+        <div className="bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 text-center">
+          <h2 className="h2 mt-2 text-2xl md:text-4xl">
+            {lang === 'pl' ? 'Wesprzyj nas' : lang === 'ru' ? 'Поддержите нас' : 'Support Us'}
+          </h2>
+          <p className="p mt-2 max-w-3xl text-sm md:text-base mx-auto">
+            {lang === 'pl'
+              ? 'Jeśli podoba Ci się to, co robimy, możesz nas wesprzeć, kupując nam kawę!'
+              : lang === 'ru'
+                ? 'Если вам нравится то, что мы делаем, вы можете поддержать нас, купив нам кофе!'
+                : 'If you like what we do, you can support us by buying us a coffee!'}
+          </p>
+          <div className="mt-6">
+            <a
+              className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white/90 shadow-glow transition-all duration-300 hover:scale-105 hover:border-neon-2/60 hover:text-white"
+              href="https://buymeacoffee.com/miluxailabs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {lang === 'pl'
+                ? 'Kup nam kawę'
+                : lang === 'ru'
+                  ? 'Купите нам кофе'
+                  : 'Buy us a coffee'}
+            </a>
+          </div>
+        </div>
+      </section>
+
       </div>
 
       <Footer lang={lang} setLang={setLang} mode="home" />
