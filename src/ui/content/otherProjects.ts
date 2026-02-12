@@ -22,9 +22,9 @@ const baseOtherProjects: OtherProject[] = [
       ru: 'выживании в кризисных ситуациях и катастрофах'
     },
     description: {
-      pl: 'To jest jeszcze po prostu idea, i żadnych kroków nie podejmowaliśmy.',
-      en: 'This is still just an idea, and we have not taken any steps.',
-      ru: 'Это ещё просто идея, и мы не предприняли никаких шагов.'
+      pl: 'To jest jeszcze po prostu idea.',
+      en: 'This is still just an idea.',
+      ru: 'Это ещё просто идея.'
     },
     status: 'unconfirmed'
   },
