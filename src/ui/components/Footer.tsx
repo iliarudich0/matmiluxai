@@ -41,6 +41,9 @@ export function Footer({
             <a className="text-sm text-muted hover:text-text" href="https://github.com/Milux-AI-Labs" target="_blank" rel="noreferrer">
               GitHub
             </a>
+            <a className="text-sm text-muted hover:text-text" href="https://www.linkedin.com/company/milux-ai-labs/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
           </div>
           <LanguageToggle lang={lang} onChange={setLang} />
         </div>
