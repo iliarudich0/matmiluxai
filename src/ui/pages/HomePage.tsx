@@ -130,37 +130,6 @@ export function HomePage() {
         </div>
       </section>
 
-      <section id="why" className="mt-14 scroll-mt-28">
-        <div className="kicker">{pick(lang, WHY.title)}</div>
-        <h2 className="h2 mt-2">
-          {lang === 'pl' ? 'Technologia, która realnie pomaga.' : lang === 'ru' ? 'Технологии, которые реально помогают.' : 'Technology that truly helps.'}
-        </h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          {WHY.items.map((it) => {
-            const Icon =
-              it.key === 'ai'
-                ? IconSpark
-                : it.key === 'learn'
-                  ? IconMedal
-                  : it.key === 'team'
-                    ? IconUsers
-                    : IconShield;
-
-            return (
-              <div key={it.key} className="card">
-                <div className="flex items-start gap-3">
-                  <Icon className="h-6 w-6 text-neon-2" />
-                  <div>
-                    <div className="text-base font-semibold">{pick(lang, it.title)}</div>
-                    <div className="p mt-1">{pick(lang, it.text)}</div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
       <section id="team" className="mt-14 scroll-mt-28">
         <div className="kicker">{lang === 'pl' ? 'Zespół' : lang === 'ru' ? 'Команда' : 'Team'}</div>
         <h2 className="h2 mt-2">
@@ -204,6 +173,37 @@ export function HomePage() {
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="why" className="mt-14 scroll-mt-28">
+        <div className="kicker">{pick(lang, WHY.title)}</div>
+        <h2 className="h2 mt-2">
+          {lang === 'pl' ? 'Technologia, która realnie pomaga.' : lang === 'ru' ? 'Технологии, которые реально помогают.' : 'Technology that truly helps.'}
+        </h2>
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
+          {WHY.items.map((it) => {
+            const Icon =
+              it.key === 'ai'
+                ? IconSpark
+                : it.key === 'learn'
+                  ? IconMedal
+                  : it.key === 'team'
+                    ? IconUsers
+                    : IconShield;
+
+            return (
+              <div key={it.key} className="card">
+                <div className="flex items-start gap-3">
+                  <Icon className="h-6 w-6 text-neon-2" />
+                  <div>
+                    <div className="text-base font-semibold">{pick(lang, it.title)}</div>
+                    <div className="p mt-1">{pick(lang, it.text)}</div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
