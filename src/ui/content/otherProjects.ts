@@ -14,11 +14,17 @@ export type OtherProject = {
 };
 
 const baseOtherProjects: OtherProject[] = [
-
+  {
+    name: 'SafeZoneX',
+    focus: {
+      pl: 'przetrwaniu w sytuacjach kryzysowych i katastrofach',
+      en: 'survival in crisis situations and disasters',
+      ru: 'выживанию в кризисных ситуациях и катастрофах'
+    },
     description: {
-      pl: 'Rewolucyjna aplikacja AI ratująca życie w sytuacjach kryzysowych. Zapewnia natychmiastową pomoc, mapy ewakuacji, komunikację awaryjną i wskazówki przetrwania.',
-      en: 'Revolutionary AI app saving lives in crisis situations. Provides instant help, evacuation maps, emergency communication, and survival guidance.',
-      ru: 'Революционное приложение ИИ, спасающее жизни в кризисных ситуациях. Обеспечивает мгновенную помощь, карты эвакуации, аварийную связь и рекомендации по выживанию.'
+      pl: 'Rewolucyjna aplikacja AI wspierająca przetrwanie w sytuacjach kryzysowych: natychmiastowe wskazówki, mapy ewakuacji, komunikacja awaryjna i praktyczne porady przetrwania.',
+      en: 'AI app focused on survival in crisis situations: instant guidance, evacuation maps, emergency communication, and practical survival tips.',
+      ru: 'Приложение ИИ, ориентированное на выживание в кризисных ситуациях: мгновенные рекомендации, карты эвакуации, аварийная связь и практические советы по выживанию.'
     },
     status: 'unconfirmed'
   },
