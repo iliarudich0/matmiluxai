@@ -145,11 +145,11 @@ export function HomePage() {
 
       <section id="team" className="mt-14 scroll-mt-28">
         <div className="bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10">
-          <div className="kicker">{lang === 'pl' ? 'Zespół' : lang === 'ru' ? 'Команда' : 'Team'}</div>
-          <h2 className="h2 mt-2">
-            {lang === 'pl' ? 'Poznaj nasz zespół' : lang === 'ru' ? 'Познакомьтесь с нашей командой' : 'Meet our team'}
-          </h2>
-        <p className="p mt-2 max-w-3xl">
+          <div className="kicker text-sm md:text-base">{lang === 'pl' ? 'Zespół' : lang === 'ru' ? 'Команда' : 'Team'}</div>
+            <h2 className="h2 mt-2 text-2xl md:text-4xl">
+              {lang === 'pl' ? 'Poznaj nasz zespół' : lang === 'ru' ? 'Познакомьтесь с нашей командой' : 'Meet our team'}
+            </h2>
+          <p className="p mt-2 max-w-3xl text-sm md:text-base">
           {lang === 'pl'
             ? <>
                 MiLux AI Labs zostało założone
@@ -180,37 +180,37 @@ export function HomePage() {
                 onContextMenu={(e) => e.preventDefault()}
               />
             </div>
-            <div className="text-sm font-semibold">Ilia Rudich</div>
-            <div className="text-xs text-muted mt-1">
+            <div className="text-xs md:text-sm font-semibold">Ilia Rudich</div>
+            <div className="text-[10px] md:text-xs text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
-            <div className="text-xs text-neon-2 mt-1 text-center">
+            <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
               {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
             </div>
           </div>
 
           <div className="card text-center">
-            <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-2 to-neon-3 flex items-center justify-center text-lg font-bold text-white mb-2">
+            <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-2 to-neon-3 flex items-center justify-center text-sm md:text-lg font-bold text-white mb-2">
               MK
             </div>
-            <div className="text-sm font-semibold">Maksim Koturanov</div>
-            <div className="text-xs text-muted mt-1">
+            <div className="text-xs md:text-sm font-semibold">Maksim Koturanov</div>
+            <div className="text-[10px] md:text-xs text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
-            <div className="text-xs text-neon-2 mt-1 text-center">
+            <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
               {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
             </div>
           </div>
 
           <div className="card text-center">
-            <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-3 to-neon-1 flex items-center justify-center text-lg font-bold text-white mb-2">
+            <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-3 to-neon-1 flex items-center justify-center text-sm md:text-lg font-bold text-white mb-2">
               NP
             </div>
-            <div className="text-sm font-semibold">Nikita Palunchanka</div>
-            <div className="text-xs text-muted mt-1">
+            <div className="text-xs md:text-sm font-semibold">Nikita Palunchanka</div>
+            <div className="text-[10px] md:text-xs text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
-            <div className="text-xs text-neon-2 mt-1 text-center">
+            <div className="text-[10px] md:text-xs text-neon-2 mt-1 text-center">
               {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
             </div>
           </div>
