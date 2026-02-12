@@ -172,7 +172,7 @@ export function HomePage() {
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
             <div className="text-xs text-neon-2 mt-1 text-center">
-              10%
+              {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
             </div>
           </div>
 
@@ -185,7 +185,7 @@ export function HomePage() {
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
             <div className="text-xs text-neon-2 mt-1 text-center">
-              10%
+              {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
             </div>
           </div>
 
@@ -198,7 +198,7 @@ export function HomePage() {
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
             <div className="text-xs text-neon-2 mt-1 text-center">
-              10%
+              {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
             </div>
           </div>
         </div>
