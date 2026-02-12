@@ -38,12 +38,6 @@ export function Footer({
 
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-3" aria-label={lang === 'pl' ? 'Media społecznościowe' : lang === 'ru' ? 'Социальные сети' : 'Social media'}>
-            <a className="text-sm text-muted hover:text-text" href="https://twitter.com" target="_blank" rel="noreferrer">
-              X
-            </a>
-            <a className="text-sm text-muted hover:text-text" href="https://www.linkedin.com/company/milux-ai-labs/" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
             <a className="text-sm text-muted hover:text-text" href="https://github.com/Milux-AI-Labs" target="_blank" rel="noreferrer">
               GitHub
             </a>
