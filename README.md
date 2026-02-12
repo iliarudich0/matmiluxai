@@ -6,7 +6,7 @@ Futuristic, privacy-first company site for **MiLux AI Labs**, built as a static 
 - `/` — one-page landing: Hero, Projects, Why MiLux, Roadmap, FAQ, Contact, Footer.
 - `/projects/tik-mathik/` — Tik‑Mathik AI project page.
 - `/projects/tikdrive/` — TikDrive project page.
-- `/projects/tikeverylang/` — TikEveryLang AI project page.
+- `/projects/tiklang-ai/` — TikLang AI project page.
 - `/privacy/` — Privacy Policy (PL/EN).
 
 ## Tech

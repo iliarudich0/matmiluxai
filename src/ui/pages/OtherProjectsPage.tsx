@@ -16,7 +16,7 @@ export function OtherProjectsPage() {
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {otherProjects.map((project) => (
-            <div key={project.name} className="group relative overflow-hidden rounded-3xl border-2 border-white/15 bg-gradient-to-br from-white/5 via-white/2 to-transparent p-6 shadow-xl transition-all duration-300 hover:scale-[1.02]">
+            <div key={project.name} className="group relative overflow-hidden rounded-3xl border-2 border-white/15 bg-gradient-to-br from-white/5 via-white/2 to-transparent p-6 shadow-xl transition-all duration-300 hover:scale-[1.02] min-h-[320px]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent" />
 
               <div className="absolute left-4 top-4 z-20">

@@ -7,7 +7,7 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
 
   const accentRing = project.accent === 'neon-2' ? 'hover:shadow-[0_0_0_1px_rgb(var(--c-neon-2)/0.25),0_0_32px_rgb(var(--c-neon-2)/0.12)]' : 'hover:shadow-glow';
 
-  const confirmedSlugs = new Set(['adtiklocker', 'tik-mathik', 'tikdrive', 'tiklawyer', 'tikeverylang', 'ai-house-redesign', 'taxpilot-ai']);
+  const confirmedSlugs = new Set(['adtiklocker', 'tik-mathik', 'tikdrive', 'tiklawyer', 'tiklang-ai', 'ai-house-redesign', 'taxpilot-ai']);
   const isConfirmed = confirmedSlugs.has(project.slug);
   const statusLabel = isConfirmed
     ? {
@@ -31,7 +31,7 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       'adtiklocker': '/icons/adtiklocker.png',
       'tik-mathik': '/icons/tik-mathik.png',
       'tikdrive': '/icons/tikdrive.png',
-      'tikeverylang': '/icons/tikeverylang.png',
+      'tiklang-ai': '/icons/tiklang-ai.png',
       'tiklawyer': '/icons/tiklawyer.png',
       'safezonex': '/icons/safezonex.png',
       'carfix-ai': '/icons/carfix.png',

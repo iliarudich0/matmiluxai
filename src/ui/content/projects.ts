@@ -2,7 +2,7 @@ export type ProjectSlug =
   | 'adtiklocker'
   | 'tik-mathik'
   | 'tikdrive'
-  | 'tikeverylang'
+  | 'tiklang-ai'
   | 'tiklawyer'
   | 'safezonex'
   | 'carfix-ai'
@@ -208,22 +208,22 @@ export const projects: Project[] = [
     accent: 'neon-2'
   },
   {
-    slug: 'tikeverylang',
-    name: 'TikEveryLang AI',
+    slug: 'tiklang-ai',
+    name: 'TikLang AI',
     tagline: {
       pl: 'Uniwersalny tłumacz i nauczyciel językowy w jednym.',
       en: 'A universal translator and language tutor in one.',
       ru: 'Универсальный переводчик и языковой наставник в одном.'
     },
     shortDescription: {
-      pl: 'Uniwersalny tłumacz i nauczyciel językowy w jednym – TikEveryLang AI otworzy przed Tobą świat języków dzięki mocy sztucznej inteligencji.',
-      en: 'A universal translator and language tutor in one – TikEveryLang AI will open up a world of languages for you, powered by artificial intelligence.',
-      ru: 'Универсальный переводчик и языковой наставник в одном — TikEveryLang AI открывает мир языков с помощью ИИ.'
+      pl: 'Uniwersalny tłumacz i nauczyciel językowy w jednym – TikLang AI otworzy przed Tobą świat języków dzięki mocy sztucznej inteligencji.',
+      en: 'A universal translator and language tutor in one – TikLang AI will open up a world of languages for you, powered by artificial intelligence.',
+      ru: 'Универсальный переводчик и языковой наставник в одном — TikLang AI открывает мир языков с помощью ИИ.'
     },
     description: {
-      pl: 'TikEveryLang AI to wizja przyszłości nauki języków – aplikacja, która wykorzysta AI, aby uczynić naukę dowolnego języka szybką, wciągającą i dostępną dla każdego. Choć projekt jest na etapie planowania, już teraz zdradzimy, czego można się spodziewać. Aplikacja ma oferować interaktywne konwersacje z AI naśladujące dialog z native speakerem oraz personalizowane lekcje dostosowane do Twoich postępów. Planowane są funkcje rozpoznawania mowy i natychmiastowej korekty wymowy, a także tłumaczenia kontekstowe w locie. TikEveryLang AI będzie wspierać wiele języków – od angielskiego i hiszpańskiego, po chiński czy suahili – wszystko w jednym miejscu. Celem jest przekroczenie barier językowych dzięki technologii: gdziekolwiek jesteś, błyskawicznie porozumiesz się w każdym języku. Więcej informacji już wkrótce – śledź nasze aktualizacje!',
-      en: 'TikEveryLang AI is our futuristic vision for language learning – an app that will leverage AI to make learning any language fast, immersive, and accessible to everyone. The project is still in the planning phase, but we can share a glimpse of what\'s to come. The app is set to offer interactive conversations with an AI that simulate talking to a native speaker, as well as personalized lessons tailored to your progress. Planned features include speech recognition with instant pronunciation correction and real-time contextual translations. TikEveryLang AI will support numerous languages – from English and Spanish to Chinese or Swahili – all within one platform. The goal is to break language barriers through technology: wherever you go, you\'ll be able to communicate instantly in any language. More information is coming soon – stay tuned for updates!',
-      ru: 'TikEveryLang AI — наше видение будущего изучения языков. Приложение на базе ИИ сделает обучение быстрым, увлекательным и доступным. Планируются интерактивные диалоги с AI, персональные уроки, распознавание речи с мгновенной коррекцией произношения и контекстные переводы в реальном времени. Поддержка многих языков — от английского и испанского до китайского и суахили — в одном месте. Цель — снять языковые барьеры с помощью технологий.'
+      pl: 'TikLang AI to wizja przyszłości nauki języków – aplikacja, która wykorzysta AI, aby uczynić naukę dowolnego języka szybką, wciągającą i dostępną dla każdego. Choć projekt jest na etapie planowania, już teraz zdradzimy, czego można się spodziewać. Aplikacja ma oferować interaktywne konwersacje z AI naśladujące dialog z native speakerem oraz personalizowane lekcje dostosowane do Twoich postępów. Planowane są funkcje rozpoznawania mowy i natychmiastowej korekty wymowy, a także tłumaczenia kontekstowe w locie. TikLang AI będzie wspierać wiele języków – od angielskiego i hiszpańskiego, po chiński czy suahili – wszystko w jednym miejscu. Celem jest przekroczenie barier językowych dzięki technologii: gdziekolwiek jesteś, błyskawicznie porozumiesz się w każdym języku. Więcej informacji już wkrótce – śledź nasze aktualizacje!',
+      en: 'TikLang AI is our futuristic vision for language learning – an app that will leverage AI to make learning any language fast, immersive, and accessible to everyone. The project is still in the planning phase, but we can share a glimpse of what\'s to come. The app is set to offer interactive conversations with an AI that simulate talking to a native speaker, as well as personalized lessons tailored to your progress. Planned features include speech recognition with instant pronunciation correction and real-time contextual translations. TikLang AI will support numerous languages – from English and Spanish to Chinese or Swahili – all within one platform. The goal is to break language barriers through technology: wherever you go, you\'ll be able to communicate instantly in any language. More information is coming soon – stay tuned for updates!',
+      ru: 'TikLang AI — наше видение будущего изучения языков. Приложение на базе ИИ сделает обучение быстрым, увлекательным и доступным. Планируются интерактивные диалоги с AI, персональные уроки, распознавание речи с мгновенной коррекцией произношения и контекстные переводы в реальном времени. Поддержка многих языков — от английского и испанского до китайского и суахили — в одном месте. Цель — снять языковые барьеры с помощью технологий.'
     },
     features: {
       pl: [

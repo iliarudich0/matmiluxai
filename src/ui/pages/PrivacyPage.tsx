@@ -64,7 +64,7 @@ function PrivacyPL() {
       <Section title="1. Wprowadzenie">
         <p>
           Niniejsza Polityka prywatności wyjaśnia, w jaki sposób MiLux AI Labs (\"my\", \"nas\", \"nasze\") gromadzi,
-          wykorzystuje i chroni dane użytkowników naszych aplikacji mobilnych (Tik-Mathik AI, TikDrive, TikEveryLang AI)
+          wykorzystuje i chroni dane użytkowników naszych aplikacji mobilnych (Tik-Mathik AI, TikDrive, TikLang AI)
           oraz strony internetowej. Szanujemy Twoją prywatność i dokładamy wszelkich starań, aby chronić Twoje dane.
         </p>
         <p className="mt-3">
@@ -178,7 +178,7 @@ function PrivacyEN() {
       <Section title="1. Introduction">
         <p>
           This Privacy Policy explains how MiLux AI Labs (\"we\", \"us\", \"our\") collects, uses, and protects user data in our
-          mobile applications (Tik-Mathik AI, TikDrive, TikEveryLang AI) and website. We respect your privacy and are
+          mobile applications (Tik-Mathik AI, TikDrive, TikLang AI) and website. We respect your privacy and are
           committed to protecting your information.
         </p>
         <p className="mt-3">

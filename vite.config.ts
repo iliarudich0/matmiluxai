@@ -18,7 +18,7 @@ export default defineConfig({
         tikMathikPrivacy: path.resolve(__dirname, 'projects/tik-mathik/privacy.html'),
         tikDrive: path.resolve(__dirname, 'projects/tikdrive/index.html'),
         tikDrivePrivacy: path.resolve(__dirname, 'projects/tikdrive/privacy.html'),
-        tikEveryLang: path.resolve(__dirname, 'projects/tikeverylang/index.html'),
+        tikLang: path.resolve(__dirname, 'projects/tiklang-ai/index.html'),
         tikLawyer: path.resolve(__dirname, 'projects/tiklawyer/index.html'),
         tikLawyerPrivacy: path.resolve(__dirname, 'projects/tiklawyer/privacy.html'),
         safeZoneX: path.resolve(__dirname, 'projects/safezonex/index.html'),
