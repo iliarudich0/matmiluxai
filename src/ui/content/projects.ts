@@ -1165,9 +1165,9 @@ export const projects: Project[] = [
       ru: 'TaxPilot AI — интеллектуальное приложение, заменяющее традиционного бухгалтера – помогает с налоговыми расчётами, отслеживает сроки и оптимизирует вычеты.'
     },
     description: {
-      pl: 'TaxPilot AI to rewolucyjna aplikacja podatkowa wykorzystująca sztuczną inteligencję do uproszczenia rozliczeń podatkowych. Aplikacja automatycznie analizuje Twoje przychody i wydatki, sugeruje optymalne odliczenia i przypomina o terminach płatności. Dzięki zaawansowanym algorytmom AI możesz mieć pewność, że nie przepłacasz podatków i nie przegapiasz żadnych ulg. TaxPilot AI monitoruje zmiany w przepisach podatkowych i automatycznie dostosowuje rekomendacje do aktualnych regulacji. To jak posiadanie osobistego doradcy podatkowego dostępnego 24/7 – idealne dla przedsiębiorców, freelancerów i wszystkich, którzy chcą mieć pełną kontrolę nad swoimi finansami. Z TaxPilot AI rozliczenia podatkowe stają się prostsze, szybsze i bardziej precyzyjne niż kiedykolwiek.',
-      en: 'TaxPilot AI is a revolutionary tax application using artificial intelligence to simplify tax settlements. The app automatically analyzes your income and expenses, suggests optimal deductions, and reminds you of payment deadlines. Thanks to advanced AI algorithms, you can be sure you\'re not overpaying taxes and not missing any benefits. TaxPilot AI monitors changes in tax regulations and automatically adjusts recommendations to current laws. It\'s like having a personal tax advisor available 24/7 – perfect for entrepreneurs, freelancers, and anyone who wants full control over their finances. With TaxPilot AI, tax settlements become simpler, faster, and more accurate than ever before.',
-      ru: 'TaxPilot AI — революционное налоговое приложение, использующее искусственный интеллект для упрощения налоговых расчётов. Приложение автоматически анализирует ваши доходы и расходы, предлагает оптимальные вычеты и напоминает о сроках платежей. Благодаря продвинутым AI-алгоритмам вы можете быть уверены, что не переплачиваете налоги и не упускаете льготы. TaxPilot AI отслеживает изменения в налоговом законодательстве и автоматически адаптирует рекомендации к актуальным нормам. Это как личный налоговый консультант 24/7 – идеально для предпринимателей, фрилансеров и всех, кто хочет полный контроль над финансами. С TaxPilot AI налоговые расчёты становятся проще, быстрее и точнее.'
+      pl: 'TaxPilot AI to asystent księgowy oparty na AI dla polskich mikro i małych firm. Funkcje: AI Księgowy (OCR dokumentów, automatyczne księgowanie), Centrum Obowiązków (przypomnienia JPK/VAT/PIT/ZUS), Przepływ Podpisz i Prześlij, Jednoekranowe Zamknięcie Miesiąca. Bezpieczeństwo: szyfrowanie wrażliwych danych. Stack: Flutter, Firebase.',
+      en: 'TaxPilot AI is an AI-first accounting assistant for Polish micro and small businesses. Features: AI Księgowy document pipeline (OCR/parse/auto-post), Obligations center (JPK/VAT/PIT/ZUS reminders), Sign & Submit flow, One-screen month close. Security: envelope crypto for sensitive fields. Stack: Flutter, Firebase.',
+      ru: 'TaxPilot AI — помощник бухгалтера на базе ИИ для польских микро- и малых предприятий. Функции: AI Księgowy (OCR документов, автоматическое бухгалтерское проведение), Центр обязательств (напоминания JPK/VAT/PIT/ZUS), поток Подпиши и Отправь, Одноэкранное закрытие месяца. Безопасность: шифрование чувствительных данных. Стек: Flutter, Firebase.'
     },
     features: {
       pl: [
@@ -1205,6 +1205,7 @@ export const projects: Project[] = [
       en: 'App in development. Planned launch in 2026.',
       ru: 'Приложение в разработке. Планируемый запуск в 2026.'
     },
+    mockScreenshot: '/icons/mocuptaxpilot.png',
     accent: 'neon-2'
   },
   {

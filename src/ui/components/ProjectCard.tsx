@@ -40,7 +40,8 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       'interviewcoach-ai': '/icons/interviewcoach.png',
       'memoryboost-ai': '/icons/memoryboost.png',
       'contractscan-ai': '/icons/contractscan.png',
-      'studyplanner-ai': '/icons/studyplanner.png'
+      'studyplanner-ai': '/icons/studyplanner.png',
+      'taxpilot-ai': '/icons/logotaxpilot.png'
     };
     return iconMap[slug];
   };
