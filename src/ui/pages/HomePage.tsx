@@ -152,6 +152,9 @@ export function HomePage() {
             <div className="text-sm text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
+            <div className="text-xs text-neon-2 mt-1">
+              {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
+            </div>
           </div>
 
           <div className="card text-center">
@@ -162,6 +165,9 @@ export function HomePage() {
             <div className="text-sm text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
             </div>
+            <div className="text-xs text-neon-2 mt-1">
+              {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
+            </div>
           </div>
 
           <div className="card text-center">
@@ -171,6 +177,9 @@ export function HomePage() {
             <div className="text-lg font-semibold">Nikita P.</div>
             <div className="text-sm text-muted mt-1">
               {lang === 'pl' ? 'Współzałożyciel' : lang === 'ru' ? 'Сооснователь' : 'Co-founder'}
+            </div>
+            <div className="text-xs text-neon-2 mt-1">
+              {lang === 'pl' ? '10% udziałów' : lang === 'ru' ? '10% доля' : '10% equity'}
             </div>
           </div>
         </div>
