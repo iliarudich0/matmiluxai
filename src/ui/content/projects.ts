@@ -1105,7 +1105,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'ai-house-redesign',
-    name: 'AI House Redesign',
+    name: 'AI Home Redesign',
     tagline: {
       pl: 'Przeprojektuj swój dom z AI.',
       en: 'Redesign your home with AI.',
@@ -1149,6 +1149,7 @@ export const projects: Project[] = [
       en: 'Join the beta',
       ru: 'Присоединиться к бете'
     },
+    mockScreenshot: '/icons/mocupaihomereds.png',
     accent: 'neon-1'
   },
   {
