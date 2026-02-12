@@ -11,7 +11,7 @@ export function getInitialLanguage(): Language {
   const nav = (navigator.language || '').toLowerCase();
   if (nav.startsWith('pl')) return 'pl';
   if (nav.startsWith('ru')) return 'ru';
-  return 'en';
+  return 'pl';
 }
 
 export function setLanguage(lang: Language) {
