@@ -20,7 +20,7 @@ export type ProjectSlug =
   | 'tikcorporate-ai'
   | 'ai-house-redesign'
   | 'taxpilot-ai'
-  | 'audio-summariser';
+  ;
 
 export type Project = {
   slug: ProjectSlug;
@@ -1209,55 +1209,6 @@ export const projects: Project[] = [
     mockScreenshot: '/icons/mocuptaxpilot.png',
     accent: 'neon-2'
   },
-  {
-    slug: 'audio-summariser',
-    name: 'Audio Summariser AI',
-    tagline: {
-      pl: 'AI do podsumowywania audio — nagrywaj wykłady i myśli, otrzymuj strukturalne streszczenia.',
-      en: 'AI-powered audio summarization — record lectures and thoughts, get structured summaries.',
-      ru: 'ИИ для суммирования аудио — записывай лекции и мысли, получай структурированные конспекты.'
-    },
-    shortDescription: {
-      pl: 'Włącz diktafon na wykładzie, a na koniec otrzymaj krótki, strukturalny konspekt i zadawaj pytania.',
-      en: 'Turn on the recorder during a lecture, and at the end get a short, structured summary and ask questions about it.',
-      ru: 'Включи диктофон на лекции, а в конце получи краткий структурированный конспект и задавай вопросы по нему.'
-    },
-    description: {
-      pl: 'Audio Summariser AI to aplikacja, która pozwala nagrywać wykłady lub swoje chaotyczne myśli przez godzinę, a następnie otrzymywać wszystko w uporządkowanym, strukturalnym formacie. Możesz zadawać pytania dotyczące treści, budować plany i organizować wiedzę. Idealne dla studentów, profesjonalistów i wszystkich, którzy chcą efektywnie przetwarzać informacje audio.',
-      en: 'Audio Summariser AI is an app that lets you record lectures or your scattered thoughts for an hour, then receive everything in an organized, structured format. You can ask questions about the content, build plans, and organize knowledge. Perfect for students, professionals, and anyone who wants to efficiently process audio information.',
-      ru: 'Audio Summariser AI — это приложение, которое позволяет записывать лекции или свои хаотичные мысли в течение часа, а затем получать всё в упорядоченном, структурированном виде. Можно задавать вопросы по содержимому, строить планы и организовывать знания. Идеально для студентов, профессионалов и всех, кто хочет эффективно обрабатывать аудиоинформацию.'
-    },
-    features: {
-      pl: [
-        'Nagrywanie wykładów i automatyczne tworzenie konspektów.',
-        'Strukturyzacja chaotycznych myśli w plany i notatki.',
-        'Możliwość zadawania pytań AI na temat nagrania.',
-        'Integracja z kalendarzem i zadaniami.',
-        'Prywatność i bezpieczeństwo danych.'
-      ],
-      en: [
-        'Record lectures and automatically create summaries.',
-        'Structure scattered thoughts into plans and notes.',
-        'Ask AI questions about the recording.',
-        'Integration with calendar and tasks.',
-        'Privacy and data security.'
-      ],
-      ru: [
-        'Запись лекций и автоматическое создание конспектов.',
-        'Структуризация хаотичных мыслей в планы и заметки.',
-        'Возможность задавать вопросы ИИ по записи.',
-        'Интеграция с календарем и задачами.',
-        'Приватность и безопасность данных.'
-      ]
-    },
-    cta: {
-      pl: 'Dowiedz się więcej',
-      en: 'Learn more',
-      ru: 'Узнать больше'
-    },
-    accent: 'neon-1',
-    hasPrivacy: false
-  }
 ];
 
 export const projectBySlug = Object.fromEntries(projects.map((p) => [p.slug, p])) as Record<ProjectSlug, Project>;
