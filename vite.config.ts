@@ -11,7 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         home: path.resolve(__dirname, 'index.html'),
-        googleVerification: path.resolve(__dirname, 'google65e5b3eab0616588.html'),
+        'google65e5b3eab0616588.html': path.resolve(__dirname, 'google65e5b3eab0616588.html'),
         privacy: path.resolve(__dirname, 'privacy/index.html'),
         otherProjects: path.resolve(__dirname, 'other-projects/index.html'),
         tikMathikPrivacyPL: path.resolve(__dirname, 'polityka_prywatnosci.html'),
