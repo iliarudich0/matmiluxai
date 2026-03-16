@@ -164,7 +164,7 @@ export function HomePage() {
                 : <>MiLux AI Labs was founded by Ilia Rudich, who combines technical expertise with the vision of creating AI tools that truly help people. Stanislaw Rudich is a business partner for Google Play Store, and the developer account is being transferred to his company.</>}
           </p>
 
-          <div className="mt-8 grid gap-4 grid-cols-1 max-w-xs mx-auto">
+          <div className="mt-8 grid gap-4 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto">
             <Reveal>
               <div className="card text-center">
                 <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-1 to-neon-2 flex items-center justify-center text-lg font-bold text-white mb-2 overflow-hidden">
@@ -180,7 +180,14 @@ export function HomePage() {
                 <div className="text-[10px] md:text-xs text-muted mt-1">
                   {lang === 'pl' ? 'Założyciel, CEO' : lang === 'ru' ? 'Основатель, CEO' : 'Founder, CEO'}
                 </div>
-                <div className="mt-3 text-xs md:text-sm font-semibold">Stanislaw Rudich</div>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div className="card text-center">
+                <div className="mx-auto h-12 w-12 rounded-full bg-gradient-to-br from-neon-2 to-neon-3 flex items-center justify-center text-sm font-bold text-white mb-2">
+                  SR
+                </div>
+                <div className="text-xs md:text-sm font-semibold">Stanislaw Rudich</div>
                 <div className="text-[10px] md:text-xs text-muted mt-1">
                   {lang === 'pl'
                     ? 'Partner biznesowy Google Play Store'
