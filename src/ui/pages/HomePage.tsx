@@ -178,11 +178,7 @@ export function HomePage() {
                 </div>
                 <div className="text-xs md:text-sm font-semibold">Ilia Rudich</div>
                 <div className="text-[10px] md:text-xs text-muted mt-1">
-                  {lang === 'pl'
-                    ? 'Założyciel, CEO • Partner Google Play Store: Stanislaw Rudich'
-                    : lang === 'ru'
-                      ? 'Основатель, CEO • Партнёр Google Play Store: Stanislaw Rudich'
-                      : 'Founder, CEO • Google Play Store partner: Stanislaw Rudich'}
+                  {lang === 'pl' ? 'Założyciel, CEO' : lang === 'ru' ? 'Основатель, CEO' : 'Founder, CEO'}
                 </div>
               </div>
             </Reveal>
