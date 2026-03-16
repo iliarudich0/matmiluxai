@@ -158,10 +158,10 @@ export function HomePage() {
           </h2>
           <p className="p mt-2 max-w-3xl text-sm md:text-base">
             {lang === 'pl'
-              ? <>MiLux AI Labs zostało założone przez Ilia Rudich, który łączy wiedzę techniczną z wizją tworzenia narzędzi AI, które naprawdę pomagają ludziom.</>
+              ? <>MiLux AI Labs zostało założone przez Ilia Rudich, który łączy wiedzę techniczną z wizją tworzenia narzędzi AI, które naprawdę pomagają ludziom. Stanislaw Rudich jest partnerem firmowym dla Google Play Store, a konto deweloperskie jest przenoszone na jego firmę.</>
               : lang === 'ru'
-                ? <>MiLux AI Labs основана Илией Рудичем, который сочетает технические знания с видением создания AI-инструментов, которые действительно помогают людям.</>
-                : <>MiLux AI Labs was founded by Ilia Rudich, who combines technical expertise with the vision of creating AI tools that truly help people.</>}
+                ? <>MiLux AI Labs основана Илией Рудичем, который сочетает технические знания с видением создания AI-инструментов, которые действительно помогают людям. Stanislaw Rudich является бизнес-партнёром по Google Play Store, а аккаунт разработчика переносится на его компанию.</>
+                : <>MiLux AI Labs was founded by Ilia Rudich, who combines technical expertise with the vision of creating AI tools that truly help people. Stanislaw Rudich is a business partner for Google Play Store, and the developer account is being transferred to his company.</>}
           </p>
 
           <div className="mt-8 grid gap-4 grid-cols-1 max-w-xs mx-auto">
@@ -178,7 +178,11 @@ export function HomePage() {
                 </div>
                 <div className="text-xs md:text-sm font-semibold">Ilia Rudich</div>
                 <div className="text-[10px] md:text-xs text-muted mt-1">
-                  {lang === 'pl' ? 'Założyciel, CEO' : lang === 'ru' ? 'Основатель, CEO' : 'Founder, CEO'}
+                  {lang === 'pl'
+                    ? 'Założyciel, CEO • Partner Google Play Store: Stanislaw Rudich'
+                    : lang === 'ru'
+                      ? 'Основатель, CEO • Партнёр Google Play Store: Stanislaw Rudich'
+                      : 'Founder, CEO • Google Play Store partner: Stanislaw Rudich'}
                 </div>
               </div>
             </Reveal>
