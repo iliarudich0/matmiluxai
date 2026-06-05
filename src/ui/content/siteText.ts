@@ -10,9 +10,9 @@ export const BRAND = {
 } as const;
 
 export const CONTACT = {
-  title: { pl: 'Contact', en: 'Contact', ru: 'Contact' },
+  title: { pl: 'Kontakt', en: 'Contact', ru: 'Contact' },
   text: {
-    pl: 'For product questions, partnerships or early access, contact us at',
+    pl: 'W sprawach produktowych, partnerstw lub wczesnego dostępu napisz do nas na',
     en: 'For product questions, partnerships or early access, contact us at',
     ru: 'For product questions, partnerships or early access, contact us at'
   },

@@ -17,6 +17,9 @@ export function Footer({
           <div className="text-sm font-semibold text-slate-950">Milux Tech</div>
           <div className="mt-2 text-sm text-slate-500">&copy; 2026 Milux Tech. All rights reserved.</div>
           <div className="mt-3 text-sm text-slate-500">Rdix is planned as the first public product of Milux Tech.</div>
+          <a className="mt-3 inline-flex text-sm font-medium text-teal-700 hover:text-teal-900" href="https://matmilux.pl/">
+            matmilux.pl
+          </a>
         </div>
 
         <div className="flex flex-wrap items-center gap-x-5 gap-y-3">

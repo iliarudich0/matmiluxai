@@ -5,13 +5,7 @@ export type Language = 'pl' | 'en' | 'ru';
 const STORAGE_KEY = 'milux_lang';
 
 export function getInitialLanguage(): Language {
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved === 'pl' || saved === 'en' || saved === 'ru') return saved;
-
-  const nav = (navigator.language || '').toLowerCase();
-  if (nav.startsWith('pl')) return 'pl';
-  if (nav.startsWith('ru')) return 'ru';
-  return 'pl';
+  return 'en';
 }
 
 export function setLanguage(lang: Language) {

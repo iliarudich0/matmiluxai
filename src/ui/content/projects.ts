@@ -21,46 +21,36 @@ export const projects: Project[] = [
     name: 'Rdix',
     label: 'First launch',
     tagline: {
-      pl: 'Lokalny marketplace dla uslug, zadan i codziennej pomocy.',
-      en: 'A local marketplace for services, tasks, trusted contractors and everyday help.',
-      ru: 'Local marketplace for services, tasks, trusted contractors and everyday help.'
+      pl: 'Lokalny marketplace dla usług, zadań i codziennej pomocy.',
+      en: 'A local marketplace for services, tasks, trusted contractors and everyday help.'
     },
     shortDescription: {
-      pl: 'Rdix laczy klientow i wykonawcow w jednym prostym marketplace.',
-      en: 'Rdix connects clients and workers in one simple marketplace.',
-      ru: 'Rdix connects clients and workers in one simple marketplace.'
+      pl: 'Rdix łączy klientów i wykonawców w jednym prostym marketplace.',
+      en: 'Rdix connects clients and workers in one simple marketplace.'
     },
     description: {
-      pl: 'Rdix is planned as the first public product of Milux Tech: a local marketplace for services, tasks, trusted contractors and everyday help. The product is focused on a simple flow for requests, chat, booking and reviews.',
-      en: 'Rdix is planned as the first public product of Milux Tech: a local marketplace for services, tasks, trusted contractors and everyday help. The product is focused on a simple flow for requests, chat, booking and reviews.',
-      ru: 'Rdix is planned as the first public product of Milux Tech: a local marketplace for services, tasks, trusted contractors and everyday help. The product is focused on a simple flow for requests, chat, booking and reviews.'
+      pl: 'Rdix jest planowany jako pierwszy publiczny produkt Milux Tech: lokalny marketplace dla usług, zadań, zaufanych wykonawców i codziennej pomocy. Produkt koncentruje się na prostym przepływie zgłoszeń, czatu, rezerwacji i opinii.',
+      en: 'Rdix is planned as the first public product of Milux Tech: a local marketplace for services, tasks, trusted contractors and everyday help. The product is focused on a simple flow for requests, chat, booking and reviews.'
     },
     features: {
       pl: [
-        'Local services and tasks',
-        'Clients and workers in one marketplace',
-        'Simple request, chat, booking and review flow'
+        'Lokalne usługi i zadania',
+        'Klienci i wykonawcy w jednym marketplace',
+        'Prosty przepływ zgłoszenia, czatu, rezerwacji i opinii'
       ],
       en: [
-        'Local services and tasks',
-        'Clients and workers in one marketplace',
-        'Simple request, chat, booking and review flow'
-      ],
-      ru: [
         'Local services and tasks',
         'Clients and workers in one marketplace',
         'Simple request, chat, booking and review flow'
       ]
     },
     cta: {
-      pl: 'Contact Milux Tech',
-      en: 'Contact Milux Tech',
-      ru: 'Contact Milux Tech'
+      pl: 'Skontaktuj się z Milux Tech',
+      en: 'Contact Milux Tech'
     },
     ctaNote: {
-      pl: 'In development, planned as the first public product.',
-      en: 'In development, planned as the first public product.',
-      ru: 'In development, planned as the first public product.'
+      pl: 'W trakcie rozwoju, planowany jako pierwszy publiczny produkt.',
+      en: 'In development, planned as the first public product.'
     },
     status: 'In development, planned as the first public product.',
     accent: 'teal',
@@ -71,34 +61,25 @@ export const projects: Project[] = [
     name: 'TikDrive',
     label: 'Next product',
     tagline: {
-      pl: 'Marketplace dla lekcji jazdy, instruktorow i szkol jazdy.',
-      en: 'A marketplace for driving lessons, instructors and driving schools.',
-      ru: 'A marketplace for driving lessons, instructors and driving schools.'
+      pl: 'Marketplace dla lekcji jazdy, instruktorów i szkół jazdy.',
+      en: 'A marketplace for driving lessons, instructors and driving schools.'
     },
     shortDescription: {
-      pl: 'TikDrive helps learners find instructors, book lessons and track learning progress.',
-      en: 'TikDrive helps learners find instructors, book lessons and track learning progress.',
-      ru: 'TikDrive helps learners find instructors, book lessons and track learning progress.'
+      pl: 'TikDrive pomaga kursantom znaleźć instruktorów, rezerwować lekcje i śledzić postępy nauki.',
+      en: 'TikDrive helps learners find instructors, book lessons and track learning progress.'
     },
     description: {
-      pl: 'TikDrive is planned as the second Milux Tech product: a marketplace for driving lessons, instructors and driving schools. The roadmap includes instructor discovery, lesson booking, progress tracking and a future ProgoDrive professional panel for instructors and schools.',
-      en: 'TikDrive is planned as the second Milux Tech product: a marketplace for driving lessons, instructors and driving schools. The roadmap includes instructor discovery, lesson booking, progress tracking and a future ProgoDrive professional panel for instructors and schools.',
-      ru: 'TikDrive is planned as the second Milux Tech product: a marketplace for driving lessons, instructors and driving schools. The roadmap includes instructor discovery, lesson booking, progress tracking and a future ProgoDrive professional panel for instructors and schools.'
+      pl: 'TikDrive jest planowany jako drugi produkt Milux Tech: marketplace dla lekcji jazdy, instruktorów i szkół jazdy. Roadmapa obejmuje wyszukiwanie instruktorów, rezerwację lekcji, śledzenie postępów oraz przyszły profesjonalny panel ProgoDrive dla instruktorów i szkół.',
+      en: 'TikDrive is planned as the second Milux Tech product: a marketplace for driving lessons, instructors and driving schools. The roadmap includes instructor discovery, lesson booking, progress tracking and a future ProgoDrive professional panel for instructors and schools.'
     },
     features: {
       pl: [
-        'Find instructors',
-        'Book driving lessons',
-        'Track learning progress',
-        'Future ProgoDrive panel for instructors and schools'
+        'Wyszukiwanie instruktorów',
+        'Rezerwacja lekcji jazdy',
+        'Śledzenie postępów nauki',
+        'Przyszły panel ProgoDrive dla instruktorów i szkół'
       ],
       en: [
-        'Find instructors',
-        'Book driving lessons',
-        'Track learning progress',
-        'Future ProgoDrive panel for instructors and schools'
-      ],
-      ru: [
         'Find instructors',
         'Book driving lessons',
         'Track learning progress',
@@ -106,14 +87,12 @@ export const projects: Project[] = [
       ]
     },
     cta: {
-      pl: 'Contact Milux Tech',
-      en: 'Contact Milux Tech',
-      ru: 'Contact Milux Tech'
+      pl: 'Skontaktuj się z Milux Tech',
+      en: 'Contact Milux Tech'
     },
     ctaNote: {
-      pl: 'In planning / prototype.',
-      en: 'In planning / prototype.',
-      ru: 'In planning / prototype.'
+      pl: 'W planowaniu / prototypie.',
+      en: 'In planning / prototype.'
     },
     status: 'In planning / prototype.',
     accent: 'blue',
