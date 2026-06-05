@@ -1,17 +1,12 @@
 {
-  "name": "MiLux AI Labs",
-  "short_name": "MiLux",
-  "description": "MiLux AI Labs - Tworzymy innowacyjne aplikacje AI dla lepszego życia. Odkryj nasze projekty i dołącz do rewolucji sztucznej inteligencji.",
+  "name": "Milux Tech",
+  "short_name": "Milux Tech",
+  "description": "Milux Tech builds focused marketplace products, starting with Rdix and TikDrive.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#08090e",
-  "theme_color": "#08090e",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
-    {
-      "src": "/icons/miluxailabs-logo.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
     {
       "src": "/icon.svg",
       "sizes": "512x512",

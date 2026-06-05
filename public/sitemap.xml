@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://matmilux.pl/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-06-05</lastmod>
   </url>
   <url>
     <loc>https://matmilux.pl/privacy/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-06-05</lastmod>
   </url>
   <url>
-    <loc>https://matmilux.pl/projects/tik-mathik/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <loc>https://matmilux.pl/terms.html</loc>
+    <lastmod>2026-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://matmilux.pl/cookies.html</loc>
+    <lastmod>2026-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://matmilux.pl/projects/rdix/</loc>
+    <lastmod>2026-06-05</lastmod>
   </url>
   <url>
     <loc>https://matmilux.pl/projects/tikdrive/</loc>
-    <lastmod>2026-01-10</lastmod>
-  </url>
-  <url>
-    <loc>https://matmilux.pl/projects/tiklang-ai/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-06-05</lastmod>
   </url>
 </urlset>
